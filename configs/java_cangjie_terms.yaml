@@ -1,0 +1,23 @@
+# Java→Cangjie term mapping for BM25 query construction
+# One-to-many: covers different naming conventions across
+# manual (zh), std (zh/en), and stdx (en) documentation.
+Annotation: [Attribute]
+Thread: [并发, 线程]
+Optional: [Option, 可选]
+"null": [None]
+Stream: [流, Iterator, 迭代器]
+Map: [HashMap, 映射]
+List: [ArrayList, Array, 列表]
+Set: [HashSet, 集合]
+"@Override": [Attribute]
+interface: [interface, 接口]
+extends: [继承]
+implements: [实现]
+enum: [enum, 枚举]
+try-with-resources: [自动关闭, 资源管理]
+synchronized: [同步, 锁]
+Arrays: [Array, 数组]
+ArrayList: [ArrayList, 列表]
+HashMap: [HashMap, 映射]
+HashSet: [HashSet, 集合]
+StringBuilder: [String, 字符串]
