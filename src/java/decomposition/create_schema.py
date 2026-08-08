@@ -7,7 +7,7 @@ import argparse
 from tree_sitter import Language, Parser
 
 from src.java.utils.get_schema_file import get_schema_file
-from src.java.utils.project_paths import resolve_java_project_root
+from src.java.utils.project_paths import materialize_call_graph, resolve_java_project_root
 
 
 class Class:
@@ -739,6 +739,7 @@ def create_schema(args):
         args.suffix,
         getattr(args, 'project_root', ''),
     )
+    call_graph_path = materialize_call_graph(project_dir, args.project_name)
     java_files = get_dir_files(str(project_dir))
     parser = get_language_parser('java')
 
@@ -767,7 +768,7 @@ def create_schema(args):
             json.dump(schema, f, indent=4)
 
     call_graph = []
-    with open(f'data/java/call_graphs/{args.project_name}/callgraph.txt') as f:
+    with call_graph_path.open() as f:
         call_graph = [x.strip() for x in f.readlines() if x.strip().startswith('M:')]
 
     progress_bar = tqdm.tqdm(total=len(call_graph), desc='Updating call graph')

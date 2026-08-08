@@ -15,7 +15,7 @@ suffix=$4
 project_root=${5:-}
 
 echo "Creating schema for $project"
-export PYTHONPATH=$(pwd)
+export PYTHONPATH="$(pwd)${PYTHONPATH:+:$PYTHONPATH}"
 args=(
   --project_name "$project"
   --suffix "$suffix"

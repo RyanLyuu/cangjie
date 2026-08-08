@@ -13,6 +13,64 @@ from src.java.utils.project_paths import resolve_java_project_root
 REPO_ROOT = Path(__file__).resolve().parents[3]
 
 
+def ensure_compiled_classes(
+    project_dir, maven_executable="mvn", compile_timeout=900
+):
+    """Compile a checked-in cleaned project when ignored Maven outputs are absent."""
+    project_dir = Path(project_dir)
+    classes_dir = project_dir / "target/classes"
+    if classes_dir.is_dir():
+        return False
+
+    pom = project_dir / "pom.xml"
+    if not pom.is_file():
+        raise FileNotFoundError(f"Maven project file not found: {pom}")
+    maven = shutil.which(maven_executable) or (
+        maven_executable if Path(maven_executable).is_file() else ""
+    )
+    if not maven:
+        raise RuntimeError(
+            f"Maven executable not found: {maven_executable}; install Maven or pass --maven"
+        )
+
+    command = [
+        maven,
+        "-q",
+        "-DskipTests",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Djapicmp.skip",
+        "-Dmaven.javadoc.skip=true",
+        "compile",
+    ]
+    try:
+        completed = subprocess.run(
+            command,
+            cwd=project_dir,
+            capture_output=True,
+            text=True,
+            timeout=compile_timeout,
+            check=False,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(
+            f"Maven compile timed out after {compile_timeout}s: {project_dir}"
+        ) from exc
+    if completed.returncode != 0:
+        diagnostic = "\n".join(
+            part.strip() for part in (completed.stdout, completed.stderr) if part.strip()
+        )
+        raise RuntimeError(
+            f"Maven compile failed for {project_dir}:\n{diagnostic[-8000:]}"
+        )
+    if not classes_dir.is_dir():
+        raise RuntimeError(
+            f"Maven compile succeeded but did not create {classes_dir}"
+        )
+    return True
+
+
 def detect_and_remove_cycles(graph):
     # Calculate in-degrees of all nodes
     in_degree = defaultdict(int)
@@ -47,7 +105,14 @@ def detect_and_remove_cycles(graph):
     return topological_order
 
 
-def parse_dependencies(project_name, suffix, project_root="", jdeps_executable="jdeps"):
+def parse_dependencies(
+    project_name,
+    suffix,
+    project_root="",
+    jdeps_executable="jdeps",
+    maven_executable="mvn",
+    compile_timeout=900,
+):
     dependencies_dir = REPO_ROOT / f"data/java/dependencies{suffix}" / project_name
     dependencies_dir.mkdir(parents=True, exist_ok=True)
 
@@ -69,9 +134,8 @@ def parse_dependencies(project_name, suffix, project_root="", jdeps_executable="
         raise RuntimeError(
             f"jdeps executable not found: {jdeps_executable}; install a JDK or pass --jdeps"
         )
+    ensure_compiled_classes(project_dir, maven_executable, compile_timeout)
     main_classes_dir = project_dir / "target/classes"
-    if not main_classes_dir.is_dir():
-        raise FileNotFoundError(f"compiled Java classes not found: {main_classes_dir}")
     subprocess.run(
         [jdeps, "-verbose", "-dotoutput", str(dependencies_dir), str(main_classes_dir)],
         check=True,
@@ -178,7 +242,12 @@ def main(args):
     function_name = args.function
     if function_name == "parse_dependencies":
         parse_dependencies(
-            args.project_name, args.suffix, args.project_root, args.jdeps
+            args.project_name,
+            args.suffix,
+            args.project_root,
+            args.jdeps,
+            args.maven,
+            args.compile_timeout,
         )
     else:
         raise NotImplementedError(f"function {function_name} not implemented")
@@ -209,6 +278,13 @@ def parse_args():
     )
     parser.add_argument(
         "--jdeps", type=str, default="jdeps", help="jdeps executable path"
+    )
+    parser.add_argument(
+        "--maven", type=str, default="mvn", help="Maven executable path"
+    )
+    parser.add_argument(
+        "--compile-timeout", type=int, default=900,
+        help="automatic Maven compile timeout in seconds",
     )
     return parser.parse_args()
 

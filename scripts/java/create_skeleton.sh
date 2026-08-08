@@ -22,7 +22,7 @@ if [ "$translate_tests" != "true" ] && [ "$translate_tests" != "false" ]; then
 fi
 
 echo "Creating skeleton for $project"
-export PYTHONPATH=$(pwd)
+export PYTHONPATH="$(pwd)${PYTHONPATH:+:$PYTHONPATH}"
 args=(
   --project "$project"
   --model "$model"

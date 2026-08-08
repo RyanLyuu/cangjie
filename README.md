@@ -28,6 +28,25 @@ Java preprocessing and occurrence-aware schema
   -> separate dependency-ordered fragment command
 ```
 
+## Prerequisites
+
+- JDK 11 with `java`, `javac`, and `jdeps` on `PATH`
+- Maven 3.8 or newer
+- Node.js/npm for the Codex CLI
+- Cangjie SDK 1.0.5 with `cjc` and `cjpm` on `PATH`
+
+Initialize the Cangjie SDK in each new shell using its installed `envsetup.sh`:
+
+```bash
+source /path/to/cangjie/envsetup.sh
+java -version
+javac -version
+jdeps --version
+mvn -version
+cjc --version
+cjpm --version
+```
+
 ## Codex Configuration
 
 The baseline launches the local Codex CLI. Credentials are never read from the
@@ -87,6 +106,11 @@ bash scripts/java/create_skeleton.sh \
 bash scripts/java/translate_fragment.sh \
   commons-cli codex-baseline _evosuite_cleaned_base 0.0 false
 ```
+
+The checked-in project-level `callgraph.txt` is copied into `data/java/`
+automatically by `create_schema.sh`. Maven build outputs are intentionally not
+checked in; `get_dependencies.sh` runs `mvn compile` automatically when
+`target/classes` is missing, then invokes `jdeps`.
 
 `create_skeleton.sh` runs the complete type-to-skeleton command and exits only
 after `cjpm build` succeeds. `resolve_types.sh` is the optional type-only entry

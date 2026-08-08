@@ -30,5 +30,5 @@ if [ -n "$agent_model" ]; then
   args+=(--agent-model "$agent_model")
 fi
 
-export PYTHONPATH=$(pwd)
+export PYTHONPATH="$(pwd)${PYTHONPATH:+:$PYTHONPATH}"
 python3 -m src.java.translation.baseline_fragment_translation "${args[@]}"
