@@ -7,7 +7,8 @@ docs/projects.txt
 __pycache__/
 misc/
 vscode-codeql-starter/
-projects/
+projects/**/.git/
+projects/**/target/
 databases/
 java/data/
 data/java/rag/
@@ -15,6 +16,10 @@ data/java/
 x2cangjie.code-workspace
 **/target/
 *.log
+.env
+.env.*
+!.env.example
+.codex/auth.json
 
 
 AGENTS.md

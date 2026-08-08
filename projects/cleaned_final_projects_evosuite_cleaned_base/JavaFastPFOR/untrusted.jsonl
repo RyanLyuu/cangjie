@@ -1,0 +1,352 @@
+{"body": "import jdk.incubator.vector.*", "path": "JavaFastPFOR/src/main/java/me/lemire/integercompression/vector/VectorBitPacker.java"}
+{"body": "import jdk.incubator.vector.*", "path": "JavaFastPFOR/src/main/java/me/lemire/integercompression/vector/VectorBitPackerTerse.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/LCPForDelta_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128WIthIntBuffer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDelta_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16WithHardCodes_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BinaryPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BitPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Composition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagBinaryPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagEncoding_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagVariableByte_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR128_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntCompressor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntWrapper_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/JustCopy_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Kamikaze_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS9_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFD_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS9_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFD_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S9_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple9_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/SkippableComposition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/UncompressibleInputException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Util_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/VariableByte_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkBitPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkCSV_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkOffsettedSeries_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkSkippable_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/Benchmark_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/PerformanceLogger$Timer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/PerformanceLogger_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/Delta_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBinaryPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBitPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedComposition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedIntCompressor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedVariableByte_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/SkippableIntegratedComposition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/XorBinaryPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/ClusteredDataGenerator_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/UniformDataGenerator_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongAs2IntsCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongComposition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongJustCopy_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongUtil_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongVariableByte_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/RoaringIntPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/SkippableLongComposition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/differential/LongDelta_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/LCPForDelta_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128WIthIntBuffer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDelta_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16WithHardCodes_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BinaryPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BitPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Composition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagBinaryPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagEncoding_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagVariableByte_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR128_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntCompressor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntWrapper_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/JustCopy_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Kamikaze_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS9_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFD_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS9_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFD_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S9_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple9_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/SkippableComposition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/UncompressibleInputException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Util_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/VariableByte_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkBitPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkCSV_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkOffsettedSeries_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkSkippable_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/Benchmark_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/PerformanceLogger$Timer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/PerformanceLogger_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/Delta_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBinaryPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBitPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedComposition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedIntCompressor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedVariableByte_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/SkippableIntegratedComposition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/XorBinaryPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/ClusteredDataGenerator_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/UniformDataGenerator_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongAs2IntsCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongComposition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongJustCopy_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongUtil_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongVariableByte_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/RoaringIntPacking_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/SkippableLongComposition_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/differential/LongDelta_ESTest.java"}
+{"body": "import org.evosuite.runtime.Random", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkSkippable_ESTest.java"}
+{"body": "import org.evosuite.runtime.Random", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/Benchmark_ESTest.java"}
+{"body": "import org.evosuite.runtime.Random", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/ClusteredDataGenerator_ESTest.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/LCPForDelta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128WIthIntBuffer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDelta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16WithHardCodes_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BitPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Composition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagBinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagEncoding_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagVariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR128_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntCompressor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntWrapper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/JustCopy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Kamikaze_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFD_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFD_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/SkippableComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/UncompressibleInputException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Util_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/VariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkBitPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkCSV_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkOffsettedSeries_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkSkippable_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/Benchmark_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/PerformanceLogger$Timer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/PerformanceLogger_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/Delta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBitPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedIntCompressor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedVariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/SkippableIntegratedComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/XorBinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/ClusteredDataGenerator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/UniformDataGenerator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongAs2IntsCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongJustCopy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongUtil_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongVariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/RoaringIntPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/SkippableLongComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/differential/LongDelta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkOffsettedSeries_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintWriter", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkOffsettedSeries_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.util.MockRandom", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/UniformDataGenerator_ESTest.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/LCPForDelta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128WIthIntBuffer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDelta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16WithHardCodes_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BitPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Composition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagBinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagEncoding_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagVariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR128_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntCompressor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntWrapper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/JustCopy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Kamikaze_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFD_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFD_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/SkippableComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/UncompressibleInputException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Util_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/VariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkBitPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkCSV_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkOffsettedSeries_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkSkippable_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/Benchmark_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/PerformanceLogger$Timer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/PerformanceLogger_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/Delta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBitPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedIntCompressor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedVariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/SkippableIntegratedComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/XorBinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/ClusteredDataGenerator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/UniformDataGenerator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongAs2IntsCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongJustCopy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongUtil_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongVariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/RoaringIntPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/SkippableLongComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/differential/LongDelta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/LCPForDelta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128WIthIntBuffer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDelta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16WithHardCodes_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BitPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Composition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagBinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagEncoding_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagVariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR128_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntCompressor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntWrapper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/JustCopy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Kamikaze_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFD_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFD_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple9_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/SkippableComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/UncompressibleInputException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Util_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/VariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkBitPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkCSV_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkOffsettedSeries_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkSkippable_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/Benchmark_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/PerformanceLogger$Timer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/PerformanceLogger_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/Delta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBitPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedIntCompressor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedVariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/SkippableIntegratedComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/XorBinaryPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/ClusteredDataGenerator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/UniformDataGenerator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongAs2IntsCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongJustCopy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongUtil_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongVariableByte_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/RoaringIntPacking_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/SkippableLongComposition_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/differential/LongDelta_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkCSV_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkOffsettedSeries_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkSkippable_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/Benchmark_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.FileSystemHandling", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkCSV_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.FileSystemHandling", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkOffsettedSeries_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.FileSystemHandling", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkSkippable_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.FileSystemHandling", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/Benchmark_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/LCPForDelta_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128WIthIntBuffer_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDeltaUnpack128_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/PForDelta_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16WithHardCodes_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/com/kamikaze/pfordelta/Simple16_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BinaryPacking_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/BitPacking_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Composition_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagBinaryPacking_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagEncoding_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/DeltaZigzagVariableByte_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR128_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/FastPFOR_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/IntCompressor_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/JustCopy_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Kamikaze_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS16_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFDS9_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/NewPFD_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS16_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFDS9_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/OptPFD_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S16_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/S9_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple16_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Simple9_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/SkippableComposition_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/Util_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/VariableByte_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkBitPacking_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkCSV_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkOffsettedSeries_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/BenchmarkSkippable_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/benchmarktools/Benchmark_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/Delta_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBinaryPacking_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedBitPacking_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedComposition_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedIntCompressor_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/IntegratedVariableByte_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/SkippableIntegratedComposition_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/differential/XorBinaryPacking_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/ClusteredDataGenerator_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/integercompression/synth/UniformDataGenerator_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongAs2IntsCodec_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongComposition_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongJustCopy_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/LongVariableByte_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/SkippableLongComposition_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "JavaFastPFOR/evosuite-tests/me/lemire/longcompression/differential/LongDelta_ESTest.java"}

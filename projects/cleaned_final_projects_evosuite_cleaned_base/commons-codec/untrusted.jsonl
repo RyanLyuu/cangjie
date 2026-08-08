@@ -1,0 +1,476 @@
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/CharEncoding_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Charsets_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/DecoderException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/EncoderException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Resources_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16InputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16OutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32InputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32OutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64InputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64OutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecInputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BinaryCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/CharSequenceUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Hex_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/StringUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/cli/Digest_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/B64_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3$EngineState_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3$Output_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Crypt_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/HmacAlgorithms_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/HmacUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Md5Crypt_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MessageDigestAlgorithms_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash2_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3$IncrementalHash32_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32C_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Sha2Crypt_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/UnixCrypt_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/XXHash32_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/AbstractCaverphone_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone1_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone2_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic$CologneBuffer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic$CologneInputBuffer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex$Branch_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex$Rule_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DoubleMetaphone_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/MatchRatingApproachEncoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Metaphone_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Nysiis_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/RefinedSoundex_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/SoundexUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Soundex_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/BeiderMorseEncoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang$LangRule_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$AnyLanguage_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$LanguageSet_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$NoLanguage_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$SomeLanguages_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/NameType_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$PhonemeBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$RulesApplication_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/ResourceConstants_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$PhonemeList_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$Phoneme_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule1_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/RuleType_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/BCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/PercentCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QuotedPrintableCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/RFC1522Codec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/URLCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/Utils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/CharEncoding_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Charsets_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/DecoderException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/EncoderException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Resources_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16InputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16OutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32InputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32OutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64InputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64OutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecInputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BinaryCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/CharSequenceUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Hex_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/StringUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/cli/Digest_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/B64_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3$EngineState_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3$Output_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Crypt_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/HmacAlgorithms_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/HmacUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Md5Crypt_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MessageDigestAlgorithms_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash2_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3$IncrementalHash32_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32C_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Sha2Crypt_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/UnixCrypt_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/XXHash32_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/AbstractCaverphone_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone1_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone2_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic$CologneBuffer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic$CologneInputBuffer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex$Branch_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex$Rule_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DoubleMetaphone_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/MatchRatingApproachEncoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Metaphone_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Nysiis_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/RefinedSoundex_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/SoundexUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Soundex_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/BeiderMorseEncoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang$LangRule_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$AnyLanguage_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$LanguageSet_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$NoLanguage_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$SomeLanguages_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/NameType_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$PhonemeBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$RulesApplication_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/ResourceConstants_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$PhonemeList_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$Phoneme_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule1_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/RuleType_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/BCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/PercentCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QuotedPrintableCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/RFC1522Codec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/URLCodec_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/Utils_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64InputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$PhonemeBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule_ESTest.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/CharEncoding_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Charsets_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/DecoderException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/EncoderException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Resources_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16InputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16OutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32InputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32OutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64InputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64OutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecInputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BinaryCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/CharSequenceUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Hex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/StringUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/cli/Digest_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/B64_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3$EngineState_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3$Output_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Crypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/HmacAlgorithms_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/HmacUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Md5Crypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MessageDigestAlgorithms_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash2_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3$IncrementalHash32_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32C_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Sha2Crypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/UnixCrypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/XXHash32_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/AbstractCaverphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone1_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone2_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic$CologneBuffer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic$CologneInputBuffer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex$Branch_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex$Rule_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DoubleMetaphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/MatchRatingApproachEncoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Metaphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Nysiis_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/RefinedSoundex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/SoundexUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Soundex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/BeiderMorseEncoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang$LangRule_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$AnyLanguage_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$LanguageSet_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$NoLanguage_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$SomeLanguages_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/NameType_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$PhonemeBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$RulesApplication_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/ResourceConstants_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$PhonemeList_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$Phoneme_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule1_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/RuleType_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/BCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/PercentCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QuotedPrintableCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/RFC1522Codec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/URLCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/Utils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileInputStream", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32InputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileOutputStream", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64OutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileOutputStream", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16OutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32OutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThrowable", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/DecoderException_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.util.MockRandom", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/B64_ESTest.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/CharEncoding_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Charsets_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/DecoderException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/EncoderException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Resources_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16InputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16OutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32InputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32OutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64InputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64OutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecInputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BinaryCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/CharSequenceUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Hex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/StringUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/cli/Digest_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/B64_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3$EngineState_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3$Output_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Crypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/HmacAlgorithms_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/HmacUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Md5Crypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MessageDigestAlgorithms_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash2_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3$IncrementalHash32_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32C_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Sha2Crypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/UnixCrypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/XXHash32_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/AbstractCaverphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone1_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone2_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic$CologneBuffer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic$CologneInputBuffer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex$Branch_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex$Rule_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DoubleMetaphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/MatchRatingApproachEncoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Metaphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Nysiis_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/RefinedSoundex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/SoundexUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Soundex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/BeiderMorseEncoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang$LangRule_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$AnyLanguage_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$LanguageSet_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$NoLanguage_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$SomeLanguages_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/NameType_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$PhonemeBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$RulesApplication_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/ResourceConstants_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$PhonemeList_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$Phoneme_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule1_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/RuleType_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/BCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/PercentCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QuotedPrintableCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/RFC1522Codec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/URLCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/Utils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/CharEncoding_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Charsets_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/DecoderException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/EncoderException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Resources_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16InputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16OutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32InputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32OutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64InputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64OutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecInputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BinaryCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/CharSequenceUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Hex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/StringUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/cli/Digest_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/B64_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3$EngineState_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3$Output_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Crypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/HmacAlgorithms_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/HmacUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Md5Crypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MessageDigestAlgorithms_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash2_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3$IncrementalHash32_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32C_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Sha2Crypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/UnixCrypt_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/XXHash32_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/AbstractCaverphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone1_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone2_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic$CologneBuffer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic$CologneInputBuffer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex$Branch_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex$Rule_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DoubleMetaphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/MatchRatingApproachEncoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Metaphone_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Nysiis_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/RefinedSoundex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/SoundexUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Soundex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/BeiderMorseEncoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang$LangRule_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$AnyLanguage_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$LanguageSet_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$NoLanguage_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$SomeLanguages_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/NameType_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$PhonemeBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$RulesApplication_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/ResourceConstants_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$PhonemeList_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$Phoneme_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule1_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/RuleType_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/BCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/PercentCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QuotedPrintableCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/RFC1522Codec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/URLCodec_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/Utils_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Charsets_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/Resources_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16InputStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16OutputStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base16_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32InputStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base32OutputStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64InputStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64OutputStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecInputStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodecOutputStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BaseNCodec_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/BinaryCodec_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/CharSequenceUtils_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Hex_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/StringUtils_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/B64_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/Blake3_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash2_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3$IncrementalHash32_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/MurmurHash3_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32C_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/PureJavaCrc32_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/UnixCrypt_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/digest/XXHash32_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/AbstractCaverphone_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Caverphone_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/ColognePhonetic_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DaitchMokotoffSoundex_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/DoubleMetaphone_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/MatchRatingApproachEncoder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Metaphone_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Nysiis_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/RefinedSoundex_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/SoundexUtils_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/Soundex_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/BeiderMorseEncoder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Lang_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$AnyLanguage_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$LanguageSet_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages$NoLanguage_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Languages_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$PhonemeBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule$Phoneme_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule1_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/BCodec_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/PercentCodec_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QCodec_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/QuotedPrintableCodec_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/RFC1522Codec_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/URLCodec_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/net/Utils_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64InputStream_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/binary/Base64InputStream_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$PhonemeBuilder_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine$PhonemeBuilder_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/PhoneticEngine_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-codec/evosuite-tests/org/apache/commons/codec/language/bm/Rule_ESTest_scaffolding.java"}

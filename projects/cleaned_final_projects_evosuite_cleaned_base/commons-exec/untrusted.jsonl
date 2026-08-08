@@ -1,0 +1,215 @@
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/CommandLine_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DaemonExecutor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecuteResultHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor$Builder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/LogOutputStream$ByteArrayOutputStreamX_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/LogOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/OS_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer$ProcessDestroyerThread_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/StreamPumper_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ThreadUtil_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/Watchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/DefaultProcessingEnvironment_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/EnvironmentUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/OpenVmsProcessingEnvironment_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherImpl_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherProxy_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/Java13CommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/OS2CommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/VmsCommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/WinNTCommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/DebugUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/MapUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/StringUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/CommandLine_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DaemonExecutor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecuteResultHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor$Builder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/LogOutputStream$ByteArrayOutputStreamX_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/LogOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/OS_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer$ProcessDestroyerThread_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/StreamPumper_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ThreadUtil_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/Watchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/DefaultProcessingEnvironment_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/EnvironmentUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/OpenVmsProcessingEnvironment_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherImpl_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherProxy_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/Java13CommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/OS2CommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/VmsCommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/WinNTCommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/DebugUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/MapUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/StringUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.System", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ThreadUtil_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/Watchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/CommandLine_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DaemonExecutor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecuteResultHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor$Builder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/LogOutputStream$ByteArrayOutputStreamX_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/LogOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/OS_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer$ProcessDestroyerThread_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/StreamPumper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ThreadUtil_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/Watchdog_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/DefaultProcessingEnvironment_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/EnvironmentUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/OpenVmsProcessingEnvironment_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherImpl_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherProxy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/Java13CommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/OS2CommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/VmsCommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/WinNTCommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/DebugUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/MapUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/StringUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/CommandLine_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/Java13CommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/OS2CommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/WinNTCommandLauncher_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/StringUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileInputStream", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileInputStream", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/StreamPumper_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileOutputStream", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileOutputStream", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileOutputStream", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/StreamPumper_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockException", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThread", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DaemonExecutor_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThread", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThread", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThread", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ThreadUtil_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThrowable", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecuteResultHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThrowable", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteException_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThrowable", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.net.MockURI", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/CommandLine_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DaemonExecutor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecuteResultHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor$Builder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/LogOutputStream$ByteArrayOutputStreamX_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/LogOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/OS_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer$ProcessDestroyerThread_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/StreamPumper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ThreadUtil_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/Watchdog_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/DefaultProcessingEnvironment_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/EnvironmentUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/OpenVmsProcessingEnvironment_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherImpl_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherProxy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/Java13CommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/OS2CommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/VmsCommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/WinNTCommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/DebugUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/MapUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/StringUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/CommandLine_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DaemonExecutor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecuteResultHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor$Builder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/LogOutputStream$ByteArrayOutputStreamX_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/LogOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/OS_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer$ProcessDestroyerThread_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/StreamPumper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ThreadUtil_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/Watchdog_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/DefaultProcessingEnvironment_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/EnvironmentUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/OpenVmsProcessingEnvironment_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherImpl_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherProxy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/Java13CommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/OS2CommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/VmsCommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/WinNTCommandLauncher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/DebugUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/MapUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/StringUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.FileSystemHandling", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/CommandLine_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecuteResultHandler_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/OS_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/StreamPumper_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ThreadUtil_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/Watchdog_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/environment/EnvironmentUtils_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherImpl_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/CommandLauncherProxy_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/Java13CommandLauncher_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/OS2CommandLauncher_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/VmsCommandLauncher_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/launcher/WinNTCommandLauncher_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/util/StringUtils_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/DefaultExecutor_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ExecuteWatchdog_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/InputStreamPumper_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/PumpStreamHandler_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ShutdownHookProcessDestroyer_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ThreadUtil_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/ThreadUtil_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/Watchdog_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-exec/evosuite-tests/org/apache/commons/exec/Watchdog_ESTest_scaffolding.java"}

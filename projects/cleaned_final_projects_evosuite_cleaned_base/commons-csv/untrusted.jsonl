@@ -1,0 +1,59 @@
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVPrinter_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVRecord_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Constants_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/ExtendedBufferedReader_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Lexer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Token_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVPrinter_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVRecord_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Constants_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/ExtendedBufferedReader_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Lexer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Token_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVPrinter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVRecord_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Constants_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/ExtendedBufferedReader_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Lexer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Token_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVPrinter_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileOutputStream", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileWriter", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVPrinter_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintWriter", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVPrinter_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintWriter", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThrowable", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.net.MockURL", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVPrinter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVRecord_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Constants_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/ExtendedBufferedReader_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Lexer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Token_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVPrinter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVRecord_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Constants_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/ExtendedBufferedReader_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Lexer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Token_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVPrinter_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVRecord_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/ExtendedBufferedReader_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/IOUtils_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/Lexer_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-csv/evosuite-tests/org/apache/commons/csv/CSVParser_ESTest_scaffolding.java"}

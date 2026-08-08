@@ -1,0 +1,167 @@
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItemFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItem_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileCountLimitExceededException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileItemStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$FileItemIteratorImpl_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$SizeException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$SizeLimitExceededException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$UnknownSizeException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUpload_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/InvalidFileNameException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream$ProgressNotifier_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/ParameterParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItemFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItem_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/portlet/PortletFileUpload_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/servlet/ServletRequestContext_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/FileItemHeadersImpl_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/LimitedInputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/Streams_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/Base64Decoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/MimeUtility_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/ParseException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/QuotedPrintableDecoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItemFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItem_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileCountLimitExceededException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileItemStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$FileItemIteratorImpl_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$SizeException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$SizeLimitExceededException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$UnknownSizeException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUpload_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/InvalidFileNameException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream$ProgressNotifier_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/ParameterParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItemFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItem_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/portlet/PortletFileUpload_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/servlet/ServletRequestContext_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/FileItemHeadersImpl_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/LimitedInputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/Streams_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/Base64Decoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/MimeUtility_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/ParseException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/QuotedPrintableDecoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUpload_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream$ProgressNotifier_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/portlet/PortletFileUpload_ESTest.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItemFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItem_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileCountLimitExceededException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileItemStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$FileItemIteratorImpl_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$SizeException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$SizeLimitExceededException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$UnknownSizeException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUpload_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/InvalidFileNameException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream$ProgressNotifier_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/ParameterParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItemFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItem_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/portlet/PortletFileUpload_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/servlet/ServletRequestContext_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/FileItemHeadersImpl_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/LimitedInputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/Streams_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/Base64Decoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/MimeUtility_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/ParseException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/QuotedPrintableDecoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItemFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItem_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadException_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItemFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItem_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/QuotedPrintableDecoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileInputStream", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileOutputStream", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/QuotedPrintableDecoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockIOException", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadException_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/Base64Decoder_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintWriter", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadException_ESTest.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItemFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItem_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileCountLimitExceededException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileItemStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$FileItemIteratorImpl_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$SizeException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$SizeLimitExceededException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$UnknownSizeException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUpload_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/InvalidFileNameException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream$ProgressNotifier_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/ParameterParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItemFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItem_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/portlet/PortletFileUpload_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/servlet/ServletRequestContext_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/FileItemHeadersImpl_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/LimitedInputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/Streams_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/Base64Decoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/MimeUtility_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/ParseException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/QuotedPrintableDecoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItemFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/DefaultFileItem_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileCountLimitExceededException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileItemStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$FileItemIteratorImpl_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$SizeException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$SizeLimitExceededException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase$UnknownSizeException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUpload_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/InvalidFileNameException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream$ProgressNotifier_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/ParameterParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItemFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItem_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/portlet/PortletFileUpload_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/servlet/ServletRequestContext_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/FileItemHeadersImpl_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/LimitedInputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/Streams_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/Base64Decoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/MimeUtility_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/ParseException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/QuotedPrintableDecoder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItemFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.FileSystemHandling", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/disk/DiskFileItemFactory_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadException_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/ParameterParser_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/FileItemHeadersImpl_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/Base64Decoder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/MimeUtility_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/util/mime/QuotedPrintableDecoder_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUploadBase_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUpload_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/FileUpload_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream$ProgressNotifier_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream$ProgressNotifier_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/MultipartStream_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/portlet/PortletFileUpload_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-fileupload/evosuite-tests/org/apache/commons/fileupload/portlet/PortletFileUpload_ESTest_scaffolding.java"}

@@ -1,0 +1,582 @@
+{"body": "import java.sql.ClientInfoStatus", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/DirectedMutableGraph_ESTest.java"}
+{"body": "import java.sql.SQLNonTransientConnectionException", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/DirectedMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/CommonsGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/GraphException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedDirectedGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedUndirectedGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/VertexPair_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/AbstractGraphConnection_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultGrapher_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultHeadVertexConnector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultLinkedConnectionBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultTailVertexConnector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSetNode_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSet_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeapNode_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeap_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/ColoredVertices_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColoringAlgorithmsSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColorsBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/NotEnoughColorsException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/UncoloredOrderedVertices_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/ConnectedComponentHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityAlgorithmsSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultKFactorBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultRankingSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DefaultExportSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DotExporter_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/GraphExportException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFlowWeightedEdgesBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFromHeadBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultMaxFlowAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultToTailBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/FlowNetworkHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/DirectedMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryPath_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryWeightedPath_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/MutableSpanningTree_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/RevertedGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/UndirectedMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/CheriyanMehlhornGabowAlgorithm_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/DefaultSccAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/KosarajuSharirAlgorithm_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanAlgorithm_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanVertexMetaInfo_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/AllVertexPairsShortestPath_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultHeuristicBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultPathSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultShortestPathAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultTargetSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultWeightedEdgesSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/NegativeWeightedCycleException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PathNotFoundException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PredecessorsList_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/ShortestDistances_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningWeightedEdgeMapperBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ReverseDeleteGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ShortestEdges_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/SuperVertex_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/WeightedEdgesComparator_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Assertions_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Objects_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/BaseGraphVisitHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitAlgorithmsSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/VisitGraphBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigDecimalWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigIntegerWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/DoubleWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/FloatWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/IntegerWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/LongWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/CommonsGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/GraphException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedDirectedGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedUndirectedGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/VertexPair_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/AbstractGraphConnection_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultGrapher_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultHeadVertexConnector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultLinkedConnectionBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultTailVertexConnector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSetNode_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSet_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeapNode_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeap_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/ColoredVertices_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColoringAlgorithmsSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColorsBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/NotEnoughColorsException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/UncoloredOrderedVertices_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/ConnectedComponentHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityAlgorithmsSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultKFactorBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultRankingSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DefaultExportSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DotExporter_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/GraphExportException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFlowWeightedEdgesBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFromHeadBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultMaxFlowAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultToTailBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/FlowNetworkHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/DirectedMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryPath_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryWeightedPath_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/MutableSpanningTree_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/RevertedGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/UndirectedMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/CheriyanMehlhornGabowAlgorithm_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/DefaultSccAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/KosarajuSharirAlgorithm_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanAlgorithm_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanVertexMetaInfo_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/AllVertexPairsShortestPath_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultHeuristicBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultPathSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultShortestPathAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultTargetSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultWeightedEdgesSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/NegativeWeightedCycleException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PathNotFoundException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PredecessorsList_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/ShortestDistances_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningWeightedEdgeMapperBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ReverseDeleteGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ShortestEdges_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/SuperVertex_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/WeightedEdgesComparator_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Assertions_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Objects_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/BaseGraphVisitHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitAlgorithmsSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/VisitGraphBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigDecimalWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigIntegerWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/DoubleWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/FloatWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/IntegerWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/LongWeightBaseOperations_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/CommonsGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedDirectedGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultGrapher_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultHeadVertexConnector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultLinkedConnectionBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeap_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColoringAlgorithmsSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColorsBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/UncoloredOrderedVertices_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/ConnectedComponentHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityAlgorithmsSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultKFactorBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultRankingSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DefaultExportSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DotExporter_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFlowWeightedEdgesBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFromHeadBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultMaxFlowAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultToTailBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/FlowNetworkHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryWeightedPath_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/MutableSpanningTree_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/AllVertexPairsShortestPath_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultHeuristicBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultPathSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultShortestPathAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultTargetSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultWeightedEdgesSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PredecessorsList_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeAlgorithmSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeSourceSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningWeightedEdgeMapperBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ReverseDeleteGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ShortestEdges_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/WeightedEdgesComparator_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitAlgorithmsSelector_ESTest.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/CommonsGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/GraphException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedDirectedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedUndirectedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/VertexPair_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/AbstractGraphConnection_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultGrapher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultHeadVertexConnector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultLinkedConnectionBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultTailVertexConnector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSetNode_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSet_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeapNode_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeap_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/ColoredVertices_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColoringAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColorsBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/NotEnoughColorsException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/UncoloredOrderedVertices_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/ConnectedComponentHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultKFactorBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultRankingSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DefaultExportSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DotExporter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/GraphExportException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFlowWeightedEdgesBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFromHeadBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultMaxFlowAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultToTailBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/FlowNetworkHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/DirectedMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryPath_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryWeightedPath_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/MutableSpanningTree_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/RevertedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/UndirectedMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/CheriyanMehlhornGabowAlgorithm_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/DefaultSccAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/KosarajuSharirAlgorithm_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanAlgorithm_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanVertexMetaInfo_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/AllVertexPairsShortestPath_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultHeuristicBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultPathSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultShortestPathAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultTargetSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultWeightedEdgesSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/NegativeWeightedCycleException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PathNotFoundException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PredecessorsList_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/ShortestDistances_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningWeightedEdgeMapperBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ReverseDeleteGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ShortestEdges_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/SuperVertex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/WeightedEdgesComparator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Assertions_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Objects_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/BaseGraphVisitHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/VisitGraphBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigDecimalWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigIntegerWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/DoubleWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/FloatWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/IntegerWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/LongWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DotExporter_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThrowable", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/GraphException_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThrowable", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/GraphExportException_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThrowable", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/DirectedMutableGraph_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThrowable", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/NegativeWeightedCycleException_ESTest.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/CommonsGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/GraphException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedDirectedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedUndirectedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/VertexPair_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/AbstractGraphConnection_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultGrapher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultHeadVertexConnector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultLinkedConnectionBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultTailVertexConnector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSetNode_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSet_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeapNode_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeap_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/ColoredVertices_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColoringAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColorsBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/NotEnoughColorsException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/UncoloredOrderedVertices_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/ConnectedComponentHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultKFactorBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultRankingSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DefaultExportSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DotExporter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/GraphExportException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFlowWeightedEdgesBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFromHeadBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultMaxFlowAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultToTailBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/FlowNetworkHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/DirectedMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryPath_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryWeightedPath_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/MutableSpanningTree_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/RevertedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/UndirectedMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/CheriyanMehlhornGabowAlgorithm_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/DefaultSccAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/KosarajuSharirAlgorithm_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanAlgorithm_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanVertexMetaInfo_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/AllVertexPairsShortestPath_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultHeuristicBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultPathSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultShortestPathAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultTargetSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultWeightedEdgesSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/NegativeWeightedCycleException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PathNotFoundException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PredecessorsList_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/ShortestDistances_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningWeightedEdgeMapperBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ReverseDeleteGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ShortestEdges_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/SuperVertex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/WeightedEdgesComparator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Assertions_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Objects_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/BaseGraphVisitHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/VisitGraphBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigDecimalWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigIntegerWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/DoubleWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/FloatWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/IntegerWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/LongWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/CommonsGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/GraphException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedDirectedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedUndirectedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/VertexPair_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/AbstractGraphConnection_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultGrapher_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultHeadVertexConnector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultLinkedConnectionBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultTailVertexConnector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSetNode_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSet_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeapNode_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeap_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/ColoredVertices_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColoringAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColorsBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/NotEnoughColorsException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/UncoloredOrderedVertices_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/ConnectedComponentHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultKFactorBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultRankingSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DefaultExportSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DotExporter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/GraphExportException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFlowWeightedEdgesBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFromHeadBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultMaxFlowAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultToTailBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/FlowNetworkHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/DirectedMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryPath_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryWeightedPath_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/MutableSpanningTree_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/RevertedGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/UndirectedMutableGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/CheriyanMehlhornGabowAlgorithm_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/DefaultSccAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/KosarajuSharirAlgorithm_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanAlgorithm_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanVertexMetaInfo_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/AllVertexPairsShortestPath_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultHeuristicBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultPathSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultShortestPathAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultTargetSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultWeightedEdgesSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/NegativeWeightedCycleException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PathNotFoundException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PredecessorsList_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/ShortestDistances_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningWeightedEdgeMapperBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ReverseDeleteGraph_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ShortestEdges_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/SuperVertex_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/WeightedEdgesComparator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Assertions_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Objects_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/BaseGraphVisitHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitSourceSelector_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/VisitGraphBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigDecimalWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigIntegerWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/DoubleWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/FloatWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/IntegerWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/LongWeightBaseOperations_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/CommonsGraph_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/GraphException_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedDirectedGraph_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedGraph_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedMutableGraph_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/VertexPair_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultGrapher_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultHeadVertexConnector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultTailVertexConnector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/DisjointSetNode_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeapNode_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeap_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/ColoredVertices_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColoringAlgorithmsSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColorsBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/UncoloredOrderedVertices_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/ConnectedComponentHandler_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityAlgorithmsSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultKFactorBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultRankingSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DefaultExportSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DotExporter_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/GraphExportException_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFlowWeightedEdgesBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFromHeadBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultMaxFlowAlgorithmSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultToTailBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/FlowNetworkHandler_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseGraph_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseMutableGraph_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/DirectedMutableGraph_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryPath_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryWeightedPath_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/MutableSpanningTree_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/RevertedGraph_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/UndirectedMutableGraph_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/CheriyanMehlhornGabowAlgorithm_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/DefaultSccAlgorithmSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/KosarajuSharirAlgorithm_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/scc/TarjanAlgorithm_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/AllVertexPairsShortestPath_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultHeuristicBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultPathSourceSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultShortestPathAlgorithmSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultTargetSourceSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultWeightedEdgesSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/NegativeWeightedCycleException_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PredecessorsList_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/ShortestDistances_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeAlgorithmSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeSourceSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningWeightedEdgeMapperBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ReverseDeleteGraph_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ShortestEdges_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/SuperVertex_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/WeightedEdgesComparator_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Assertions_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/utils/Objects_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitAlgorithmsSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitSourceSelector_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigDecimalWeightBaseOperations_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/BigIntegerWeightBaseOperations_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/DoubleWeightBaseOperations_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/FloatWeightBaseOperations_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/IntegerWeightBaseOperations_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/weight/primitive/LongWeightBaseOperations_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/CommonsGraph_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/CommonsGraph_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedDirectedGraph_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedDirectedGraph_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedGraph_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedGraph_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedMutableGraph_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/SynchronizedMutableGraph_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultGrapher_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultGrapher_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultHeadVertexConnector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultHeadVertexConnector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultLinkedConnectionBuilder_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/builder/DefaultLinkedConnectionBuilder_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeap_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/collections/FibonacciHeap_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColoringAlgorithmsSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColoringAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColorsBuilder_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/DefaultColorsBuilder_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/UncoloredOrderedVertices_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/coloring/UncoloredOrderedVertices_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/ConnectedComponentHandler_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/ConnectedComponentHandler_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityAlgorithmsSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/connectivity/DefaultConnectivityAlgorithmsSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultKFactorBuilder_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultKFactorBuilder_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultRankingSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/elo/DefaultRankingSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/AbstractExporter_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DefaultExportSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DefaultExportSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DotExporter_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/export/DotExporter_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFlowWeightedEdgesBuilder_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFlowWeightedEdgesBuilder_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFromHeadBuilder_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultFromHeadBuilder_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultMaxFlowAlgorithmSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultMaxFlowAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultToTailBuilder_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/DefaultToTailBuilder_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/FlowNetworkHandler_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/flow/FlowNetworkHandler_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseGraph_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/BaseGraph_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryWeightedPath_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/InMemoryWeightedPath_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/MutableSpanningTree_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/model/MutableSpanningTree_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/AllVertexPairsShortestPath_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/AllVertexPairsShortestPath_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultHeuristicBuilder_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultHeuristicBuilder_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultPathSourceSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultPathSourceSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultShortestPathAlgorithmSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultShortestPathAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultTargetSourceSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultTargetSourceSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultWeightedEdgesSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/DefaultWeightedEdgesSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PredecessorsList_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/shortestpath/PredecessorsList_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeAlgorithmSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeAlgorithmSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeSourceSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningTreeSourceSelector_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningWeightedEdgeMapperBuilder_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/DefaultSpanningWeightedEdgeMapperBuilder_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ReverseDeleteGraph_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ReverseDeleteGraph_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ShortestEdges_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/ShortestEdges_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/WeightedEdgesComparator_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/spanning/WeightedEdgesComparator_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitAlgorithmsSelector_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-graph/evosuite-tests/org/apache/commons/graph/visit/DefaultVisitAlgorithmsSelector_ESTest_scaffolding.java"}

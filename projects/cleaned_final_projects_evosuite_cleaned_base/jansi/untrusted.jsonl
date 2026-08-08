@@ -1,0 +1,167 @@
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Attribute_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Color_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Erase_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$NoAnsi_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiColors_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiConsole_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMain_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMode_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer$Code_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiType_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/WindowsSupport_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/CLibrary_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/JansiLoader_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/MingwSupport_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/OSInfo_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream$ZeroWidthSupplier_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/ColorsAnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/Colors_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/FastBufferedOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/WindowsAnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Attribute_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Color_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Erase_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$NoAnsi_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiColors_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiConsole_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMain_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMode_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer$Code_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiType_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/WindowsSupport_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/CLibrary_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/JansiLoader_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/MingwSupport_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/OSInfo_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream$ZeroWidthSupplier_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/ColorsAnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/Colors_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/FastBufferedOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/WindowsAnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.Random", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/JansiLoader_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Attribute_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Color_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Erase_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$NoAnsi_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiColors_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiConsole_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMain_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMode_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer$Code_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiType_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/WindowsSupport_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/CLibrary_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/JansiLoader_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/MingwSupport_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/OSInfo_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream$ZeroWidthSupplier_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/ColorsAnsiProcessor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/Colors_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/FastBufferedOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/WindowsAnsiProcessor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileOutputStream", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileOutputStream", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFileOutputStream", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/ColorsAnsiProcessor_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/FastBufferedOutputStream_ESTest.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Attribute_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Color_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Erase_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$NoAnsi_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiColors_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiConsole_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMain_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMode_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer$Code_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiType_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/WindowsSupport_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/CLibrary_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/JansiLoader_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/MingwSupport_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/OSInfo_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream$ZeroWidthSupplier_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/ColorsAnsiProcessor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/Colors_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/FastBufferedOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/WindowsAnsiProcessor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Attribute_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Color_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$Erase_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi$NoAnsi_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiColors_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiConsole_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMain_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMode_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer$Code_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiType_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/WindowsSupport_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/CLibrary_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/JansiLoader_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/MingwSupport_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/OSInfo_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream$ZeroWidthSupplier_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/ColorsAnsiProcessor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/Colors_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/FastBufferedOutputStream_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/WindowsAnsiProcessor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/JansiLoader_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/MingwSupport_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.FileSystemHandling", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/JansiLoader_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.FileSystemHandling", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/MingwSupport_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiConsole_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiMain_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer$Code_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiRenderer_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/WindowsSupport_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/CLibrary_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/MingwSupport_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/internal/OSInfo_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/ColorsAnsiProcessor_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/Colors_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/FastBufferedOutputStream_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/WindowsAnsiProcessor_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/AnsiPrintStream_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/Ansi_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiOutputStream_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "jansi/evosuite-tests/org/fusesource/jansi/io/AnsiProcessor_ESTest_scaffolding.java"}

@@ -28,13 +28,54 @@ Java preprocessing and occurrence-aware schema
   -> separate dependency-ordered fragment command
 ```
 
+## Codex Configuration
+
+The baseline launches the local Codex CLI. Credentials are never read from the
+repository: every user must authenticate Codex on their own machine.
+
+Install Codex and sign in with a personal ChatGPT account:
+
+```bash
+npm install -g @openai/codex
+codex login
+codex login status
+```
+
+Alternatively, authenticate with a personal OpenAI API key:
+
+```bash
+export OPENAI_API_KEY="sk-..."
+printenv OPENAI_API_KEY | codex login --with-api-key
+codex login status
+```
+
+PowerShell users can run:
+
+```powershell
+$env:OPENAI_API_KEY = "sk-..."
+$env:OPENAI_API_KEY | codex login --with-api-key
+```
+
+Personal Codex defaults belong in `~/.codex/config.toml`:
+
+```toml
+model_provider = "openai"
+model = "<a Codex model available to your account>"
+```
+
+Do not commit API keys, `.env` files, or `~/.codex/auth.json`. The example
+`configs/model_configs.yaml.example` is not used to authenticate the Codex
+baseline. See the official [Codex authentication](https://developers.openai.com/codex/auth)
+and [configuration](https://developers.openai.com/codex/config-basic) guides.
+
 ## Quick Start
 
 ```bash
 conda env create -f environment.yaml
 conda activate x2cangjie
 
-# Place preprocessed inputs under this directory before starting.
+# The projects/cleaned_final_projects_evosuite_cleaned_base tree is already
+# preprocessed and can be used directly.
 bash scripts/java/create_schema.sh \
   commons-cli codex-baseline 0.0 _evosuite_cleaned_base \
   projects/cleaned_final_projects_evosuite_cleaned_base
@@ -52,9 +93,13 @@ after `cjpm build` succeeds. `resolve_types.sh` is the optional type-only entry
 point. Both commands use the authenticated local `codex` CLI; pass a sixth
 argument to select a Codex model explicitly.
 
-Already-cleaned projects do not need preprocessing again. Regenerating them
-with the preprocessing scripts requires Maven, suitable JDK versions, the Java
-Tree-sitter grammar, and the `java-callgraph` fat JAR.
+`schema_model` (for example, `codex-baseline`) is only the namespace used below
+`data/java/schemas...`; it does not select the Agent model. If the optional
+`agent_model` argument is omitted, Codex uses `~/.codex/config.toml`.
+
+The checked-in cleaned projects do not need preprocessing again. Regenerating
+them with the preprocessing scripts requires Maven, suitable JDK versions, the
+Java Tree-sitter grammar, and the `java-callgraph` fat JAR.
 
 ## Layout
 
@@ -69,5 +114,7 @@ src/java/progressive_kb/  Reusable verified translation examples
 src/java/analysis/        Experiment and error analysis
 src/java/utils/           Shared pipeline utilities
 scripts/java/             Active pipeline entry points
+projects/cleaned_final_projects_evosuite_cleaned_base/  Ready-to-use inputs
+projects/original_projects/                             Original source snapshots
 data/java/                Call graphs, schemas, and dependency artifacts
 ```

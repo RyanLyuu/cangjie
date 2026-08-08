@@ -1,0 +1,302 @@
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseKeyedPooledObjectFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObject_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BasePooledObjectFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingFactor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingKeyedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingPerKeyKeyedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$KeyedObjectPoolMinIdleTimerTask_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ObjectPoolMinIdleTimerTask_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedKeyedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedKeyedPooledObjectFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedPooledObjectFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/AbandonedConfig_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$EvictionIterator_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$Evictor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$IdentityWrapper_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$StatsStore_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseObjectPoolConfig_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/CallStackUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultEvictionPolicy_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObjectInfo_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionConfig_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer$Reaper_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer$WeakRunner_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericKeyedObjectPoolConfig_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericObjectPoolConfig_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/InterruptibleReentrantLock_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque$AbstractItr_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/NoOpCallStack_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/PoolImplUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/SecurityManagerCallStack$PrivateSecurityManager_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/SecurityManagerCallStack_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/ThrowableCallStack_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/BaseProxyHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/CglibProxySource_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxyHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxySource_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedKeyedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseKeyedPooledObjectFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObject_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BasePooledObjectFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingFactor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingKeyedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingPerKeyKeyedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$KeyedObjectPoolMinIdleTimerTask_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ObjectPoolMinIdleTimerTask_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedKeyedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedKeyedPooledObjectFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedPooledObjectFactory_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/AbandonedConfig_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$EvictionIterator_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$Evictor_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$IdentityWrapper_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$StatsStore_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseObjectPoolConfig_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/CallStackUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultEvictionPolicy_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObjectInfo_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionConfig_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer$Reaper_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer$WeakRunner_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericKeyedObjectPoolConfig_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericObjectPoolConfig_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/InterruptibleReentrantLock_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque$AbstractItr_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/NoOpCallStack_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/PoolImplUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/SecurityManagerCallStack$PrivateSecurityManager_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/SecurityManagerCallStack_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/ThrowableCallStack_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/BaseProxyHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/CglibProxySource_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxyHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxySource_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedKeyedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.System", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest.java"}
+{"body": "import org.evosuite.runtime.System", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$EvictionIterator_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$Evictor_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultEvictionPolicy_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObjectInfo_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/InterruptibleReentrantLock_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/BaseProxyHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxySource_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedKeyedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.ViolatedAssumptionAnswer", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedObjectPool_ESTest.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseKeyedPooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObject_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BasePooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingFactor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingPerKeyKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$KeyedObjectPoolMinIdleTimerTask_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ObjectPoolMinIdleTimerTask_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedKeyedPooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedPooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/AbandonedConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$EvictionIterator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$Evictor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$IdentityWrapper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$StatsStore_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseObjectPoolConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/CallStackUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultEvictionPolicy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObjectInfo_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer$Reaper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer$WeakRunner_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericKeyedObjectPoolConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericObjectPoolConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/InterruptibleReentrantLock_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque$AbstractItr_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/NoOpCallStack_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/PoolImplUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/SecurityManagerCallStack$PrivateSecurityManager_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/SecurityManagerCallStack_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/ThrowableCallStack_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/BaseProxyHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/CglibProxySource_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxyHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxySource_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintWriter", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/NoOpCallStack_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintWriter", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/ThrowableCallStack_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThread", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.lang.MockThrowable", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.time.MockInstant", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObjectInfo_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.time.MockInstant", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/PoolImplUtils_ESTest.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseKeyedPooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObject_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BasePooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingFactor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingPerKeyKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$KeyedObjectPoolMinIdleTimerTask_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ObjectPoolMinIdleTimerTask_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedKeyedPooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedPooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/AbandonedConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$EvictionIterator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$Evictor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$IdentityWrapper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$StatsStore_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseObjectPoolConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/CallStackUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultEvictionPolicy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObjectInfo_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer$Reaper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer$WeakRunner_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericKeyedObjectPoolConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericObjectPoolConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/InterruptibleReentrantLock_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque$AbstractItr_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/NoOpCallStack_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/PoolImplUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/SecurityManagerCallStack$PrivateSecurityManager_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/SecurityManagerCallStack_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/ThrowableCallStack_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/BaseProxyHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/CglibProxySource_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxyHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxySource_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseKeyedPooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObject_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BasePooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingFactor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ErodingPerKeyKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$KeyedObjectPoolMinIdleTimerTask_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$ObjectPoolMinIdleTimerTask_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedKeyedPooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils$SynchronizedPooledObjectFactory_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/AbandonedConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$EvictionIterator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$Evictor_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$IdentityWrapper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$StatsStore_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseObjectPoolConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/CallStackUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultEvictionPolicy_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObjectInfo_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer$Reaper_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer$WeakRunner_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericKeyedObjectPoolConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericObjectPoolConfig_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/InterruptibleReentrantLock_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque$AbstractItr_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/NoOpCallStack_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/PoolImplUtils_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/SecurityManagerCallStack$PrivateSecurityManager_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/SecurityManagerCallStack_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/ThrowableCallStack_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/BaseProxyHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/CglibProxySource_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxyHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxySource_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedObjectPool_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/BaseObject_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/AbandonedConfig_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$EvictionIterator_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$Evictor_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseObjectPoolConfig_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultEvictionPolicy_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObjectInfo_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionConfig_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericKeyedObjectPoolConfig_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/GenericObjectPoolConfig_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/InterruptibleReentrantLock_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/LinkedBlockingDeque_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/NoOpCallStack_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/PoolImplUtils_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/ThrowableCallStack_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/BaseProxyHandler_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxyHandler_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxySource_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedKeyedObjectPool_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedObjectPool_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/PoolUtils_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$EvictionIterator_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$EvictionIterator_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$Evictor_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool$Evictor_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/BaseGenericObjectPool_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultEvictionPolicy_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultEvictionPolicy_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObjectInfo_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObjectInfo_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/DefaultPooledObject_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/EvictionTimer_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/InterruptibleReentrantLock_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/impl/InterruptibleReentrantLock_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/BaseProxyHandler_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/BaseProxyHandler_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxySource_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/JdkProxySource_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedKeyedObjectPool_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedKeyedObjectPool_ESTest_scaffolding.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedObjectPool_ESTest.java"}
+{"body": "import static org.evosuite.shaded.org.mockito.Mockito.*", "path": "commons-pool/evosuite-tests/org/apache/commons/pool2/proxy/ProxiedObjectPool_ESTest_scaffolding.java"}

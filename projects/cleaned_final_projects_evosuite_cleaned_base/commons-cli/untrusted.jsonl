@@ -1,0 +1,129 @@
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AlreadySelectedException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AmbiguousOptionException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/BasicParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/CommandLine_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/DefaultParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/GnuParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingArgumentException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingOptionException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionGroup_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionValidator_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Option_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Options_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/ParseException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Parser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PatternOptionBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PosixParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/TypeHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/UnrecognizedOptionException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunner", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Util_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AlreadySelectedException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AmbiguousOptionException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/BasicParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/CommandLine_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/DefaultParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/GnuParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingArgumentException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingOptionException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionGroup_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionValidator_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Option_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Options_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/ParseException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Parser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PatternOptionBuilder_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PosixParser_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/TypeHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/UnrecognizedOptionException_ESTest.java"}
+{"body": "import org.evosuite.runtime.EvoRunnerParameters", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Util_ESTest.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AlreadySelectedException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AmbiguousOptionException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/BasicParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/CommandLine_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/DefaultParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/GnuParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingArgumentException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingOptionException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionGroup_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionValidator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Option_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Options_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/ParseException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Parser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PatternOptionBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PosixParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/TypeHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/UnrecognizedOptionException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.annotation.EvoSuiteClassExclude", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Util_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockFile", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintStream", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest.java"}
+{"body": "import org.evosuite.runtime.mock.java.io.MockPrintWriter", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AlreadySelectedException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AmbiguousOptionException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/BasicParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/CommandLine_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/DefaultParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/GnuParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingArgumentException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingOptionException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionGroup_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionValidator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Option_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Options_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/ParseException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Parser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PatternOptionBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PosixParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/TypeHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/UnrecognizedOptionException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Util_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AlreadySelectedException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AmbiguousOptionException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/BasicParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/CommandLine_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/DefaultParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/GnuParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingArgumentException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingOptionException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionGroup_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionValidator_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Option_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Options_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/ParseException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Parser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PatternOptionBuilder_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PosixParser_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/TypeHandler_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/UnrecognizedOptionException_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.sandbox.Sandbox.SandboxMode", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Util_ESTest_scaffolding.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.EvoSuiteFile", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/TypeHandler_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.FileSystemHandling", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest.java"}
+{"body": "import org.evosuite.runtime.testdata.FileSystemHandling", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/TypeHandler_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AlreadySelectedException_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/AmbiguousOptionException_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/CommandLine_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/DefaultParser_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/GnuParser_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/HelpFormatter_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingArgumentException_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/MissingOptionException_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionGroup_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/OptionValidator_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Option_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Options_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PatternOptionBuilder_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/PosixParser_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/TypeHandler_ESTest.java"}
+{"body": "import static org.evosuite.runtime.EvoAssertions.*", "path": "commons-cli/evosuite-tests/org/apache/commons/cli/Util_ESTest.java"}
