@@ -1,4 +1,0 @@
-interface:
-  display_name: "Resolve Cangjie Types"
-  short_description: "Research and resolve Java types for Cangjie"
-  default_prompt: "Use $resolve-cangjie-types to analyze unresolved Java type occurrences and materialize evidence-backed Cangjie targets."

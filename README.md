@@ -4,10 +4,8 @@ Java-to-Cangjie baseline driven by Codex and Cangjie compiler feedback.
 
 The active Python surface is intentionally limited to preprocessing/schema
 generation, baseline type resolution, skeleton MCP generation, and file-level
-translation. The independently developed type-resolution Skill remains under
-`resolve-cangjie-types/`. Superseded RAG, progressive-KB, mock-test, analysis,
-and fragment-level implementations are preserved under
-`deprecated/non_baseline/` and are not imported by active code.
+translation. Historical artifacts and the separately developed type-resolution
+skill are intentionally excluded from this repository checkout.
 
 ## Workflow
 
