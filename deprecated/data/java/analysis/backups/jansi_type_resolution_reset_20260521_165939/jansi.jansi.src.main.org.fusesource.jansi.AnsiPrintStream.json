@@ -1,0 +1,943 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/jansi/src/main/java/org/fusesource/jansi/AnsiPrintStream.java",
+    "imports": {
+        "18-18:import java.io.IOException;": {
+            "start": 18,
+            "end": 18,
+            "body": "import java.io.IOException;"
+        },
+        "19-19:import java.io.PrintStream;": {
+            "start": 19,
+            "end": 19,
+            "body": "import java.io.PrintStream;"
+        },
+        "20-20:import java.io.UnsupportedEncodingException;": {
+            "start": 20,
+            "end": 20,
+            "body": "import java.io.UnsupportedEncodingException;"
+        },
+        "22-22:import org.fusesource.jansi.io.AnsiOutputStream;": {
+            "start": 22,
+            "end": 22,
+            "body": "import org.fusesource.jansi.io.AnsiOutputStream;"
+        }
+    },
+    "classes": {
+        "28-96:AnsiPrintStream": {
+            "start": 28,
+            "end": 96,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [],
+            "implements": [],
+            "extends": [
+                "java.io.PrintStream"
+            ],
+            "methods": {
+                "30-32:AnsiPrintStream": {
+                    "start": 30,
+                    "end": 32,
+                    "body": [
+                        "public AnsiPrintStream(AnsiOutputStream out, boolean autoFlush) {",
+                        "        super(out, autoFlush);",
+                        "    }"
+                    ],
+                    "is_constructor": true,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [],
+                    "body_types": [],
+                    "signature": "AnsiPrintStream( AnsiOutputStream out,  boolean autoFlush)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "AnsiOutputStream",
+                            "name": "out"
+                        },
+                        {
+                            "modifier": "",
+                            "type": "boolean",
+                            "name": "autoFlush"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {
+                            "|AnsiOutputStream|out": {
+                                "identifier": "|AnsiOutputStream|out",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "parameters",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "AnsiOutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "AnsiOutputStream",
+                                "reasoning": "",
+                                "prompt": ""
+                            },
+                            "|boolean|autoFlush": {
+                                "identifier": "|boolean|autoFlush",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "parameters",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Bool",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public init(out: AnsiOutputStream, autoFlush: Bool) {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "34-37:AnsiPrintStream": {
+                    "start": 34,
+                    "end": 37,
+                    "body": [
+                        "public AnsiPrintStream(AnsiOutputStream out, boolean autoFlush, String encoding)",
+                        "            throws UnsupportedEncodingException {",
+                        "        super(out, autoFlush, encoding);",
+                        "    }"
+                    ],
+                    "is_constructor": true,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [],
+                    "body_types": [],
+                    "signature": "AnsiPrintStream( AnsiOutputStream out,  boolean autoFlush,  String encoding)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "AnsiOutputStream",
+                            "name": "out"
+                        },
+                        {
+                            "modifier": "",
+                            "type": "boolean",
+                            "name": "autoFlush"
+                        },
+                        {
+                            "modifier": "",
+                            "type": "String",
+                            "name": "encoding"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {
+                            "|AnsiOutputStream|out": {
+                                "identifier": "|AnsiOutputStream|out",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "parameters",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "AnsiOutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "AnsiOutputStream",
+                                "reasoning": "",
+                                "prompt": ""
+                            },
+                            "|boolean|autoFlush": {
+                                "identifier": "|boolean|autoFlush",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "parameters",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Bool",
+                                "reasoning": "",
+                                "prompt": ""
+                            },
+                            "|String|encoding": {
+                                "identifier": "|String|encoding",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "parameters",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public init(out: AnsiOutputStream, autoFlush: Bool, encoding: String) {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "39-41:getOut": {
+                    "start": 39,
+                    "end": 41,
+                    "body": [
+                        "protected AnsiOutputStream getOut() {",
+                        "        return (AnsiOutputStream) out;",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "protected"
+                    ],
+                    "return_types": [
+                        "AnsiOutputStream"
+                    ],
+                    "body_types": [
+                        "AnsiOutputStream"
+                    ],
+                    "signature": "getOut()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "AnsiOutputStream": {
+                                "identifier": "AnsiOutputStream",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "AnsiOutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "AnsiOutputStream",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {
+                            "AnsiOutputStream": {
+                                "identifier": "AnsiOutputStream",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "AnsiOutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "AnsiOutputStream",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    protected open func getOut(): AnsiOutputStream {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "43-45:getType": {
+                    "start": 43,
+                    "end": 45,
+                    "body": [
+                        "public AnsiType getType() {",
+                        "        return getOut().getType();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "AnsiType"
+                    ],
+                    "body_types": [],
+                    "signature": "getType()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "AnsiType": {
+                                "identifier": "AnsiType",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "AnsiType",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "AnsiType",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func getType(): AnsiType {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "47-49:getColors": {
+                    "start": 47,
+                    "end": 49,
+                    "body": [
+                        "public AnsiColors getColors() {",
+                        "        return getOut().getColors();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "AnsiColors"
+                    ],
+                    "body_types": [],
+                    "signature": "getColors()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "AnsiColors": {
+                                "identifier": "AnsiColors",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "AnsiColors",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "AnsiColors",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func getColors(): AnsiColors {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "51-53:getMode": {
+                    "start": 51,
+                    "end": 53,
+                    "body": [
+                        "public AnsiMode getMode() {",
+                        "        return getOut().getMode();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "AnsiMode"
+                    ],
+                    "body_types": [],
+                    "signature": "getMode()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "AnsiMode": {
+                                "identifier": "AnsiMode",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "AnsiMode",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "AnsiMode",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func getMode(): AnsiMode {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "55-57:setMode": {
+                    "start": 55,
+                    "end": 57,
+                    "body": [
+                        "public void setMode(AnsiMode ansiMode) {",
+                        "        getOut().setMode(ansiMode);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "setMode( AnsiMode ansiMode)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "AnsiMode",
+                            "name": "ansiMode"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "|AnsiMode|ansiMode": {
+                                "identifier": "|AnsiMode|ansiMode",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "parameters",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "AnsiMode",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "AnsiMode",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func setMode(ansiMode: AnsiMode): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "59-61:isResetAtUninstall": {
+                    "start": 59,
+                    "end": 61,
+                    "body": [
+                        "public boolean isResetAtUninstall() {",
+                        "        return getOut().isResetAtUninstall();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "boolean"
+                    ],
+                    "body_types": [],
+                    "signature": "isResetAtUninstall()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Bool",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func isResetAtUninstall(): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "63-65:setResetAtUninstall": {
+                    "start": 63,
+                    "end": 65,
+                    "body": [
+                        "public void setResetAtUninstall(boolean resetAtClose) {",
+                        "        getOut().setResetAtUninstall(resetAtClose);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "setResetAtUninstall( boolean resetAtClose)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "boolean",
+                            "name": "resetAtClose"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "|boolean|resetAtClose": {
+                                "identifier": "|boolean|resetAtClose",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "parameters",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Bool",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func setResetAtUninstall(resetAtClose: Bool): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "71-73:getTerminalWidth": {
+                    "start": 71,
+                    "end": 73,
+                    "body": [
+                        "public int getTerminalWidth() {",
+                        "        return getOut().getTerminalWidth();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "int"
+                    ],
+                    "body_types": [],
+                    "signature": "getTerminalWidth()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "int": {
+                                "identifier": "int",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Int64",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func getTerminalWidth(): Int64 {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "75-77:install": {
+                    "start": 75,
+                    "end": 77,
+                    "body": [
+                        "public void install() throws IOException {",
+                        "        getOut().install();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "install()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func install(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "79-85:uninstall": {
+                    "start": 79,
+                    "end": 85,
+                    "body": [
+                        "public void uninstall() throws IOException {",
+                        "        // If the system output stream has been closed, out should be null, so avoid a NPE",
+                        "        AnsiOutputStream out = getOut();",
+                        "        if (out != null) {",
+                        "            out.uninstall();",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "AnsiOutputStream"
+                    ],
+                    "signature": "uninstall()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {
+                            "AnsiOutputStream": {
+                                "identifier": "AnsiOutputStream",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "AnsiOutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "AnsiOutputStream",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func uninstall(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "87-95:toString": {
+                    "start": 87,
+                    "end": 95,
+                    "body": [
+                        "@Override",
+                        "    public String toString() {",
+                        "        return \"AnsiPrintStream{\"",
+                        "                + \"type=\" + getType()",
+                        "                + \", colors=\" + getColors()",
+                        "                + \", mode=\" + getMode()",
+                        "                + \", resetAtUninstall=\" + isResetAtUninstall()",
+                        "                + \"}\";",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Override"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [],
+                    "signature": "toString()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:55:25",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func toString(): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "fields": {},
+            "cangjie_class_declaration": "public open class AnsiPrintStream {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/AnsiPrintStream.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/AnsiPrintStream.cj",
+    "import_map": {
+        "IOException": "java.io.IOException",
+        "PrintStream": "java.io.PrintStream",
+        "UnsupportedEncodingException": "java.io.UnsupportedEncodingException",
+        "AnsiOutputStream": "org.fusesource.jansi.io.AnsiOutputStream"
+    }
+}

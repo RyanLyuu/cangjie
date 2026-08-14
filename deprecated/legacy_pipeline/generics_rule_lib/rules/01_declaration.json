@@ -1,0 +1,164 @@
+{
+  "category": "declaration",
+  "description": "泛型声明转换规则：Java 的泛型类/接口/方法声明到仓颉的映射。仓颉中 class、interface、struct、enum、extend 都支持泛型参数声明，语法与 Java 类似但关键字不同。",
+  "rules": [
+    {
+      "id": "C01",
+      "subcategory": "generic_class",
+      "name": "无界泛型类",
+      "java_ast_pattern": {
+        "node_type": "ClassDeclaration",
+        "has_type_parameters": true,
+        "constraint_type": "unbounded"
+      },
+      "java_regex_fallback": "class\\s+(\\w+)\\s*<\\s*([A-Z]\\w*(?:\\s*,\\s*[A-Z]\\w*)*)\\s*>",
+      "cangjie_template": "class $1<$2>",
+      "transforms": [],
+      "constraints": {
+        "cangjie_semantics": "仓颉泛型无类型擦除，类型参数在运行时保留",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 10,
+      "example": {
+        "java": "class Box<T>",
+        "cangjie": "class Box<T>",
+        "note": "直接迁移，语法相同"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C02",
+      "subcategory": "generic_class",
+      "name": "单上界泛型类",
+      "java_ast_pattern": {
+        "node_type": "ClassDeclaration",
+        "has_type_parameters": true,
+        "constraint_type": "single_bound"
+      },
+      "java_regex_fallback": "class\\s+(\\w+)\\s*<\\s*([A-Z]\\w*)\\s+extends\\s+(\\w+)\\s*>",
+      "cangjie_template": "class $1<$2> where $2 <: $3",
+      "transforms": [
+        { "from": "extends", "to": "<:", "scope": "type_bound" },
+        { "from": "extends子句", "to": "where子句", "scope": "declaration" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉使用 where T <: Bound 代替 Java 的 T extends Bound",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 10,
+      "example": {
+        "java": "class NumberBox<T extends Number>",
+        "cangjie": "class NumberBox<T> where T <: Number",
+        "note": "extends 改为 where <: 子句"
+      },
+      "validation_probes": ["cjpm build 是否通过", "约束类型是否存在于仓颉标准库"]
+    },
+    {
+      "id": "C03",
+      "subcategory": "generic_class",
+      "name": "多上界泛型类",
+      "java_ast_pattern": {
+        "node_type": "ClassDeclaration",
+        "has_type_parameters": true,
+        "constraint_type": "multi_bound"
+      },
+      "java_regex_fallback": "class\\s+(\\w+)\\s*<\\s*([A-Z]\\w*)\\s+extends\\s+(\\w+(?:\\s*&\\s*\\w+)*)\\s*>",
+      "cangjie_template": "class $1<$2> where $2 <: $3",
+      "transforms": [
+        { "from": "extends", "to": "<:", "scope": "type_bound" },
+        { "from": "Java &连接符", "to": "仓颉 &连接符", "scope": "multi_bound", "comment": "Java 和仓颉都使用 & 连接多上界，语法一致" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉多约束使用 & 连接，语法与 Java 一致",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 10,
+      "example": {
+        "java": "class Box<T extends Number & Serializable>",
+        "cangjie": "class Box<T> where T <: Number & Serializable",
+        "note": "多个上界用 & 连接，语法与 Java 相同但位置不同"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C04",
+      "subcategory": "generic_class",
+      "name": "多类型参数泛型类",
+      "java_ast_pattern": {
+        "node_type": "ClassDeclaration",
+        "has_type_parameters": true,
+        "constraint_type": "multi_param"
+      },
+      "java_regex_fallback": "class\\s+(\\w+)\\s*<\\s*([A-Z]\\w*\\s*,\\s*[A-Z]\\w*(?:\\s*,\\s*[A-Z]\\w*)*)\\s*>",
+      "cangjie_template": "class $1<$2>",
+      "transforms": [],
+      "constraints": {
+        "cangjie_semantics": "多类型参数语法与 Java 相同，用逗号分隔",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 10,
+      "example": {
+        "java": "class Pair<K, V>",
+        "cangjie": "class Pair<K, V>",
+        "note": "直迁移"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C05",
+      "subcategory": "generic_interface",
+      "name": "泛型接口",
+      "java_ast_pattern": {
+        "node_type": "InterfaceDeclaration",
+        "has_type_parameters": true
+      },
+      "java_regex_fallback": "interface\\s+(\\w+)\\s*<\\s*([A-Z]\\w*(?:\\s*,\\s*[A-Z]\\w*)*)\\s*>",
+      "cangjie_template": "interface $1<$2>",
+      "transforms": [],
+      "constraints": {
+        "cangjie_semantics": "仓颉 interface 支持泛型参数",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 9,
+      "example": {
+        "java": "interface Transformer<I, O>",
+        "cangjie": "interface Transformer<I, O>",
+        "note": "直迁移"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C06",
+      "subcategory": "generic_method",
+      "name": "泛型方法",
+      "java_ast_pattern": {
+        "node_type": "MethodDeclaration",
+        "has_type_parameters": true
+      },
+      "java_regex_fallback": "<\\s*([A-Z]\\w*)(?:\\s+extends\\s+[^>]*)?\\s*>\\s+(\\w+)\\s+(\\w+)\\s*\\([^)]*\\)",
+      "cangjie_template": "func $3<$1>($params): $2",
+      "transforms": [
+        { "from": "类型参数在返回值前", "to": "类型参数在函数名后", "scope": "signature" },
+        { "from": "param type param顺序", "to": "name: type顺序", "scope": "parameters" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉泛型方法的类型参数放在函数名后的<>中，参数使用 name: type 格式",
+        "requires": [],
+        "conflicts": [],
+        "note": "需解析参数列表中的类型变量替换，此为正则简化版，实际需 AST 处理"
+      },
+      "priority": 9,
+      "example": {
+        "java": "public <T> T identity(T t)",
+        "cangjie": "public func identity<T>(t: T): T",
+        "note": "类型参数从返回值前移到函数名后"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    }
+  ]
+}

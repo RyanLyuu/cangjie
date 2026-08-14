@@ -62,7 +62,6 @@ RUN curl -s "https://get.sdkman.io" | bash && \
 
 RUN mkdir -p /home/x2cangjie/misc/sitter-libs
 RUN git clone https://github.com/tree-sitter/tree-sitter-java.git /home/x2cangjie/misc/sitter-libs/java
-RUN git clone https://github.com/tree-sitter/tree-sitter-python.git /home/x2cangjie/misc/sitter-libs/python
 
 RUN mkdir -p /home/x2cangjie/misc/java-callgraph
 RUN git clone https://github.com/gousiosg/java-callgraph.git /home/x2cangjie/misc/java-callgraph
@@ -70,19 +69,3 @@ WORKDIR /home/x2cangjie/misc/java-callgraph
 RUN source "$HOME/.sdkman/bin/sdkman-init.sh" && mvn clean install -DskipTests
 
 WORKDIR /home/x2cangjie
-
-RUN git clone --depth 1 --branch v1.1.0 https://gitcode.com/Cangjie/CangjieCorpus.git /home/x2cangjie/misc/CangjieCorpus
-
-RUN wget https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.20.0/codeql-bundle-linux64.tar.gz
-RUN tar -xvf codeql-bundle-linux64.tar.gz -C /home/x2cangjie/misc
-RUN rm codeql-bundle-linux64.tar.gz
-ENV PATH="/home/x2cangjie/misc/codeql:$PATH"
-
-RUN git clone https://github.com/github/vscode-codeql-starter.git
-WORKDIR /home/x2cangjie/vscode-codeql-starter
-RUN git submodule update --init --remote
-WORKDIR /home/x2cangjie/vscode-codeql-starter/ql
-RUN git checkout 3b2e55bc2ac942ac2cf2646f5c69acd081ce8ea2
-
-WORKDIR /home/x2cangjie
-RUN cp misc/sitter-libs/java/queries/* vscode-codeql-starter/codeql-custom-queries-java 2>/dev/null || true

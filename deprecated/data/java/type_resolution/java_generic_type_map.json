@@ -1,0 +1,1656 @@
+{
+  "AbstractCollection": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "AbstractDoubleSpliterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "AbstractIntSpliterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "AbstractList": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "AbstractLongSpliterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "AbstractMap": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "AbstractSequentialList": {
+    "cangjie": "LinkedList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "AbstractSet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "AbstractSpliterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "AccessFlag": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "AccessibleObject": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "AnnotatedArrayType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "AnnotatedElement": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "AnnotatedParameterizedType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "AnnotatedType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "AnnotatedTypeVariable": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "AnnotatedWildcardType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "Appendable": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "ArrayList": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "Arrays": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "BufferedReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "BufferedWriter": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "Class": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "ClassFileFormatVersion": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "ClassValue": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "Collection": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "Collections": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "Comparable": {
+    "cangjie": "Comparable",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "ConcurrentHashMap": {
+    "cangjie": "ConcurrentHashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "ConcurrentMap": {
+    "cangjie": "ConcurrentHashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "ConcurrentNavigableMap": {
+    "cangjie": "ConcurrentHashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "ConcurrentSkipListMap": {
+    "cangjie": "ConcurrentHashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "ConcurrentSkipListSet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "Control": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "CopyOnWriteArrayList": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "CopyOnWriteArraySet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "Dictionary": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "Enum": {
+    "cangjie": "Any",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "EnumMap": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "EnumSet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "Enumeration": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "FilterReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "FilterWriter": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "GenericArrayType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "GenericDeclaration": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "HashMap": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "HashSet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "Hashtable": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "IdentityHashMap": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "InvocationHandler": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "Iterable": {
+    "cangjie": "Iterable",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "Iterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "LineNumberReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "LinkedList": {
+    "cangjie": "LinkedList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "List": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "ListIterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "ListResourceBundle": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "Location": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "Map": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "Member": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "Modifier": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "NavigableMap": {
+    "cangjie": "TreeMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "NavigableSet": {
+    "cangjie": "TreeSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "ObjectStreamClass": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "ObjectStreamField": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "OfDouble": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "OfInt": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "OfLong": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "OfPrimitive": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "OutputStreamWriter": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "Package": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "ParameterizedType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "PipedReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "PipedWriter": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "PrimitiveIterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "PrintWriter": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "Properties": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "PropertyResourceBundle": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "PushbackReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "Readable": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "Reader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "Record": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "RecordComponent": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "ReflectPermission": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "ResourceBundle": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "SequencedCollection": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "SequencedMap": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "SequencedSet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "Set": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "SimpleEntry": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "SimpleImmutableEntry": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "SortedMap": {
+    "cangjie": "TreeMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "SortedSet": {
+    "cangjie": "TreeSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "Spliterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "Spliterators": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "StreamTokenizer": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "StringReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "TreeMap": {
+    "cangjie": "TreeMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "TreeSet": {
+    "cangjie": "TreeSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "TypeVariable": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "WildcardType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "Writer": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.BufferedReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.BufferedWriter": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.FilterReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.FilterWriter": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.LineNumberReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.ObjectStreamClass": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.io.ObjectStreamField": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.io.OutputStreamWriter": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.PipedReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.PipedWriter": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.PrintWriter": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.PushbackReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.Reader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.StreamTokenizer": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.StringReader": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.io.Writer": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.lang.Appendable": {
+    "cangjie": "StringWriter",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.lang.Class": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.ClassValue": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.Comparable": {
+    "cangjie": "Comparable",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.lang.Enum": {
+    "cangjie": "Any",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.Iterable": {
+    "cangjie": "Iterable",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.lang.Package": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.Readable": {
+    "cangjie": "StringReader",
+    "arity": 1,
+    "raw_args": [
+      "ByteBuffer"
+    ]
+  },
+  "java.lang.Record": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.AccessFlag": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.AccessFlag.Location": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.AccessibleObject": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.AnnotatedArrayType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.AnnotatedElement": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.AnnotatedParameterizedType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.AnnotatedType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.AnnotatedTypeVariable": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.AnnotatedWildcardType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.ClassFileFormatVersion": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.GenericArrayType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.GenericDeclaration": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.InvocationHandler": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.Member": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.Modifier": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.ParameterizedType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.Proxy": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.RecordComponent": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.ReflectPermission": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.Type": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.TypeVariable": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.lang.reflect.WildcardType": {
+    "cangjie": "TypeInfo",
+    "arity": 1,
+    "raw_args": [],
+    "erase_args": true
+  },
+  "java.util.AbstractCollection": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.AbstractList": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.AbstractMap": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.AbstractMap.SimpleEntry": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.AbstractMap.SimpleImmutableEntry": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.AbstractSequentialList": {
+    "cangjie": "LinkedList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.AbstractSet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.ArrayList": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Arrays": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Collection": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Collections": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Dictionary": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.EnumMap": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.EnumSet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.Enumeration": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.HashMap": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.HashSet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.Hashtable": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.IdentityHashMap": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.Iterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.LinkedList": {
+    "cangjie": "LinkedList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.List": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.ListIterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.ListResourceBundle": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.Map": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.Map.Entry": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.NavigableMap": {
+    "cangjie": "TreeMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.NavigableSet": {
+    "cangjie": "TreeSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.PrimitiveIterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.PrimitiveIterator.OfDouble": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.PrimitiveIterator.OfInt": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.PrimitiveIterator.OfLong": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Properties": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.PropertyResourceBundle": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.ResourceBundle": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.ResourceBundle.Control": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.SequencedCollection": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.SequencedMap": {
+    "cangjie": "HashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.SequencedSet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.Set": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.SortedMap": {
+    "cangjie": "TreeMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.SortedSet": {
+    "cangjie": "TreeSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.Spliterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Spliterator.OfDouble": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Spliterator.OfInt": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Spliterator.OfLong": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Spliterator.OfPrimitive": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Spliterators": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Spliterators.AbstractDoubleSpliterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Spliterators.AbstractIntSpliterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Spliterators.AbstractLongSpliterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.Spliterators.AbstractSpliterator": {
+    "cangjie": "Iterator",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.TreeMap": {
+    "cangjie": "TreeMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.TreeSet": {
+    "cangjie": "TreeSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.concurrent.ConcurrentHashMap": {
+    "cangjie": "ConcurrentHashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.concurrent.ConcurrentMap": {
+    "cangjie": "ConcurrentHashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.concurrent.ConcurrentNavigableMap": {
+    "cangjie": "ConcurrentHashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.concurrent.ConcurrentSkipListMap": {
+    "cangjie": "ConcurrentHashMap",
+    "arity": 2,
+    "raw_args": [
+      "AnyHashable",
+      "Any"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.concurrent.ConcurrentSkipListSet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  },
+  "java.util.concurrent.CopyOnWriteArrayList": {
+    "cangjie": "ArrayList",
+    "arity": 1,
+    "raw_args": [
+      "Any"
+    ]
+  },
+  "java.util.concurrent.CopyOnWriteArraySet": {
+    "cangjie": "HashSet",
+    "arity": 1,
+    "raw_args": [
+      "AnyHashable"
+    ],
+    "hash_key_indices": [
+      0
+    ]
+  }
+}

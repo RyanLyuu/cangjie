@@ -1,0 +1,3057 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/jansi/src/main/java/org/fusesource/jansi/AnsiRenderer.java",
+    "imports": {
+        "18-18:import java.io.IOException;": {
+            "start": 18,
+            "end": 18,
+            "body": "import java.io.IOException;"
+        },
+        "19-19:import java.util.Locale;": {
+            "start": 19,
+            "end": 19,
+            "body": "import java.util.Locale;"
+        },
+        "21-21:import org.fusesource.jansi.Ansi.Attribute;": {
+            "start": 21,
+            "end": 21,
+            "body": "import org.fusesource.jansi.Ansi.Attribute;"
+        },
+        "22-22:import org.fusesource.jansi.Ansi.Color;": {
+            "start": 22,
+            "end": 22,
+            "body": "import org.fusesource.jansi.Ansi.Color;"
+        }
+    },
+    "classes": {
+        "45-258:AnsiRenderer": {
+            "start": 45,
+            "end": 258,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [
+                "164-255:Code"
+            ],
+            "implements": [],
+            "extends": [],
+            "methods": {
+                "59-66:render": {
+                    "start": 59,
+                    "end": 66,
+                    "body": [
+                        "public static String render(final String input) throws IllegalArgumentException {",
+                        "        try {",
+                        "            return render(input, new StringBuilder()).toString();",
+                        "        } catch (IOException e) {",
+                        "            // Cannot happen because StringBuilder does not throw IOException",
+                        "            throw new IllegalArgumentException(e);",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [
+                        "StringBuilder",
+                        "IOException",
+                        "IllegalArgumentException"
+                    ],
+                    "signature": "render(final String input)",
+                    "parameters": [
+                        {
+                            "modifier": "final",
+                            "type": "String",
+                            "name": "input"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "StringBuilder": {
+                                "identifier": "StringBuilder",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "StringBuilder",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "IOException": {
+                                "identifier": "IOException",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "IOException",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "IllegalArgumentException": {
+                                "identifier": "IllegalArgumentException",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "IllegalArgumentException",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "final|String|input": {
+                                "identifier": "final|String|input",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func render(input: String): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "79-120:render": {
+                    "start": 79,
+                    "end": 120,
+                    "body": [
+                        "public static Appendable render(final String input, Appendable target) throws IOException {",
+                        "",
+                        "        int i = 0;",
+                        "        int j, k;",
+                        "",
+                        "        while (true) {",
+                        "            j = input.indexOf(BEGIN_TOKEN, i);",
+                        "            if (j == -1) {",
+                        "                if (i == 0) {",
+                        "                    target.append(input);",
+                        "                    return target;",
+                        "                }",
+                        "                target.append(input.substring(i));",
+                        "                return target;",
+                        "            }",
+                        "            target.append(input.substring(i, j));",
+                        "            k = input.indexOf(END_TOKEN, j);",
+                        "",
+                        "            if (k == -1) {",
+                        "                target.append(input);",
+                        "                return target;",
+                        "            }",
+                        "            j += BEGIN_TOKEN_LEN;",
+                        "",
+                        "            // Check for invalid string with END_TOKEN before BEGIN_TOKEN",
+                        "            if (k < j) {",
+                        "                throw new IllegalArgumentException(\"Invalid input string found.\");",
+                        "            }",
+                        "            String spec = input.substring(j, k);",
+                        "",
+                        "            String[] items = spec.split(CODE_TEXT_SEPARATOR, 2);",
+                        "            if (items.length == 1) {",
+                        "                target.append(input);",
+                        "                return target;",
+                        "            }",
+                        "            String replacement = render(items[1], items[0].split(CODE_LIST_SEPARATOR));",
+                        "",
+                        "            target.append(replacement);",
+                        "",
+                        "            i = k + END_TOKEN_LEN;",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "Appendable"
+                    ],
+                    "body_types": [
+                        "int",
+                        "IllegalArgumentException",
+                        "String",
+                        "String[]"
+                    ],
+                    "signature": "render(final String input,  Appendable target)",
+                    "parameters": [
+                        {
+                            "modifier": "final",
+                            "type": "String",
+                            "name": "input"
+                        },
+                        {
+                            "modifier": "",
+                            "type": "Appendable",
+                            "name": "target"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "Appendable": {
+                                "identifier": "Appendable",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "Appendable",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "int": {
+                                "identifier": "int",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "IllegalArgumentException": {
+                                "identifier": "IllegalArgumentException",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "IllegalArgumentException",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "String[]": {
+                                "identifier": "String[]",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String[]",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "final|String|input": {
+                                "identifier": "final|String|input",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "|Appendable|target": {
+                                "identifier": "|Appendable|target",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "Appendable",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func render(input: String, target: Any): Any {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "122-124:render": {
+                    "start": 122,
+                    "end": 124,
+                    "body": [
+                        "public static String render(final String text, final String... codes) {",
+                        "        return render(Ansi.ansi(), codes).a(text).reset().toString();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [],
+                    "signature": "render(final String text)",
+                    "parameters": [
+                        {
+                            "modifier": "final",
+                            "type": "String",
+                            "name": "text"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "final|String|text": {
+                                "identifier": "final|String|text",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func render_1(text: String): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "131-133:renderCodes": {
+                    "start": 131,
+                    "end": 133,
+                    "body": [
+                        "public static String renderCodes(final String... codes) {",
+                        "        return render(Ansi.ansi(), codes).toString();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [],
+                    "signature": "renderCodes()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func renderCodes(): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "140-142:renderCodes": {
+                    "start": 140,
+                    "end": 142,
+                    "body": [
+                        "public static String renderCodes(final String codes) {",
+                        "        return renderCodes(codes.split(\"\\\\s\"));",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [],
+                    "signature": "renderCodes(final String codes)",
+                    "parameters": [
+                        {
+                            "modifier": "final",
+                            "type": "String",
+                            "name": "codes"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "final|String|codes": {
+                                "identifier": "final|String|codes",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func renderCodes(codes: String): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "144-158:render": {
+                    "start": 144,
+                    "end": 158,
+                    "body": [
+                        "private static Ansi render(Ansi ansi, String... names) {",
+                        "        for (String name : names) {",
+                        "            Code code = Code.valueOf(name.toUpperCase(Locale.ENGLISH));",
+                        "            if (code.isColor()) {",
+                        "                if (code.isBackground()) {",
+                        "                    ansi.bg(code.getColor());",
+                        "                } else {",
+                        "                    ansi.fg(code.getColor());",
+                        "                }",
+                        "            } else if (code.isAttribute()) {",
+                        "                ansi.a(code.getAttribute());",
+                        "            }",
+                        "        }",
+                        "        return ansi;",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "private",
+                        "static"
+                    ],
+                    "return_types": [
+                        "Ansi"
+                    ],
+                    "body_types": [
+                        "String",
+                        "Code"
+                    ],
+                    "signature": "render( Ansi ansi)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "Ansi",
+                            "name": "ansi"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "Ansi": {
+                                "identifier": "Ansi",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "Ansi",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Code": {
+                                "identifier": "Code",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Code",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "|Ansi|ansi": {
+                                "identifier": "|Ansi|ansi",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "Ansi",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private static func render(ansi: Ansi): Ansi {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "160-162:test": {
+                    "start": 160,
+                    "end": 162,
+                    "body": [
+                        "public static boolean test(final String text) {",
+                        "        return text != null && text.contains(BEGIN_TOKEN);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "boolean"
+                    ],
+                    "body_types": [],
+                    "signature": "test(final String text)",
+                    "parameters": [
+                        {
+                            "modifier": "final",
+                            "type": "String",
+                            "name": "text"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "final|String|text": {
+                                "identifier": "final|String|text",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func test(text: String): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "257-257:AnsiRenderer": {
+                    "start": 257,
+                    "end": 257,
+                    "body": [
+                        "private AnsiRenderer() {}"
+                    ],
+                    "is_constructor": true,
+                    "annotations": [],
+                    "modifiers": [
+                        "private"
+                    ],
+                    "return_types": [],
+                    "body_types": [],
+                    "signature": "AnsiRenderer()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private init() {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "fields": {
+                "47-47:BEGIN_TOKEN": {
+                    "start": 47,
+                    "end": 47,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String BEGIN_TOKEN = \"@|\";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let BEGIN_TOKEN: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "49-49:END_TOKEN": {
+                    "start": 49,
+                    "end": 49,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String END_TOKEN = \"|@\";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let END_TOKEN: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "51-51:CODE_TEXT_SEPARATOR": {
+                    "start": 51,
+                    "end": 51,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String CODE_TEXT_SEPARATOR = \" \";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let CODE_TEXT_SEPARATOR: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "53-53:CODE_LIST_SEPARATOR": {
+                    "start": 53,
+                    "end": 53,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String CODE_LIST_SEPARATOR = \",\";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let CODE_LIST_SEPARATOR: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "55-55:BEGIN_TOKEN_LEN": {
+                    "start": 55,
+                    "end": 55,
+                    "enum_constant": false,
+                    "body": [
+                        "private static final int BEGIN_TOKEN_LEN = 2;"
+                    ],
+                    "modifiers": [
+                        "private",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "int"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "int": {
+                                "identifier": "int",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let BEGIN_TOKEN_LEN: Int64 = throw Exception('TODO')\n"
+                    ]
+                },
+                "57-57:END_TOKEN_LEN": {
+                    "start": 57,
+                    "end": 57,
+                    "enum_constant": false,
+                    "body": [
+                        "private static final int END_TOKEN_LEN = 2;"
+                    ],
+                    "modifiers": [
+                        "private",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "int"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "int": {
+                                "identifier": "int",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let END_TOKEN_LEN: Int64 = throw Exception('TODO')\n"
+                    ]
+                }
+            },
+            "cangjie_class_declaration": "public open class AnsiRenderer {\n"
+        },
+        "164-255:Code": {
+            "start": 164,
+            "end": 255,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": true,
+            "modifiers": [
+                "@SuppressWarnings(\"unused\")",
+                "public"
+            ],
+            "nested_inside": "45-258:AnsiRenderer",
+            "nests": [],
+            "implements": [],
+            "extends": [],
+            "methods": {
+                "227-230:Code": {
+                    "start": 227,
+                    "end": 230,
+                    "body": [
+                        "Code(final Enum<?> n, boolean background) {",
+                        "            this.n = n;",
+                        "            this.background = background;",
+                        "        }"
+                    ],
+                    "is_constructor": true,
+                    "annotations": [],
+                    "modifiers": [],
+                    "return_types": [],
+                    "body_types": [],
+                    "signature": "Code(final Enum<?> n,  boolean background)",
+                    "parameters": [
+                        {
+                            "modifier": "final",
+                            "type": "Enum<?>",
+                            "name": "n"
+                        },
+                        {
+                            "modifier": "",
+                            "type": "boolean",
+                            "name": "background"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {
+                            "final|Enum<?>|n": {
+                                "identifier": "final|Enum<?>|n",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "Enum<?>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "|boolean|background": {
+                                "identifier": "|boolean|background",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    init(n: Any, background: Bool) {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "232-234:Code": {
+                    "start": 232,
+                    "end": 234,
+                    "body": [
+                        "Code(final Enum<?> n) {",
+                        "            this(n, false);",
+                        "        }"
+                    ],
+                    "is_constructor": true,
+                    "annotations": [],
+                    "modifiers": [],
+                    "return_types": [],
+                    "body_types": [],
+                    "signature": "Code(final Enum<?> n)",
+                    "parameters": [
+                        {
+                            "modifier": "final",
+                            "type": "Enum<?>",
+                            "name": "n"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {
+                            "final|Enum<?>|n": {
+                                "identifier": "final|Enum<?>|n",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "Enum<?>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    init(n: Any) {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "236-238:isColor": {
+                    "start": 236,
+                    "end": 238,
+                    "body": [
+                        "public boolean isColor() {",
+                        "            return n instanceof Ansi.Color;",
+                        "        }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "boolean"
+                    ],
+                    "body_types": [
+                        "Ansi.Color",
+                        "Ansi",
+                        "Color"
+                    ],
+                    "signature": "isColor()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "Ansi.Color": {
+                                "identifier": "Ansi.Color",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Ansi.Color",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Ansi": {
+                                "identifier": "Ansi",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Ansi",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Color": {
+                                "identifier": "Color",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Color",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func isColor(): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "240-242:getColor": {
+                    "start": 240,
+                    "end": 242,
+                    "body": [
+                        "public Ansi.Color getColor() {",
+                        "            return (Ansi.Color) n;",
+                        "        }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "Ansi.Color"
+                    ],
+                    "body_types": [
+                        "Ansi.Color",
+                        "Ansi",
+                        "Color"
+                    ],
+                    "signature": "getColor()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "Ansi.Color": {
+                                "identifier": "Ansi.Color",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "Ansi.Color",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "Ansi.Color": {
+                                "identifier": "Ansi.Color",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Ansi.Color",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Ansi": {
+                                "identifier": "Ansi",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Ansi",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Color": {
+                                "identifier": "Color",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Color",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func getColor(): Color {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "244-246:isAttribute": {
+                    "start": 244,
+                    "end": 246,
+                    "body": [
+                        "public boolean isAttribute() {",
+                        "            return n instanceof Attribute;",
+                        "        }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "boolean"
+                    ],
+                    "body_types": [
+                        "Attribute"
+                    ],
+                    "signature": "isAttribute()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "Attribute": {
+                                "identifier": "Attribute",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Attribute",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func isAttribute(): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "248-250:getAttribute": {
+                    "start": 248,
+                    "end": 250,
+                    "body": [
+                        "public Attribute getAttribute() {",
+                        "            return (Attribute) n;",
+                        "        }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "Attribute"
+                    ],
+                    "body_types": [
+                        "Attribute"
+                    ],
+                    "signature": "getAttribute()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "Attribute": {
+                                "identifier": "Attribute",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "Attribute",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "Attribute": {
+                                "identifier": "Attribute",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Attribute",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func getAttribute(): Attribute {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "252-254:isBackground": {
+                    "start": 252,
+                    "end": 254,
+                    "body": [
+                        "public boolean isBackground() {",
+                        "            return background;",
+                        "        }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "boolean"
+                    ],
+                    "body_types": [],
+                    "signature": "isBackground()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func isBackground(): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "fields": {
+                "171-171:BLACK": {
+                    "start": 171,
+                    "end": 171,
+                    "enum_constant": true,
+                    "enum_constant_name": "BLACK",
+                    "enum_constant_args": "(Color.BLACK)",
+                    "body": [
+                        "BLACK(Color.BLACK)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BLACK: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "172-172:RED": {
+                    "start": 172,
+                    "end": 172,
+                    "enum_constant": true,
+                    "enum_constant_name": "RED",
+                    "enum_constant_args": "(Color.RED)",
+                    "body": [
+                        "RED(Color.RED)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var RED: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "173-173:GREEN": {
+                    "start": 173,
+                    "end": 173,
+                    "enum_constant": true,
+                    "enum_constant_name": "GREEN",
+                    "enum_constant_args": "(Color.GREEN)",
+                    "body": [
+                        "GREEN(Color.GREEN)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var GREEN: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "174-174:YELLOW": {
+                    "start": 174,
+                    "end": 174,
+                    "enum_constant": true,
+                    "enum_constant_name": "YELLOW",
+                    "enum_constant_args": "(Color.YELLOW)",
+                    "body": [
+                        "YELLOW(Color.YELLOW)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var YELLOW: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "175-175:BLUE": {
+                    "start": 175,
+                    "end": 175,
+                    "enum_constant": true,
+                    "enum_constant_name": "BLUE",
+                    "enum_constant_args": "(Color.BLUE)",
+                    "body": [
+                        "BLUE(Color.BLUE)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BLUE: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "176-176:MAGENTA": {
+                    "start": 176,
+                    "end": 176,
+                    "enum_constant": true,
+                    "enum_constant_name": "MAGENTA",
+                    "enum_constant_args": "(Color.MAGENTA)",
+                    "body": [
+                        "MAGENTA(Color.MAGENTA)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var MAGENTA: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "177-177:CYAN": {
+                    "start": 177,
+                    "end": 177,
+                    "enum_constant": true,
+                    "enum_constant_name": "CYAN",
+                    "enum_constant_args": "(Color.CYAN)",
+                    "body": [
+                        "CYAN(Color.CYAN)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var CYAN: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "178-178:WHITE": {
+                    "start": 178,
+                    "end": 178,
+                    "enum_constant": true,
+                    "enum_constant_name": "WHITE",
+                    "enum_constant_args": "(Color.WHITE)",
+                    "body": [
+                        "WHITE(Color.WHITE)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var WHITE: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "179-179:DEFAULT": {
+                    "start": 179,
+                    "end": 179,
+                    "enum_constant": true,
+                    "enum_constant_name": "DEFAULT",
+                    "enum_constant_args": "(Color.DEFAULT)",
+                    "body": [
+                        "DEFAULT(Color.DEFAULT)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var DEFAULT: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "182-182:FG_BLACK": {
+                    "start": 182,
+                    "end": 182,
+                    "enum_constant": true,
+                    "enum_constant_name": "FG_BLACK",
+                    "enum_constant_args": "(Color.BLACK, false)",
+                    "body": [
+                        "FG_BLACK(Color.BLACK, false)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var FG_BLACK: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "183-183:FG_RED": {
+                    "start": 183,
+                    "end": 183,
+                    "enum_constant": true,
+                    "enum_constant_name": "FG_RED",
+                    "enum_constant_args": "(Color.RED, false)",
+                    "body": [
+                        "FG_RED(Color.RED, false)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var FG_RED: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "184-184:FG_GREEN": {
+                    "start": 184,
+                    "end": 184,
+                    "enum_constant": true,
+                    "enum_constant_name": "FG_GREEN",
+                    "enum_constant_args": "(Color.GREEN, false)",
+                    "body": [
+                        "FG_GREEN(Color.GREEN, false)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var FG_GREEN: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "185-185:FG_YELLOW": {
+                    "start": 185,
+                    "end": 185,
+                    "enum_constant": true,
+                    "enum_constant_name": "FG_YELLOW",
+                    "enum_constant_args": "(Color.YELLOW, false)",
+                    "body": [
+                        "FG_YELLOW(Color.YELLOW, false)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var FG_YELLOW: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "186-186:FG_BLUE": {
+                    "start": 186,
+                    "end": 186,
+                    "enum_constant": true,
+                    "enum_constant_name": "FG_BLUE",
+                    "enum_constant_args": "(Color.BLUE, false)",
+                    "body": [
+                        "FG_BLUE(Color.BLUE, false)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var FG_BLUE: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "187-187:FG_MAGENTA": {
+                    "start": 187,
+                    "end": 187,
+                    "enum_constant": true,
+                    "enum_constant_name": "FG_MAGENTA",
+                    "enum_constant_args": "(Color.MAGENTA, false)",
+                    "body": [
+                        "FG_MAGENTA(Color.MAGENTA, false)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var FG_MAGENTA: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "188-188:FG_CYAN": {
+                    "start": 188,
+                    "end": 188,
+                    "enum_constant": true,
+                    "enum_constant_name": "FG_CYAN",
+                    "enum_constant_args": "(Color.CYAN, false)",
+                    "body": [
+                        "FG_CYAN(Color.CYAN, false)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var FG_CYAN: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "189-189:FG_WHITE": {
+                    "start": 189,
+                    "end": 189,
+                    "enum_constant": true,
+                    "enum_constant_name": "FG_WHITE",
+                    "enum_constant_args": "(Color.WHITE, false)",
+                    "body": [
+                        "FG_WHITE(Color.WHITE, false)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var FG_WHITE: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "190-190:FG_DEFAULT": {
+                    "start": 190,
+                    "end": 190,
+                    "enum_constant": true,
+                    "enum_constant_name": "FG_DEFAULT",
+                    "enum_constant_args": "(Color.DEFAULT, false)",
+                    "body": [
+                        "FG_DEFAULT(Color.DEFAULT, false)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var FG_DEFAULT: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "193-193:BG_BLACK": {
+                    "start": 193,
+                    "end": 193,
+                    "enum_constant": true,
+                    "enum_constant_name": "BG_BLACK",
+                    "enum_constant_args": "(Color.BLACK, true)",
+                    "body": [
+                        "BG_BLACK(Color.BLACK, true)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BG_BLACK: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "194-194:BG_RED": {
+                    "start": 194,
+                    "end": 194,
+                    "enum_constant": true,
+                    "enum_constant_name": "BG_RED",
+                    "enum_constant_args": "(Color.RED, true)",
+                    "body": [
+                        "BG_RED(Color.RED, true)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BG_RED: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "195-195:BG_GREEN": {
+                    "start": 195,
+                    "end": 195,
+                    "enum_constant": true,
+                    "enum_constant_name": "BG_GREEN",
+                    "enum_constant_args": "(Color.GREEN, true)",
+                    "body": [
+                        "BG_GREEN(Color.GREEN, true)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BG_GREEN: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "196-196:BG_YELLOW": {
+                    "start": 196,
+                    "end": 196,
+                    "enum_constant": true,
+                    "enum_constant_name": "BG_YELLOW",
+                    "enum_constant_args": "(Color.YELLOW, true)",
+                    "body": [
+                        "BG_YELLOW(Color.YELLOW, true)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BG_YELLOW: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "197-197:BG_BLUE": {
+                    "start": 197,
+                    "end": 197,
+                    "enum_constant": true,
+                    "enum_constant_name": "BG_BLUE",
+                    "enum_constant_args": "(Color.BLUE, true)",
+                    "body": [
+                        "BG_BLUE(Color.BLUE, true)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BG_BLUE: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "198-198:BG_MAGENTA": {
+                    "start": 198,
+                    "end": 198,
+                    "enum_constant": true,
+                    "enum_constant_name": "BG_MAGENTA",
+                    "enum_constant_args": "(Color.MAGENTA, true)",
+                    "body": [
+                        "BG_MAGENTA(Color.MAGENTA, true)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BG_MAGENTA: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "199-199:BG_CYAN": {
+                    "start": 199,
+                    "end": 199,
+                    "enum_constant": true,
+                    "enum_constant_name": "BG_CYAN",
+                    "enum_constant_args": "(Color.CYAN, true)",
+                    "body": [
+                        "BG_CYAN(Color.CYAN, true)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BG_CYAN: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "200-200:BG_WHITE": {
+                    "start": 200,
+                    "end": 200,
+                    "enum_constant": true,
+                    "enum_constant_name": "BG_WHITE",
+                    "enum_constant_args": "(Color.WHITE, true)",
+                    "body": [
+                        "BG_WHITE(Color.WHITE, true)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BG_WHITE: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "201-201:BG_DEFAULT": {
+                    "start": 201,
+                    "end": 201,
+                    "enum_constant": true,
+                    "enum_constant_name": "BG_DEFAULT",
+                    "enum_constant_args": "(Color.DEFAULT, true)",
+                    "body": [
+                        "BG_DEFAULT(Color.DEFAULT, true)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BG_DEFAULT: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "204-204:RESET": {
+                    "start": 204,
+                    "end": 204,
+                    "enum_constant": true,
+                    "enum_constant_name": "RESET",
+                    "enum_constant_args": "(Attribute.RESET)",
+                    "body": [
+                        "RESET(Attribute.RESET)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var RESET: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "205-205:INTENSITY_BOLD": {
+                    "start": 205,
+                    "end": 205,
+                    "enum_constant": true,
+                    "enum_constant_name": "INTENSITY_BOLD",
+                    "enum_constant_args": "(Attribute.INTENSITY_BOLD)",
+                    "body": [
+                        "INTENSITY_BOLD(Attribute.INTENSITY_BOLD)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var INTENSITY_BOLD: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "206-206:INTENSITY_FAINT": {
+                    "start": 206,
+                    "end": 206,
+                    "enum_constant": true,
+                    "enum_constant_name": "INTENSITY_FAINT",
+                    "enum_constant_args": "(Attribute.INTENSITY_FAINT)",
+                    "body": [
+                        "INTENSITY_FAINT(Attribute.INTENSITY_FAINT)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var INTENSITY_FAINT: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "207-207:ITALIC": {
+                    "start": 207,
+                    "end": 207,
+                    "enum_constant": true,
+                    "enum_constant_name": "ITALIC",
+                    "enum_constant_args": "(Attribute.ITALIC)",
+                    "body": [
+                        "ITALIC(Attribute.ITALIC)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var ITALIC: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "208-208:UNDERLINE": {
+                    "start": 208,
+                    "end": 208,
+                    "enum_constant": true,
+                    "enum_constant_name": "UNDERLINE",
+                    "enum_constant_args": "(Attribute.UNDERLINE)",
+                    "body": [
+                        "UNDERLINE(Attribute.UNDERLINE)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var UNDERLINE: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "209-209:BLINK_SLOW": {
+                    "start": 209,
+                    "end": 209,
+                    "enum_constant": true,
+                    "enum_constant_name": "BLINK_SLOW",
+                    "enum_constant_args": "(Attribute.BLINK_SLOW)",
+                    "body": [
+                        "BLINK_SLOW(Attribute.BLINK_SLOW)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BLINK_SLOW: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "210-210:BLINK_FAST": {
+                    "start": 210,
+                    "end": 210,
+                    "enum_constant": true,
+                    "enum_constant_name": "BLINK_FAST",
+                    "enum_constant_args": "(Attribute.BLINK_FAST)",
+                    "body": [
+                        "BLINK_FAST(Attribute.BLINK_FAST)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BLINK_FAST: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "211-211:BLINK_OFF": {
+                    "start": 211,
+                    "end": 211,
+                    "enum_constant": true,
+                    "enum_constant_name": "BLINK_OFF",
+                    "enum_constant_args": "(Attribute.BLINK_OFF)",
+                    "body": [
+                        "BLINK_OFF(Attribute.BLINK_OFF)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BLINK_OFF: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "212-212:NEGATIVE_ON": {
+                    "start": 212,
+                    "end": 212,
+                    "enum_constant": true,
+                    "enum_constant_name": "NEGATIVE_ON",
+                    "enum_constant_args": "(Attribute.NEGATIVE_ON)",
+                    "body": [
+                        "NEGATIVE_ON(Attribute.NEGATIVE_ON)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var NEGATIVE_ON: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "213-213:NEGATIVE_OFF": {
+                    "start": 213,
+                    "end": 213,
+                    "enum_constant": true,
+                    "enum_constant_name": "NEGATIVE_OFF",
+                    "enum_constant_args": "(Attribute.NEGATIVE_OFF)",
+                    "body": [
+                        "NEGATIVE_OFF(Attribute.NEGATIVE_OFF)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var NEGATIVE_OFF: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "214-214:CONCEAL_ON": {
+                    "start": 214,
+                    "end": 214,
+                    "enum_constant": true,
+                    "enum_constant_name": "CONCEAL_ON",
+                    "enum_constant_args": "(Attribute.CONCEAL_ON)",
+                    "body": [
+                        "CONCEAL_ON(Attribute.CONCEAL_ON)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var CONCEAL_ON: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "215-215:CONCEAL_OFF": {
+                    "start": 215,
+                    "end": 215,
+                    "enum_constant": true,
+                    "enum_constant_name": "CONCEAL_OFF",
+                    "enum_constant_args": "(Attribute.CONCEAL_OFF)",
+                    "body": [
+                        "CONCEAL_OFF(Attribute.CONCEAL_OFF)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var CONCEAL_OFF: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "216-216:UNDERLINE_DOUBLE": {
+                    "start": 216,
+                    "end": 216,
+                    "enum_constant": true,
+                    "enum_constant_name": "UNDERLINE_DOUBLE",
+                    "enum_constant_args": "(Attribute.UNDERLINE_DOUBLE)",
+                    "body": [
+                        "UNDERLINE_DOUBLE(Attribute.UNDERLINE_DOUBLE)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var UNDERLINE_DOUBLE: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "217-217:UNDERLINE_OFF": {
+                    "start": 217,
+                    "end": 217,
+                    "enum_constant": true,
+                    "enum_constant_name": "UNDERLINE_OFF",
+                    "enum_constant_args": "(Attribute.UNDERLINE_OFF)",
+                    "body": [
+                        "UNDERLINE_OFF(Attribute.UNDERLINE_OFF)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var UNDERLINE_OFF: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "220-220:BOLD": {
+                    "start": 220,
+                    "end": 220,
+                    "enum_constant": true,
+                    "enum_constant_name": "BOLD",
+                    "enum_constant_args": "(Attribute.INTENSITY_BOLD)",
+                    "body": [
+                        "BOLD(Attribute.INTENSITY_BOLD)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var BOLD: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "221-221:FAINT": {
+                    "start": 221,
+                    "end": 221,
+                    "enum_constant": true,
+                    "enum_constant_name": "FAINT",
+                    "enum_constant_args": "(Attribute.INTENSITY_FAINT)",
+                    "body": [
+                        "FAINT(Attribute.INTENSITY_FAINT)"
+                    ],
+                    "modifiers": [],
+                    "types": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var FAINT: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "223-223:n": {
+                    "start": 223,
+                    "end": 223,
+                    "enum_constant": false,
+                    "body": [
+                        "private final Enum<?> n;"
+                    ],
+                    "modifiers": [
+                        "private",
+                        "final"
+                    ],
+                    "types": [
+                        "Enum<?>"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "Enum<?>": {
+                                "identifier": "Enum<?>",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "Enum<?>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    let n: Any = throw Exception('TODO')\n"
+                    ]
+                },
+                "225-225:background": {
+                    "start": 225,
+                    "end": 225,
+                    "enum_constant": false,
+                    "body": [
+                        "private final boolean background;"
+                    ],
+                    "modifiers": [
+                        "private",
+                        "final"
+                    ],
+                    "types": [
+                        "boolean"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    let background: Bool = throw Exception('TODO')\n"
+                    ]
+                }
+            },
+            "cangjie_class_declaration": "public open class Code {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/AnsiRenderer.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/AnsiRenderer.cj",
+    "import_map": {
+        "IOException": "java.io.IOException",
+        "Locale": "java.util.Locale",
+        "Attribute": "org.fusesource.jansi.Ansi.Attribute",
+        "Color": "org.fusesource.jansi.Ansi.Color"
+    }
+}

@@ -1,0 +1,8 @@
+models:
+  gpt-4o-2024-11-20:
+    model_id: gpt-4o-2024-11-20
+    base_url:
+    api_key: ""
+    default_headers: {}
+    total: 128000
+    max_new_tokens: 16384

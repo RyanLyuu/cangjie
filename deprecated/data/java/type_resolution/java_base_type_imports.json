@@ -1,0 +1,2352 @@
+{
+  "java.io.BufferedInputStream": [
+    "import std.io.BufferedInputStream",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.BufferedOutputStream": [
+    "import std.io.BufferedOutputStream",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.BufferedReader": [
+    "import std.io.StringReader",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.BufferedWriter": [
+    "import std.io.StringWriter",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.ByteArrayInputStream": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.ByteArrayOutputStream": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.CharArrayReader": [
+    "import std.io.InputStream"
+  ],
+  "java.io.CharArrayWriter": [
+    "import std.io.OutputStream"
+  ],
+  "java.io.CharConversionException": [
+    "import std.io.ContentFormatException"
+  ],
+  "java.io.Closeable": [
+    "import std.core.Resource"
+  ],
+  "java.io.Console": [
+    "import std.env.ConsoleReader"
+  ],
+  "java.io.DataInput": [
+    "import std.io.InputStream"
+  ],
+  "java.io.DataInputStream": [
+    "import std.io.InputStream"
+  ],
+  "java.io.DataOutput": [
+    "import std.io.OutputStream"
+  ],
+  "java.io.DataOutputStream": [
+    "import std.io.OutputStream"
+  ],
+  "java.io.EOFException": [
+    "import std.io.IOException"
+  ],
+  "java.io.Externalizable": [
+    "import std.core.Resource"
+  ],
+  "java.io.File": [
+    "import std.fs.*"
+  ],
+  "java.io.FileDescriptor": [
+    "import std.fs.*"
+  ],
+  "java.io.FileFilter": [
+    "import std.fs.*"
+  ],
+  "java.io.FileInputStream": [
+    "import std.fs.*"
+  ],
+  "java.io.FileNotFoundException": [
+    "import std.io.IOException"
+  ],
+  "java.io.FileOutputStream": [
+    "import std.fs.*"
+  ],
+  "java.io.FileReader": [
+    "import std.fs.*"
+  ],
+  "java.io.FileWriter": [
+    "import std.fs.*"
+  ],
+  "java.io.FilenameFilter": [
+    "import std.fs.*"
+  ],
+  "java.io.FilterInputStream": [
+    "import std.io.InputStream"
+  ],
+  "java.io.FilterOutputStream": [
+    "import std.io.OutputStream"
+  ],
+  "java.io.FilterReader": [
+    "import std.io.StringReader",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.FilterWriter": [
+    "import std.io.StringWriter",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.Flushable": [
+    "import std.core.Resource"
+  ],
+  "java.io.IOError": [
+    "import std.io.IOException"
+  ],
+  "java.io.IOException": [
+    "import std.io.IOException"
+  ],
+  "java.io.InputStream": [
+    "import std.io.InputStream"
+  ],
+  "java.io.InputStreamReader": [
+    "import std.io.InputStream"
+  ],
+  "java.io.InterruptedIOException": [
+    "import std.io.IOException"
+  ],
+  "java.io.InvalidClassException": [
+    "import std.io.IOException"
+  ],
+  "java.io.InvalidObjectException": [
+    "import std.io.IOException"
+  ],
+  "java.io.LineNumberInputStream": [
+    "import std.io.InputStream"
+  ],
+  "java.io.LineNumberReader": [
+    "import std.io.StringReader",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.NotActiveException": [
+    "import std.io.IOException"
+  ],
+  "java.io.NotSerializableException": [
+    "import std.io.IOException"
+  ],
+  "java.io.ObjectInput": [
+    "import std.io.InputStream"
+  ],
+  "java.io.ObjectInputStream": [
+    "import std.io.OutputStream"
+  ],
+  "java.io.ObjectOutput": [
+    "import std.io.OutputStream"
+  ],
+  "java.io.ObjectStreamClass": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.io.ObjectStreamException": [
+    "import std.io.IOException"
+  ],
+  "java.io.ObjectStreamField": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.io.OptionalDataException": [
+    "import std.io.IOException"
+  ],
+  "java.io.OutputStream": [
+    "import std.io.OutputStream"
+  ],
+  "java.io.OutputStreamWriter": [
+    "import std.io.StringWriter",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.PipedInputStream": [
+    "import std.io.InputStream"
+  ],
+  "java.io.PipedOutputStream": [
+    "import std.io.OutputStream"
+  ],
+  "java.io.PipedReader": [
+    "import std.io.StringReader",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.PipedWriter": [
+    "import std.io.StringWriter",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.PrintStream": [
+    "import std.io.OutputStream"
+  ],
+  "java.io.PrintWriter": [
+    "import std.io.StringWriter",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.PushbackInputStream": [
+    "import std.io.InputStream"
+  ],
+  "java.io.PushbackReader": [
+    "import std.io.StringReader",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.RandomAccessFile": [
+    "import std.fs.*"
+  ],
+  "java.io.Reader": [
+    "import std.io.StringReader",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.SequenceInputStream": [
+    "import std.io.InputStream"
+  ],
+  "java.io.Serial": [
+    "import std.reflect.Annotation"
+  ],
+  "java.io.Serializable": [
+    "import std.core.Resource"
+  ],
+  "java.io.StreamCorruptedException": [
+    "import std.io.IOException"
+  ],
+  "java.io.StreamTokenizer": [
+    "import std.io.StringReader",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.StringBufferInputStream": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.StringReader": [
+    "import std.io.StringReader",
+    "import std.io.ByteBuffer"
+  ],
+  "java.io.SyncFailedException": [
+    "import std.io.IOException"
+  ],
+  "java.io.UTFDataFormatException": [
+    "import std.io.ContentFormatException"
+  ],
+  "java.io.UncheckedIOException": [
+    "import std.io.IOException"
+  ],
+  "java.io.UnsupportedEncodingException": [
+    "import std.io.IOException"
+  ],
+  "java.io.WriteAbortedException": [
+    "import std.io.IOException"
+  ],
+  "java.io.Writer": [
+    "import std.io.StringWriter",
+    "import std.io.ByteBuffer"
+  ],
+  "java.lang.Appendable": [
+    "import std.io.StringWriter",
+    "import std.io.ByteBuffer"
+  ],
+  "java.lang.AutoCloseable": [
+    "import std.core.Resource"
+  ],
+  "java.lang.Class": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.ClassCastException": [
+    "import std.reflect.IllegalTypeException"
+  ],
+  "java.lang.ClassValue": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.Deprecated": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.FunctionalInterface": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.InheritableThreadLocal": [
+    "import std.core.ThreadLocal"
+  ],
+  "java.lang.Override": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.Package": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.Process": [
+    "import std.process.Process"
+  ],
+  "java.lang.ProcessBuilder": [
+    "import std.process.Process"
+  ],
+  "java.lang.ProcessHandle": [
+    "import std.process.Process"
+  ],
+  "java.lang.Readable": [
+    "import std.io.StringReader",
+    "import std.io.ByteBuffer"
+  ],
+  "java.lang.Record": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.Runtime": [
+    "import std.process.Process"
+  ],
+  "java.lang.SafeVarargs": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.SuppressWarnings": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.System.Logger": [
+    "import stdx.log.Logger"
+  ],
+  "java.lang.System.Logger.Level": [
+    "import stdx.log.LogLevel"
+  ],
+  "java.lang.Thread": [
+    "import std.core.Thread"
+  ],
+  "java.lang.ThreadGroup": [
+    "import std.core.Thread"
+  ],
+  "java.lang.ThreadLocal": [
+    "import std.core.ThreadLocal"
+  ],
+  "java.lang.annotation.Annotation": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.annotation.Documented": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.annotation.ElementType": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.annotation.Inherited": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.annotation.Native": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.annotation.Repeatable": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.annotation.Retention": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.annotation.Target": [
+    "import std.reflect.Annotation"
+  ],
+  "java.lang.ref.Reference": [
+    "import std.ref.WeakRef"
+  ],
+  "java.lang.ref.ReferenceQueue": [
+    "import std.ref.WeakRef"
+  ],
+  "java.lang.ref.SoftReference": [
+    "import std.ref.WeakRef"
+  ],
+  "java.lang.ref.WeakReference": [
+    "import std.ref.WeakRef"
+  ],
+  "java.lang.reflect.AccessFlag": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.AccessFlag.Location": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.AccessibleObject": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.AnnotatedArrayType": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.AnnotatedElement": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.AnnotatedParameterizedType": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.AnnotatedType": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.AnnotatedTypeVariable": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.AnnotatedWildcardType": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.ClassFileFormatVersion": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.Constructor": [
+    "import std.reflect.ConstructorInfo"
+  ],
+  "java.lang.reflect.Executable": [
+    "import std.reflect.InstanceFunctionInfo"
+  ],
+  "java.lang.reflect.Field": [
+    "import std.reflect.InstancePropertyInfo"
+  ],
+  "java.lang.reflect.GenericArrayType": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.GenericDeclaration": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.InvocationHandler": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.InvocationTargetException": [
+    "import std.reflect.InvocationTargetException"
+  ],
+  "java.lang.reflect.Member": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.Method": [
+    "import std.reflect.InstanceFunctionInfo"
+  ],
+  "java.lang.reflect.Modifier": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.Parameter": [
+    "import std.reflect.ParameterInfo"
+  ],
+  "java.lang.reflect.ParameterizedType": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.Proxy": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.RecordComponent": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.ReflectPermission": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.Type": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.TypeVariable": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.lang.reflect.WildcardType": [
+    "import std.reflect.TypeInfo"
+  ],
+  "java.math.BigDecimal": [
+    "import std.math.numeric.Decimal"
+  ],
+  "java.math.BigInteger": [
+    "import std.math.numeric.BigInt"
+  ],
+  "java.math.RoundingMode": [
+    "import std.math.RoundingMode"
+  ],
+  "java.net.Authenticator": [
+    "import stdx.net.http.HttpRequestHandler"
+  ],
+  "java.net.ContentHandler": [
+    "import stdx.net.http.HttpRequestHandler"
+  ],
+  "java.net.CookieHandler": [
+    "import stdx.net.http.CookieJar"
+  ],
+  "java.net.CookieManager": [
+    "import stdx.net.http.CookieJar"
+  ],
+  "java.net.CookieStore": [
+    "import stdx.net.http.CookieJar"
+  ],
+  "java.net.DatagramPacket": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.net.DatagramSocket": [
+    "import std.net.UdpSocket"
+  ],
+  "java.net.FileNameMap": [
+    "import filetype4cj.*",
+    "import filetype4cj.types.*"
+  ],
+  "java.net.HttpCookie": [
+    "import stdx.net.http.Cookie"
+  ],
+  "java.net.HttpURLConnection": [
+    "import stdx.net.http.Client"
+  ],
+  "java.net.IDN": [
+    "import stdx.encoding.url.URL"
+  ],
+  "java.net.Inet4Address": [
+    "import std.net.IPAddress"
+  ],
+  "java.net.Inet6Address": [
+    "import std.net.IPAddress"
+  ],
+  "java.net.InetAddress": [
+    "import std.net.IPAddress"
+  ],
+  "java.net.InetSocketAddress": [
+    "import std.net.SocketAddress"
+  ],
+  "java.net.InterfaceAddress": [
+    "import std.net.SocketAddress"
+  ],
+  "java.net.JarURLConnection": [
+    "import stdx.net.http.Client"
+  ],
+  "java.net.MalformedURLException": [
+    "import stdx.encoding.url.UrlSyntaxException"
+  ],
+  "java.net.MulticastSocket": [
+    "import std.net.UdpSocket"
+  ],
+  "java.net.NetworkInterface": [
+    "import std.net.SocketAddress"
+  ],
+  "java.net.ProtocolException": [
+    "import stdx.net.http.HttpException"
+  ],
+  "java.net.ProtocolFamily": [
+    "import std.net.SocketAddress"
+  ],
+  "java.net.Proxy": [
+    "import std.net.SocketAddress"
+  ],
+  "java.net.ServerSocket": [
+    "import std.net.ServerSocket"
+  ],
+  "java.net.Socket": [
+    "import std.net.TcpSocket"
+  ],
+  "java.net.SocketAddress": [
+    "import std.net.SocketAddress"
+  ],
+  "java.net.SocketOption": [
+    "import std.net.SocketAddress"
+  ],
+  "java.net.SocketOptions": [
+    "import std.net.SocketAddress"
+  ],
+  "java.net.SocketTimeoutException": [
+    "import stdx.net.http.HttpTimeoutException"
+  ],
+  "java.net.StandardProtocolFamily": [
+    "import std.net.SocketAddress"
+  ],
+  "java.net.StandardSocketOptions": [
+    "import std.net.SocketAddress"
+  ],
+  "java.net.URI": [
+    "import stdx.encoding.url.URL"
+  ],
+  "java.net.URISyntaxException": [
+    "import stdx.encoding.url.UrlSyntaxException"
+  ],
+  "java.net.URL": [
+    "import stdx.encoding.url.URL"
+  ],
+  "java.net.URLConnection": [
+    "import stdx.net.http.Client"
+  ],
+  "java.net.URLStreamHandler": [
+    "import stdx.net.http.HttpRequestHandler"
+  ],
+  "java.net.UnixDomainSocketAddress": [
+    "import std.net.SocketAddress"
+  ],
+  "java.nio.Buffer": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.ByteBuffer": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.CharBuffer": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.DoubleBuffer": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.FloatBuffer": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.IntBuffer": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.LongBuffer": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.MappedByteBuffer": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.ShortBuffer": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.channels.AsynchronousByteChannel": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.channels.AsynchronousChannel": [
+    "import std.core.Resource"
+  ],
+  "java.nio.channels.AsynchronousChannelGroup": [
+    "import std.core.Resource"
+  ],
+  "java.nio.channels.AsynchronousCloseException": [
+    "import std.io.IOException"
+  ],
+  "java.nio.channels.AsynchronousFileChannel": [
+    "import std.fs.*"
+  ],
+  "java.nio.channels.AsynchronousServerSocketChannel": [
+    "import std.net.ServerSocket"
+  ],
+  "java.nio.channels.AsynchronousSocketChannel": [
+    "import std.net.TcpSocket"
+  ],
+  "java.nio.channels.ByteChannel": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.channels.Channel": [
+    "import std.core.Resource"
+  ],
+  "java.nio.channels.ClosedByInterruptException": [
+    "import std.io.IOException"
+  ],
+  "java.nio.channels.ClosedChannelException": [
+    "import std.io.IOException"
+  ],
+  "java.nio.channels.DatagramChannel": [
+    "import std.net.UdpSocket"
+  ],
+  "java.nio.channels.FileChannel": [
+    "import std.fs.*"
+  ],
+  "java.nio.channels.FileLock": [
+    "import std.core.Resource"
+  ],
+  "java.nio.channels.FileLockInterruptionException": [
+    "import std.io.IOException"
+  ],
+  "java.nio.channels.GatheringByteChannel": [
+    "import std.io.OutputStream"
+  ],
+  "java.nio.channels.InterruptedByTimeoutException": [
+    "import std.io.IOException"
+  ],
+  "java.nio.channels.InterruptibleChannel": [
+    "import std.core.Resource"
+  ],
+  "java.nio.channels.MembershipKey": [
+    "import std.core.Resource"
+  ],
+  "java.nio.channels.MulticastChannel": [
+    "import std.net.UdpSocket"
+  ],
+  "java.nio.channels.NetworkChannel": [
+    "import std.net.SocketAddress"
+  ],
+  "java.nio.channels.Pipe": [
+    "import std.io.ByteBuffer"
+  ],
+  "java.nio.channels.ReadableByteChannel": [
+    "import std.io.InputStream"
+  ],
+  "java.nio.channels.ScatteringByteChannel": [
+    "import std.io.InputStream"
+  ],
+  "java.nio.channels.SeekableByteChannel": [
+    "import std.fs.*"
+  ],
+  "java.nio.channels.ServerSocketChannel": [
+    "import std.net.ServerSocket"
+  ],
+  "java.nio.channels.SocketChannel": [
+    "import std.net.TcpSocket"
+  ],
+  "java.nio.channels.WritableByteChannel": [
+    "import std.io.OutputStream"
+  ],
+  "java.nio.charset.CharacterCodingException": [
+    "import charset4cj.*"
+  ],
+  "java.nio.charset.Charset": [
+    "import charset4cj.*"
+  ],
+  "java.nio.charset.CharsetDecoder": [
+    "import charset4cj.*"
+  ],
+  "java.nio.charset.CharsetEncoder": [
+    "import charset4cj.*"
+  ],
+  "java.nio.charset.CoderResult": [
+    "import std.io.ContentFormatException"
+  ],
+  "java.nio.charset.IllegalCharsetNameException": [
+    "import charset4cj.*"
+  ],
+  "java.nio.charset.MalformedInputException": [
+    "import charset4cj.*"
+  ],
+  "java.nio.charset.StandardCharsets": [
+    "import charset4cj.*"
+  ],
+  "java.nio.charset.UnmappableCharacterException": [
+    "import charset4cj.*"
+  ],
+  "java.nio.charset.UnsupportedCharsetException": [
+    "import charset4cj.*"
+  ],
+  "java.nio.file.AccessDeniedException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.AtomicMoveNotSupportedException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.ClosedDirectoryStreamException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.ClosedFileSystemException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.ClosedWatchServiceException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.DirectoryNotEmptyException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.DirectoryStream": [
+    "import std.fs.Directory"
+  ],
+  "java.nio.file.FileAlreadyExistsException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.FileStore": [
+    "import std.fs.FileInfo"
+  ],
+  "java.nio.file.FileSystem": [
+    "import std.fs.FileInfo"
+  ],
+  "java.nio.file.FileSystemAlreadyExistsException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.FileSystemException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.FileSystemLoopException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.FileSystemNotFoundException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.FileSystems": [
+    "import std.fs.Path"
+  ],
+  "java.nio.file.FileVisitor": [
+    "import std.fs.Path"
+  ],
+  "java.nio.file.Files": [
+    "import std.fs.*"
+  ],
+  "java.nio.file.InvalidPathException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.NoSuchFileException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.NotDirectoryException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.NotLinkException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.Path": [
+    "import std.fs.*"
+  ],
+  "java.nio.file.PathMatcher": [
+    "import std.fs.Path"
+  ],
+  "java.nio.file.Paths": [
+    "import std.fs.*"
+  ],
+  "java.nio.file.ReadOnlyFileSystemException": [
+    "import std.fs.FSException"
+  ],
+  "java.nio.file.SecureDirectoryStream": [
+    "import std.fs.Directory"
+  ],
+  "java.nio.file.SimpleFileVisitor": [
+    "import std.fs.Path"
+  ],
+  "java.nio.file.WatchEvent": [
+    "import std.fs.Path"
+  ],
+  "java.nio.file.WatchKey": [
+    "import std.core.Resource"
+  ],
+  "java.nio.file.WatchService": [
+    "import std.core.Resource"
+  ],
+  "java.nio.file.Watchable": [
+    "import std.fs.Path"
+  ],
+  "java.nio.file.attribute.BasicFileAttributes": [
+    "import std.fs.FileInfo"
+  ],
+  "java.nio.file.attribute.DosFileAttributes": [
+    "import std.fs.FileInfo"
+  ],
+  "java.nio.file.attribute.FileAttribute": [
+    "import std.fs.FileInfo"
+  ],
+  "java.nio.file.attribute.FileTime": [
+    "import std.time.DateTime"
+  ],
+  "java.nio.file.attribute.PosixFileAttributes": [
+    "import std.fs.FileInfo"
+  ],
+  "java.nio.file.attribute.UserPrincipalNotFoundException": [
+    "import std.fs.FSException"
+  ],
+  "java.security.AccessControlContext": [
+    "import std.core.Resource"
+  ],
+  "java.security.AlgorithmConstraints": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.AlgorithmParameterGenerator": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.AlgorithmParameterGeneratorSpi": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.AlgorithmParameters": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.AlgorithmParametersSpi": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.AuthProvider": [
+    "import std.core.Resource"
+  ],
+  "java.security.Certificate": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "java.security.CodeSigner": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.CodeSource": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.DigestException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.DigestInputStream": [
+    "import stdx.crypto.digest.SHA256"
+  ],
+  "java.security.DigestOutputStream": [
+    "import stdx.crypto.digest.SHA256"
+  ],
+  "java.security.DomainCombiner": [
+    "import std.core.Resource"
+  ],
+  "java.security.DomainLoadStoreParameter": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.DrbgParameters": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.DrbgParameters.Capability": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.DrbgParameters.Instantiation": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.DrbgParameters.NextBytes": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.DrbgParameters.Reseed": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.GeneralSecurityException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.Guard": [
+    "import std.core.Resource"
+  ],
+  "java.security.GuardedObject": [
+    "import std.core.Resource"
+  ],
+  "java.security.Identity": [
+    "import stdx.crypto.x509.X509Name"
+  ],
+  "java.security.IdentityScope": [
+    "import stdx.crypto.x509.X509Name"
+  ],
+  "java.security.InvalidAlgorithmParameterException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.InvalidKeyException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.InvalidParameterException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.Key": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.KeyException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.KeyFactory": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.KeyFactorySpi": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.KeyManagementException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.KeyPair": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.KeyPairGenerator": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.KeyRep": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.KeyRep.Type": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore.Builder": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore.CallbackHandlerProtection": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore.Entry": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore.Entry.Attribute": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore.LoadStoreParameter": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore.PasswordProtection": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore.PrivateKeyEntry": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore.ProtectionParameter": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore.SecretKeyEntry": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStore.TrustedCertificateEntry": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.KeyStoreException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.KeyStoreSpi": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.MessageDigest": [
+    "import stdx.crypto.digest.SHA256"
+  ],
+  "java.security.MessageDigestSpi": [
+    "import stdx.crypto.digest.SHA256"
+  ],
+  "java.security.NoSuchAlgorithmException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.NoSuchProviderException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.PKCS12Attribute": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.Policy": [
+    "import std.core.Resource"
+  ],
+  "java.security.Policy.Parameters": [
+    "import std.core.Resource"
+  ],
+  "java.security.PolicySpi": [
+    "import std.core.Resource"
+  ],
+  "java.security.Principal": [
+    "import stdx.crypto.x509.X509Name"
+  ],
+  "java.security.PrivateKey": [
+    "import stdx.crypto.x509.PrivateKey"
+  ],
+  "java.security.ProtectionDomain": [
+    "import std.core.Resource"
+  ],
+  "java.security.Provider": [
+    "import std.core.Resource"
+  ],
+  "java.security.Provider.Service": [
+    "import std.core.Resource"
+  ],
+  "java.security.ProviderException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.PublicKey": [
+    "import stdx.crypto.x509.PublicKey"
+  ],
+  "java.security.SecureClassLoader": [
+    "import std.core.Resource"
+  ],
+  "java.security.SecureRandom": [
+    "import stdx.crypto.crypto.SecureRandom"
+  ],
+  "java.security.SecureRandomParameters": [
+    "import stdx.crypto.crypto.SecureRandom"
+  ],
+  "java.security.SecureRandomSpi": [
+    "import stdx.crypto.crypto.SecureRandom"
+  ],
+  "java.security.Security": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.Signature": [
+    "import stdx.crypto.x509.Signature"
+  ],
+  "java.security.SignatureException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.SignatureSpi": [
+    "import stdx.crypto.x509.Signature"
+  ],
+  "java.security.SignedObject": [
+    "import stdx.crypto.x509.Signature"
+  ],
+  "java.security.Signer": [
+    "import stdx.crypto.x509.X509Name"
+  ],
+  "java.security.Timestamp": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.URIParameter": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.UnrecoverableEntryException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.UnrecoverableKeyException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.cert.CRL": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "java.security.cert.CRLException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "java.security.cert.CRLReason": [
+    "import stdx.crypto.x509.KeyUsage"
+  ],
+  "java.security.cert.CRLSelector": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "java.security.cert.CertPath": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.cert.CertPathBuilder": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.cert.CertPathBuilderException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "java.security.cert.CertPathBuilderResult": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.cert.CertPathBuilderSpi": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.CertPathChecker": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.CertPathParameters": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.CertPathValidator": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.CertPathValidatorException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "java.security.cert.CertPathValidatorException.BasicReason": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.CertPathValidatorException.Reason": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.CertPathValidatorResult": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.cert.CertPathValidatorSpi": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.CertSelector": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.cert.CertStore": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.cert.CertStoreException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "java.security.cert.CertStoreParameters": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.CertStoreSpi": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.Certificate": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "java.security.cert.CertificateEncodingException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "java.security.cert.CertificateException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "java.security.cert.CertificateExpiredException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "java.security.cert.CertificateFactory": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "java.security.cert.CertificateFactorySpi": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.CertificateNotYetValidException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "java.security.cert.CertificateParsingException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "java.security.cert.CertificateRevokedException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "java.security.cert.CollectionCertStoreParameters": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.Extension": [
+    "import stdx.crypto.x509.KeyUsage"
+  ],
+  "java.security.cert.LDAPCertStoreParameters": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.PKIXBuilderParameters": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.PKIXCertPathBuilderResult": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.PKIXCertPathChecker": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.PKIXCertPathValidatorResult": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.PKIXParameters": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.PKIXReason": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.PKIXRevocationChecker": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.PKIXRevocationChecker.Option": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.PolicyNode": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.PolicyQualifierInfo": [
+    "import stdx.crypto.x509.VerifyOption"
+  ],
+  "java.security.cert.TrustAnchor": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.cert.URICertStoreParameters": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.cert.X509CRL": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "java.security.cert.X509CRLEntry": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "java.security.cert.X509CRLSelector": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "java.security.cert.X509CertSelector": [
+    "import stdx.crypto.x509.X509CertificateInfo"
+  ],
+  "java.security.cert.X509Certificate": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "java.security.cert.X509Extension": [
+    "import stdx.crypto.x509.KeyUsage"
+  ],
+  "java.security.interfaces.DSAKey": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.interfaces.DSAKeyPairGenerator": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.interfaces.DSAParams": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.interfaces.DSAPrivateKey": [
+    "import stdx.crypto.x509.PrivateKey"
+  ],
+  "java.security.interfaces.DSAPublicKey": [
+    "import stdx.crypto.x509.PublicKey"
+  ],
+  "java.security.interfaces.ECKey": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.interfaces.ECPrivateKey": [
+    "import stdx.crypto.keys.ECDSAPrivateKey"
+  ],
+  "java.security.interfaces.ECPublicKey": [
+    "import stdx.crypto.keys.ECDSAPublicKey"
+  ],
+  "java.security.interfaces.EdECKey": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.interfaces.EdECPrivateKey": [
+    "import stdx.crypto.keys.ECDSAPrivateKey"
+  ],
+  "java.security.interfaces.EdECPublicKey": [
+    "import stdx.crypto.keys.ECDSAPublicKey"
+  ],
+  "java.security.interfaces.RSAKey": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.interfaces.RSAMultiPrimePrivateCrtKey": [
+    "import stdx.crypto.keys.RSAPrivateKey"
+  ],
+  "java.security.interfaces.RSAPrivateCrtKey": [
+    "import stdx.crypto.keys.RSAPrivateKey"
+  ],
+  "java.security.interfaces.RSAPrivateKey": [
+    "import stdx.crypto.keys.RSAPrivateKey"
+  ],
+  "java.security.interfaces.RSAPublicKey": [
+    "import stdx.crypto.keys.RSAPublicKey"
+  ],
+  "java.security.interfaces.XECKey": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.interfaces.XECPrivateKey": [
+    "import stdx.crypto.keys.ECDSAPrivateKey"
+  ],
+  "java.security.interfaces.XECPublicKey": [
+    "import stdx.crypto.keys.ECDSAPublicKey"
+  ],
+  "java.security.spec.AlgorithmParameterSpec": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.DSAGenParameterSpec": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.DSAParameterSpec": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.DSAPrivateKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.DSAPublicKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.ECField": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.ECFieldF2m": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.ECFieldFp": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.ECGenParameterSpec": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.ECParameterSpec": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.ECPoint": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.ECPrivateKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.ECPublicKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.EdDSAParameterSpec": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.EdECPoint": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.EdECPrivateKeySpec": [
+    "import stdx.crypto.keys.ECDSAPrivateKey"
+  ],
+  "java.security.spec.EdECPublicKeySpec": [
+    "import stdx.crypto.keys.ECDSAPublicKey"
+  ],
+  "java.security.spec.EllipticCurve": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.EncodedKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.InvalidKeySpecException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.spec.InvalidParameterSpecException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "java.security.spec.KeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.MGF1ParameterSpec": [
+    "import stdx.crypto.keys.OAEPOption"
+  ],
+  "java.security.spec.NamedParameterSpec": [
+    "import stdx.crypto.keys.Curve"
+  ],
+  "java.security.spec.PKCS8EncodedKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.PSSParameterSpec": [
+    "import stdx.crypto.keys.PSSOption"
+  ],
+  "java.security.spec.RSAKeyGenParameterSpec": [
+    "import stdx.crypto.keys.RSAPrivateKey"
+  ],
+  "java.security.spec.RSAMultiPrimePrivateCrtKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.RSAOtherPrimeInfo": [
+    "import stdx.crypto.keys.RSAPrivateKey"
+  ],
+  "java.security.spec.RSAPrivateCrtKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.RSAPrivateKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.RSAPublicKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.X509EncodedKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "java.security.spec.XECPrivateKeySpec": [
+    "import stdx.crypto.keys.ECDSAPrivateKey"
+  ],
+  "java.security.spec.XECPublicKeySpec": [
+    "import stdx.crypto.keys.ECDSAPublicKey"
+  ],
+  "java.time.Clock": [
+    "import std.time.DateTime"
+  ],
+  "java.time.DayOfWeek": [
+    "import std.time.DayOfWeek"
+  ],
+  "java.time.Duration": [
+    "import std.time.Duration"
+  ],
+  "java.time.Instant": [
+    "import std.time.DateTime"
+  ],
+  "java.time.InstantSource": [
+    "import std.time.DateTime"
+  ],
+  "java.time.LocalDate": [
+    "import std.time.DateTime"
+  ],
+  "java.time.LocalDateTime": [
+    "import std.time.DateTime"
+  ],
+  "java.time.LocalTime": [
+    "import std.time.DateTime"
+  ],
+  "java.time.Month": [
+    "import std.time.Month"
+  ],
+  "java.time.MonthDay": [
+    "import std.time.DateTime"
+  ],
+  "java.time.OffsetDateTime": [
+    "import std.time.DateTime"
+  ],
+  "java.time.OffsetTime": [
+    "import std.time.DateTime"
+  ],
+  "java.time.Period": [
+    "import std.time.Duration"
+  ],
+  "java.time.Year": [
+    "import std.time.DateTime"
+  ],
+  "java.time.YearMonth": [
+    "import std.time.DateTime"
+  ],
+  "java.time.ZoneId": [
+    "import std.time.TimeZone"
+  ],
+  "java.time.ZoneOffset": [
+    "import std.time.TimeZone"
+  ],
+  "java.time.ZonedDateTime": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.AbstractChronology": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.ChronoLocalDate": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.ChronoLocalDateTime": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.ChronoPeriod": [
+    "import std.time.Duration"
+  ],
+  "java.time.chrono.ChronoZonedDateTime": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.Chronology": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.HijrahChronology": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.HijrahDate": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.IsoChronology": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.JapaneseChronology": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.JapaneseDate": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.MinguoChronology": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.MinguoDate": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.ThaiBuddhistChronology": [
+    "import std.time.DateTime"
+  ],
+  "java.time.chrono.ThaiBuddhistDate": [
+    "import std.time.DateTime"
+  ],
+  "java.time.format.DateTimeFormatterBuilder": [
+    "import std.time.DateTime"
+  ],
+  "java.time.format.DateTimeParseException": [
+    "import std.time.TimeParseException"
+  ],
+  "java.time.temporal.ChronoUnit": [
+    "import std.time.Duration"
+  ],
+  "java.time.temporal.Temporal": [
+    "import std.time.DateTime"
+  ],
+  "java.time.temporal.TemporalAccessor": [
+    "import std.time.DateTime"
+  ],
+  "java.time.temporal.TemporalAdjuster": [
+    "import std.time.DateTime"
+  ],
+  "java.time.temporal.TemporalAdjusters": [
+    "import std.time.DateTime"
+  ],
+  "java.time.temporal.TemporalAmount": [
+    "import std.time.Duration"
+  ],
+  "java.time.temporal.TemporalUnit": [
+    "import std.time.Duration"
+  ],
+  "java.time.temporal.UnsupportedTemporalTypeException": [
+    "import std.time.TimeParseException"
+  ],
+  "java.time.zone.ZoneOffsetTransition": [
+    "import std.time.TimeZone"
+  ],
+  "java.time.zone.ZoneOffsetTransitionRule": [
+    "import std.time.TimeZone"
+  ],
+  "java.time.zone.ZoneRules": [
+    "import std.time.TimeZone"
+  ],
+  "java.time.zone.ZoneRulesException": [
+    "import std.time.TimeParseException"
+  ],
+  "java.util.AbstractCollection": [
+    "import std.collection.ArrayList"
+  ],
+  "java.util.AbstractList": [
+    "import std.collection.ArrayList"
+  ],
+  "java.util.AbstractMap": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.AbstractMap.SimpleEntry": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.AbstractMap.SimpleImmutableEntry": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.AbstractQueue": [
+    "import std.collection.ArrayQueue"
+  ],
+  "java.util.AbstractSequentialList": [
+    "import std.collection.LinkedList"
+  ],
+  "java.util.AbstractSet": [
+    "import std.collection.HashSet"
+  ],
+  "java.util.ArrayDeque": [
+    "import std.collection.ArrayDeque"
+  ],
+  "java.util.ArrayList": [
+    "import std.collection.ArrayList"
+  ],
+  "java.util.Arrays": [
+    "import std.collection.ArrayList"
+  ],
+  "java.util.Collection": [
+    "import std.collection.ArrayList"
+  ],
+  "java.util.Collections": [
+    "import std.collection.ArrayList"
+  ],
+  "java.util.ConcurrentModificationException": [
+    "import std.collection.ConcurrentModificationException"
+  ],
+  "java.util.Date": [
+    "import std.time.DateTime"
+  ],
+  "java.util.Deque": [
+    "import std.collection.Deque"
+  ],
+  "java.util.Dictionary": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.EnumMap": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.EnumSet": [
+    "import std.collection.HashSet"
+  ],
+  "java.util.EventListenerProxy": [
+    "import std.core.Resource"
+  ],
+  "java.util.Formattable": [
+    "import std.convert.Formattable"
+  ],
+  "java.util.HashMap": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.HashSet": [
+    "import std.collection.HashSet"
+  ],
+  "java.util.Hashtable": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.IdentityHashMap": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.LinkedList": [
+    "import std.collection.LinkedList"
+  ],
+  "java.util.List": [
+    "import std.collection.ArrayList"
+  ],
+  "java.util.ListResourceBundle": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.Map": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.Map.Entry": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.NavigableMap": [
+    "import std.collection.TreeMap"
+  ],
+  "java.util.NavigableSet": [
+    "import std.collection.TreeSet"
+  ],
+  "java.util.Properties": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.PropertyResourceBundle": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.Queue": [
+    "import std.collection.Queue"
+  ],
+  "java.util.Random": [
+    "import std.random.*"
+  ],
+  "java.util.ResourceBundle": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.ResourceBundle.Control": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.SequencedCollection": [
+    "import std.collection.ArrayList"
+  ],
+  "java.util.SequencedMap": [
+    "import std.collection.HashMap"
+  ],
+  "java.util.SequencedSet": [
+    "import std.collection.HashSet"
+  ],
+  "java.util.Set": [
+    "import std.collection.HashSet"
+  ],
+  "java.util.SortedMap": [
+    "import std.collection.TreeMap"
+  ],
+  "java.util.SortedSet": [
+    "import std.collection.TreeSet"
+  ],
+  "java.util.Stack": [
+    "import std.collection.Stack"
+  ],
+  "java.util.TimeZone": [
+    "import std.time.TimeZone"
+  ],
+  "java.util.Timer": [
+    "import std.sync.Timer"
+  ],
+  "java.util.TimerTask": [
+    "import std.core.Thread"
+  ],
+  "java.util.TreeMap": [
+    "import std.collection.TreeMap"
+  ],
+  "java.util.TreeSet": [
+    "import std.collection.TreeSet"
+  ],
+  "java.util.UUID": [
+    "import uuid4cj.uuid4cj.*"
+  ],
+  "java.util.concurrent.AbstractExecutorService": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.ArrayBlockingQueue": [
+    "import std.collection.concurrent.ArrayBlockingQueue"
+  ],
+  "java.util.concurrent.BlockingDeque": [
+    "import std.collection.Deque"
+  ],
+  "java.util.concurrent.BlockingQueue": [
+    "import std.collection.Queue"
+  ],
+  "java.util.concurrent.CompletableFuture": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.CompletionService": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.CompletionStage": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.ConcurrentHashMap": [
+    "import std.collection.concurrent.ConcurrentHashMap"
+  ],
+  "java.util.concurrent.ConcurrentLinkedDeque": [
+    "import std.collection.concurrent.ConcurrentLinkedQueue"
+  ],
+  "java.util.concurrent.ConcurrentLinkedQueue": [
+    "import std.collection.concurrent.ConcurrentLinkedQueue"
+  ],
+  "java.util.concurrent.ConcurrentMap": [
+    "import std.collection.concurrent.ConcurrentHashMap"
+  ],
+  "java.util.concurrent.ConcurrentNavigableMap": [
+    "import std.collection.concurrent.ConcurrentHashMap"
+  ],
+  "java.util.concurrent.ConcurrentSkipListMap": [
+    "import std.collection.concurrent.ConcurrentHashMap"
+  ],
+  "java.util.concurrent.ConcurrentSkipListSet": [
+    "import std.collection.HashSet"
+  ],
+  "java.util.concurrent.CopyOnWriteArrayList": [
+    "import std.collection.ArrayList"
+  ],
+  "java.util.concurrent.CopyOnWriteArraySet": [
+    "import std.collection.HashSet"
+  ],
+  "java.util.concurrent.CountDownLatch": [
+    "import std.sync.SyncCounter"
+  ],
+  "java.util.concurrent.CountedCompleter": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.CyclicBarrier": [
+    "import std.sync.Barrier"
+  ],
+  "java.util.concurrent.DelayQueue": [
+    "import std.collection.Queue"
+  ],
+  "java.util.concurrent.Delayed": [
+    "import std.time.Duration"
+  ],
+  "java.util.concurrent.Exchanger": [
+    "import std.sync.Barrier"
+  ],
+  "java.util.concurrent.ExecutorCompletionService": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.ExecutorService": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.Executors": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.ForkJoinPool": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.ForkJoinTask": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.ForkJoinWorkerThread": [
+    "import std.core.Thread"
+  ],
+  "java.util.concurrent.Future": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.FutureTask": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.LinkedBlockingDeque": [
+    "import std.collection.Deque"
+  ],
+  "java.util.concurrent.LinkedBlockingQueue": [
+    "import std.collection.Queue"
+  ],
+  "java.util.concurrent.LinkedTransferQueue": [
+    "import std.collection.Queue"
+  ],
+  "java.util.concurrent.Phaser": [
+    "import std.sync.Barrier"
+  ],
+  "java.util.concurrent.PriorityBlockingQueue": [
+    "import std.collection.Queue"
+  ],
+  "java.util.concurrent.RecursiveAction": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.RecursiveTask": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.RunnableFuture": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.RunnableScheduledFuture": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.ScheduledExecutorService": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.ScheduledFuture": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.ScheduledThreadPoolExecutor": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.Semaphore": [
+    "import std.sync.Semaphore"
+  ],
+  "java.util.concurrent.SynchronousQueue": [
+    "import std.collection.Queue"
+  ],
+  "java.util.concurrent.ThreadLocalRandom": [
+    "import std.random.*"
+  ],
+  "java.util.concurrent.ThreadPoolExecutor": [
+    "import std.core.Future"
+  ],
+  "java.util.concurrent.TimeUnit": [
+    "import std.time.Duration"
+  ],
+  "java.util.concurrent.TransferQueue": [
+    "import std.collection.Queue"
+  ],
+  "java.util.concurrent.atomic.AtomicBoolean": [
+    "import std.sync.AtomicBool"
+  ],
+  "java.util.concurrent.atomic.AtomicInteger": [
+    "import std.sync.AtomicInt64"
+  ],
+  "java.util.concurrent.atomic.AtomicIntegerArray": [
+    "import std.sync.AtomicInt64"
+  ],
+  "java.util.concurrent.atomic.AtomicIntegerFieldUpdater": [
+    "import std.sync.AtomicInt64"
+  ],
+  "java.util.concurrent.atomic.AtomicLong": [
+    "import std.sync.AtomicInt64"
+  ],
+  "java.util.concurrent.atomic.AtomicLongArray": [
+    "import std.sync.AtomicInt64"
+  ],
+  "java.util.concurrent.atomic.AtomicLongFieldUpdater": [
+    "import std.sync.AtomicInt64"
+  ],
+  "java.util.concurrent.atomic.AtomicMarkableReference": [
+    "import std.sync.AtomicReference"
+  ],
+  "java.util.concurrent.atomic.AtomicReference": [
+    "import std.sync.AtomicReference"
+  ],
+  "java.util.concurrent.atomic.AtomicReferenceArray": [
+    "import std.sync.AtomicReference"
+  ],
+  "java.util.concurrent.atomic.AtomicReferenceFieldUpdater": [
+    "import std.sync.AtomicReference"
+  ],
+  "java.util.concurrent.atomic.AtomicStampedReference": [
+    "import std.sync.AtomicReference"
+  ],
+  "java.util.concurrent.atomic.DoubleAccumulator": [
+    "import std.sync.AtomicInt64"
+  ],
+  "java.util.concurrent.atomic.DoubleAdder": [
+    "import std.sync.AtomicInt64"
+  ],
+  "java.util.concurrent.atomic.LongAccumulator": [
+    "import std.sync.AtomicInt64"
+  ],
+  "java.util.concurrent.atomic.LongAdder": [
+    "import std.sync.AtomicInt64"
+  ],
+  "java.util.concurrent.locks.AbstractOwnableSynchronizer": [
+    "import std.sync.Mutex"
+  ],
+  "java.util.concurrent.locks.AbstractQueuedLongSynchronizer": [
+    "import std.sync.Mutex"
+  ],
+  "java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject": [
+    "import std.sync.Condition"
+  ],
+  "java.util.concurrent.locks.AbstractQueuedSynchronizer": [
+    "import std.sync.Mutex"
+  ],
+  "java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject": [
+    "import std.sync.Condition"
+  ],
+  "java.util.concurrent.locks.Condition": [
+    "import std.sync.Condition"
+  ],
+  "java.util.concurrent.locks.Lock": [
+    "import std.sync.Mutex"
+  ],
+  "java.util.concurrent.locks.LockSupport": [
+    "import std.core.Thread"
+  ],
+  "java.util.concurrent.locks.ReadWriteLock": [
+    "import std.sync.ReadWriteLock"
+  ],
+  "java.util.concurrent.locks.ReentrantLock": [
+    "import std.sync.Mutex"
+  ],
+  "java.util.concurrent.locks.ReentrantReadWriteLock": [
+    "import std.sync.ReadWriteLock"
+  ],
+  "java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock": [
+    "import std.sync.ReadWriteLock"
+  ],
+  "java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock": [
+    "import std.sync.ReadWriteLock"
+  ],
+  "java.util.concurrent.locks.StampedLock": [
+    "import std.sync.ReadWriteLock"
+  ],
+  "java.util.jar.Attributes": [
+    "import std.fs.FileInfo"
+  ],
+  "java.util.jar.JarEntry": [
+    "import zip4cj.*"
+  ],
+  "java.util.jar.JarException": [
+    "import zip4cj.*"
+  ],
+  "java.util.jar.JarFile": [
+    "import zip4cj.*"
+  ],
+  "java.util.jar.JarInputStream": [
+    "import zip4cj.*"
+  ],
+  "java.util.jar.JarOutputStream": [
+    "import zip4cj.*"
+  ],
+  "java.util.jar.Manifest": [
+    "import std.fs.FileInfo"
+  ],
+  "java.util.random.RandomGeneratorFactory": [
+    "import std.random.Random"
+  ],
+  "java.util.regex.MatchResult": [
+    "import std.regex.Regex"
+  ],
+  "java.util.regex.Matcher": [
+    "import std.regex.Regex"
+  ],
+  "java.util.regex.Pattern": [
+    "import std.regex.Regex"
+  ],
+  "java.util.zip.Adler32": [
+    "import stdx.crypto.digest.HashType"
+  ],
+  "java.util.zip.CRC32": [
+    "import stdx.crypto.digest.HashType"
+  ],
+  "java.util.zip.CRC32C": [
+    "import stdx.crypto.digest.HashType"
+  ],
+  "java.util.zip.CheckedInputStream": [
+    "import stdx.compress.zlib.DecompressInputStream"
+  ],
+  "java.util.zip.CheckedOutputStream": [
+    "import stdx.compress.zlib.CompressOutputStream"
+  ],
+  "java.util.zip.Checksum": [
+    "import stdx.crypto.digest.HashType"
+  ],
+  "java.util.zip.DataFormatException": [
+    "import stdx.compress.zlib.ZlibException"
+  ],
+  "java.util.zip.Deflater": [
+    "import stdx.compress.zlib.CompressOutputStream"
+  ],
+  "java.util.zip.DeflaterInputStream": [
+    "import stdx.compress.zlib.CompressInputStream"
+  ],
+  "java.util.zip.DeflaterOutputStream": [
+    "import stdx.compress.zlib.CompressOutputStream"
+  ],
+  "java.util.zip.GZIPInputStream": [
+    "import stdx.compress.zlib.DecompressInputStream"
+  ],
+  "java.util.zip.GZIPOutputStream": [
+    "import stdx.compress.zlib.CompressOutputStream"
+  ],
+  "java.util.zip.Inflater": [
+    "import stdx.compress.zlib.DecompressInputStream"
+  ],
+  "java.util.zip.InflaterInputStream": [
+    "import stdx.compress.zlib.DecompressInputStream"
+  ],
+  "java.util.zip.InflaterOutputStream": [
+    "import stdx.compress.zlib.DecompressOutputStream"
+  ],
+  "java.util.zip.ZipEntry": [
+    "import zip4cj.*"
+  ],
+  "java.util.zip.ZipError": [
+    "import zip4cj.*"
+  ],
+  "java.util.zip.ZipException": [
+    "import zip4cj.*"
+  ],
+  "java.util.zip.ZipFile": [
+    "import zip4cj.*"
+  ],
+  "java.util.zip.ZipInputStream": [
+    "import zip4cj.*"
+  ],
+  "java.util.zip.ZipOutputStream": [
+    "import zip4cj.*"
+  ],
+  "javax.crypto.AEADBadTagException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.BadPaddingException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.Cipher": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.CipherInputStream": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.CipherOutputStream": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.CipherSpi": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.DecapsulateException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.EncryptedPrivateKeyInfo": [
+    "import stdx.crypto.x509.PrivateKey"
+  ],
+  "javax.crypto.ExemptionMechanism": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.ExemptionMechanismException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.ExemptionMechanismSpi": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.IllegalBlockSizeException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.KEM": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.KEM.Decapsulator": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.KEM.Encapsulated": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.KEM.Encapsulator": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.KEMSpi": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.KEMSpi.DecapsulatorSpi": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.KEMSpi.EncapsulatorSpi": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.KeyAgreement": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.KeyAgreementSpi": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.KeyGenerator": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.KeyGeneratorSpi": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.Mac": [
+    "import stdx.crypto.digest.HMAC"
+  ],
+  "javax.crypto.MacSpi": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.NoSuchPaddingException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.NullCipher": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.SealedObject": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.SecretKey": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.SecretKeyFactory": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.SecretKeyFactorySpi": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.ShortBufferException": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.interfaces.DHKey": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.interfaces.DHPrivateKey": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.interfaces.DHPublicKey": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.interfaces.PBEKey": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.spec.ChaCha20ParameterSpec": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.spec.DESKeySpec": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.spec.DESedeKeySpec": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.spec.DHGenParameterSpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.spec.DHParameterSpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.spec.DHPrivateKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.spec.DHPublicKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.crypto.spec.GCMParameterSpec": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.spec.IvParameterSpec": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.spec.OAEPParameterSpec": [
+    "import stdx.crypto.keys.OAEPOption"
+  ],
+  "javax.crypto.spec.PBEKeySpec": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.spec.PBEParameterSpec": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.spec.PSource": [
+    "import stdx.crypto.keys.OAEPOption"
+  ],
+  "javax.crypto.spec.PSource.PSpecified": [
+    "import stdx.crypto.digest.CryptoException"
+  ],
+  "javax.crypto.spec.RC2ParameterSpec": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.spec.RC5ParameterSpec": [
+    "import stdx.crypto.crypto.SM4"
+  ],
+  "javax.crypto.spec.SecretKeySpec": [
+    "import stdx.crypto.x509.Key"
+  ],
+  "javax.net.ServerSocketFactory": [
+    "import std.net.TcpServerSocket"
+  ],
+  "javax.net.SocketFactory": [
+    "import std.net.TcpSocket"
+  ],
+  "javax.net.ssl.CertPathTrustManagerParameters": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.ExtendedSSLSession": [
+    "import stdx.net.tls.TlsSession"
+  ],
+  "javax.net.ssl.HandshakeCompletedEvent": [
+    "import stdx.net.tls.TlsException"
+  ],
+  "javax.net.ssl.HandshakeCompletedListener": [
+    "import stdx.net.tls.TlsException"
+  ],
+  "javax.net.ssl.HostnameVerifier": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.HttpsURLConnection": [
+    "import stdx.net.http.Client"
+  ],
+  "javax.net.ssl.KeyManager": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.net.ssl.KeyManagerFactory": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.net.ssl.KeyManagerFactorySpi": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.net.ssl.KeyStoreBuilderParameters": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.ManagerFactoryParameters": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.SNIHostName": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.SNIMatcher": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.SNIServerName": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.SSLContext": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.SSLContextSpi": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.SSLEngine": [
+    "import stdx.net.tls.TlsSocket"
+  ],
+  "javax.net.ssl.SSLEngineResult": [
+    "import stdx.net.tls.TlsSocket"
+  ],
+  "javax.net.ssl.SSLException": [
+    "import stdx.net.tls.TlsException"
+  ],
+  "javax.net.ssl.SSLHandshakeException": [
+    "import stdx.net.tls.TlsException"
+  ],
+  "javax.net.ssl.SSLKeyException": [
+    "import stdx.net.tls.TlsException"
+  ],
+  "javax.net.ssl.SSLParameters": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.SSLPeerUnverifiedException": [
+    "import stdx.net.tls.TlsException"
+  ],
+  "javax.net.ssl.SSLProtocolException": [
+    "import stdx.net.tls.TlsException"
+  ],
+  "javax.net.ssl.SSLServerSocket": [
+    "import stdx.net.tls.TlsSocket"
+  ],
+  "javax.net.ssl.SSLServerSocketFactory": [
+    "import stdx.net.tls.TlsSocket"
+  ],
+  "javax.net.ssl.SSLSession": [
+    "import stdx.net.tls.TlsSession"
+  ],
+  "javax.net.ssl.SSLSessionBindingEvent": [
+    "import stdx.net.tls.TlsSession"
+  ],
+  "javax.net.ssl.SSLSessionBindingListener": [
+    "import stdx.net.tls.TlsSession"
+  ],
+  "javax.net.ssl.SSLSessionContext": [
+    "import stdx.net.tls.TlsSessionContext"
+  ],
+  "javax.net.ssl.SSLSocket": [
+    "import stdx.net.tls.TlsSocket"
+  ],
+  "javax.net.ssl.SSLSocketFactory": [
+    "import stdx.net.tls.TlsSocket"
+  ],
+  "javax.net.ssl.StandardConstants": [
+    "import stdx.net.tls.TlsClientConfig"
+  ],
+  "javax.net.ssl.TrustManager": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.net.ssl.TrustManagerFactory": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.net.ssl.TrustManagerFactorySpi": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.net.ssl.X509ExtendedKeyManager": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.net.ssl.X509ExtendedTrustManager": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.net.ssl.X509KeyManager": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.net.ssl.X509TrustManager": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.security.auth.Destroyable": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.Refreshable": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.Subject": [
+    "import stdx.crypto.x509.X509Name"
+  ],
+  "javax.security.auth.SubjectDomainCombiner": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.callback.Callback": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.callback.CallbackHandler": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.callback.ChoiceCallback": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.callback.ConfirmationCallback": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.callback.LanguageCallback": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.callback.NameCallback": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.callback.PasswordCallback": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.callback.TextInputCallback": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.callback.TextOutputCallback": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.login.AppConfigurationEntry": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.login.Configuration": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.login.Configuration.Parameters": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.login.ConfigurationSpi": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.login.LoginContext": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.spi.LoginModule": [
+    "import std.core.Resource"
+  ],
+  "javax.security.auth.x500.X500Principal": [
+    "import stdx.crypto.x509.X509Name"
+  ],
+  "javax.security.auth.x500.X500PrivateCredential": [
+    "import stdx.crypto.x509.X509Name"
+  ],
+  "javax.security.cert.Certificate": [
+    "import stdx.crypto.x509.X509Certificate"
+  ],
+  "javax.security.cert.CertificateEncodingException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "javax.security.cert.CertificateException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "javax.security.cert.CertificateExpiredException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "javax.security.cert.CertificateNotYetValidException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "javax.security.cert.CertificateParsingException": [
+    "import stdx.crypto.x509.X509Exception"
+  ],
+  "javax.security.cert.X509Certificate": [
+    "import stdx.crypto.x509.X509Certificate"
+  ]
+}

@@ -160,6 +160,16 @@ def build_schema_package_dependency_graph(
     for schema_fname, _schema_path, schema in all_schemas:
         src_subpath = compute_skeleton_sub_path(schema.get('path', ''))
         graph.setdefault(src_subpath, set())
+
+        # Structural fallbacks are emitted as project-root interfaces by the
+        # skeleton generator.  A schema in a Java subpackage that materializes
+        # one of these placeholders therefore imports the root package, even
+        # though the placeholder is not a Java class and cannot appear in
+        # ``class_to_subpath``.  Keep that edge in the package graph so the
+        # effective layout collapses the subpackage before generation.
+        if src_subpath is not None and schema.get('generated_type_placeholders'):
+            add_package_edge(graph, src_subpath, None)
+
         dependency_key = _find_dependency_key_for_schema(dependencies, schema_fname)
         if dependency_key and dependency_key in dependencies:
             for dependent_class in dependencies[dependency_key]:

@@ -1,58 +1,62 @@
 # x2cangjie
 
-This repository contains the x2cangjie Java-to-Cangjie baseline. Codex resolves
-occurrence-level types, Cangjie compilation validates every type and fragment,
-and failed candidates deterministically return to a compilable TODO skeleton.
+Java-to-Cangjie baseline driven by Codex and Cangjie compiler feedback.
 
-## Active Scope
+The active Python surface is intentionally limited to preprocessing/schema
+generation, baseline type resolution, skeleton MCP generation, and file-level
+translation. The independently developed type-resolution Skill remains under
+`resolve-cangjie-types/`. Superseded RAG, progressive-KB, mock-test, analysis,
+and fragment-level implementations are preserved under
+`deprecated/non_baseline/` and are not imported by active code.
 
-- Java project download and build setup
-- Cangjie keyword and Java name-conflict normalization
-- Third-party dependency reduction
-- Developer/EvoSuite test preprocessing
-- Call-graph generation
-- Tree-sitter schema generation
-- Class dependency extraction
-- Codex-backed occurrence-level type translation
-- Minimal `cjc` type probes with at most three attempts
-- Cangjie TODO skeleton generation and mandatory `cjpm build`
-- Dependency-ordered Codex fragment translation with incremental `cjpm build`
-
-The intended main flow is:
+## Workflow
 
 ```text
-Java preprocessing and occurrence-aware schema
-  -> Codex type decisions and isolated cjc probes
-  -> direct schema.type_translations materialization
-  -> TODO skeleton generation and cjpm build
-  -> separate dependency-ordered fragment command
+Preprocessed Java project
+  -> occurrence-aware schema generation
+  -> class and fragment dependency analysis
+  -> Codex type resolution with isolated cjc probes
+  -> Codex skeleton agent calls generate_cangjie_skeleton MCP tool
+  -> compilable TODO skeleton and cjpm build
+  -> dependency-ordered file translation with agent-owned cjpm repair
 ```
 
-## Prerequisites
+`create_skeleton.sh` stops after a dedicated Codex agent calls the local
+`generate_cangjie_skeleton` MCP tool and the resulting skeleton builds
+successfully. The tool rejects unresolved type contracts and writes only below
+`data/java/` in the current repository.
+Fragment translation is started separately with `translate_fragment.sh`. It now
+assigns each dependency-ordered Java file to one persistent Codex app-server
+thread, avoiding a new `codex exec/resume` process for every file. The agent
+owns edits and may run at most three `cjpm build` attempts per file; the 300
+second limit remains an emergency watchdog. Each run gives the agent an isolated
+temporary copy containing only the selected Java project, its schemas, and its
+Cangjie translation package; Codex runs with its workspace sandbox enabled and
+cannot use sibling projects or repository-wide helpers. The controller
+synchronizes only the target file and its schema receipt back after each
+transaction, verifies the final build, and restores the file's original TODO
+skeleton if that transaction fails. The legacy transport remains available with
+`--agent-transport exec`.
 
-- JDK 11 with `java`, `javac`, and `jdeps` on `PATH`
+## Setup
+
+Requirements:
+
+- Conda
+- JDK 11 with `java`, `javac`, and `jdeps`
 - Maven 3.8 or newer
-- Node.js/npm for the Codex CLI
-- Cangjie SDK 1.0.5 with `cjc` and `cjpm` on `PATH`
+- Node.js/npm
+- Cangjie SDK 1.0.5 with `cjc` and `cjpm`
 
-Initialize the Cangjie SDK in each new shell using its installed `envsetup.sh`:
+Create the Python environment and initialize the Cangjie SDK:
 
 ```bash
+conda env create -f environment.yaml
+conda activate x2cangjie
 source /path/to/cangjie/envsetup.sh
-java -version
-javac -version
-jdeps --version
-mvn -version
-cjc --version
-cjpm --version
 ```
 
-## Codex Configuration
-
-The baseline launches the local Codex CLI. Credentials are never read from the
-repository: every user must authenticate Codex on their own machine.
-
-Install Codex and sign in with a personal ChatGPT account:
+Install and authenticate Codex:
 
 ```bash
 npm install -g @openai/codex
@@ -60,85 +64,47 @@ codex login
 codex login status
 ```
 
-Alternatively, authenticate with a personal OpenAI API key:
+API-key authentication is also supported:
 
 ```bash
 export OPENAI_API_KEY="sk-..."
 printenv OPENAI_API_KEY | codex login --with-api-key
-codex login status
 ```
 
-PowerShell users can run:
-
-```powershell
-$env:OPENAI_API_KEY = "sk-..."
-$env:OPENAI_API_KEY | codex login --with-api-key
-```
-
-Personal Codex defaults belong in `~/.codex/config.toml`:
+Optional model defaults belong in `~/.codex/config.toml`:
 
 ```toml
 model_provider = "openai"
-model = "<a Codex model available to your account>"
+model = "<model available to your account>"
 ```
 
-Do not commit API keys, `.env` files, or `~/.codex/auth.json`. The example
-`configs/model_configs.yaml.example` is not used to authenticate the Codex
-baseline. See the official [Codex authentication](https://developers.openai.com/codex/auth)
-and [configuration](https://developers.openai.com/codex/config-basic) guides.
+Do not commit API keys, `.env` files, or `~/.codex/auth.json`.
 
-## Quick Start
+## Run
+
+The projects under `projects/cleaned_final_projects_evosuite_cleaned_base` are
+already preprocessed and can be used directly:
 
 ```bash
-conda env create -f environment.yaml
-conda activate x2cangjie
+PROJECT=commons-cli
+SCHEMA_MODEL=codex-baseline
+SUFFIX=_evosuite_cleaned_base
+TEMPERATURE=0.0
+PROJECT_ROOT=projects/cleaned_final_projects_evosuite_cleaned_base
 
-# The projects/cleaned_final_projects_evosuite_cleaned_base tree is already
-# preprocessed and can be used directly.
 bash scripts/java/create_schema.sh \
-  commons-cli codex-baseline 0.0 _evosuite_cleaned_base \
-  projects/cleaned_final_projects_evosuite_cleaned_base
+  "$PROJECT" "$SCHEMA_MODEL" "$TEMPERATURE" "$SUFFIX" "$PROJECT_ROOT"
+
 bash scripts/java/get_dependencies.sh \
-  commons-cli _evosuite_cleaned_base \
-  projects/cleaned_final_projects_evosuite_cleaned_base
+  "$PROJECT" "$SUFFIX" "$PROJECT_ROOT"
+
 bash scripts/java/create_skeleton.sh \
-  commons-cli codex-baseline _evosuite_cleaned_base 0.0 false
+  "$PROJECT" "$SCHEMA_MODEL" "$SUFFIX" "$TEMPERATURE" false
+
 bash scripts/java/translate_fragment.sh \
-  commons-cli codex-baseline _evosuite_cleaned_base 0.0 false
+  "$PROJECT" "$SCHEMA_MODEL" "$SUFFIX" "$TEMPERATURE" false
 ```
 
-The checked-in project-level `callgraph.txt` is copied into `data/java/`
-automatically by `create_schema.sh`. Maven build outputs are intentionally not
-checked in; `get_dependencies.sh` runs `mvn compile` automatically when
-`target/classes` is missing, then invokes `jdeps`.
-
-`create_skeleton.sh` runs the complete type-to-skeleton command and exits only
-after `cjpm build` succeeds. `resolve_types.sh` is the optional type-only entry
-point. Both commands use the authenticated local `codex` CLI; pass a sixth
-argument to select a Codex model explicitly.
-
-`schema_model` (for example, `codex-baseline`) is only the namespace used below
-`data/java/schemas...`; it does not select the Agent model. If the optional
-`agent_model` argument is omitted, Codex uses `~/.codex/config.toml`.
-
-The checked-in cleaned projects do not need preprocessing again. Regenerating
-them with the preprocessing scripts requires Maven, suitable JDK versions, the
-Java Tree-sitter grammar, and the `java-callgraph` fat JAR.
-
-## Layout
-
-```text
-src/java/preprocessing/   Java source normalization and test cleanup
-src/java/decomposition/   Tree-sitter project schema extraction
-src/java/type_resolution/ Baseline AgentRunner, Codex adapter, probes, and schema slots
-src/java/translation/     Skeleton and baseline fragment translation commands
-src/java/isolation_validation/  Runtime and behavioral validation support
-src/java/rag/             Translation retrieval support
-src/java/progressive_kb/  Reusable verified translation examples
-src/java/analysis/        Experiment and error analysis
-src/java/utils/           Shared pipeline utilities
-scripts/java/             Active pipeline entry points
-projects/cleaned_final_projects_evosuite_cleaned_base/  Ready-to-use inputs
-projects/original_projects/                             Original source snapshots
-data/java/                Call graphs, schemas, and dependency artifacts
-```
+`SCHEMA_MODEL` is the schema output namespace, not the Codex model name. The
+skeleton and fragment commands use the model in `~/.codex/config.toml` by
+default; pass a sixth argument to either command to override it.

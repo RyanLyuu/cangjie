@@ -6,7 +6,12 @@ import types
 import unittest
 from pathlib import Path
 
-from src.java.type_resolution.agent import AgentResult, AgentRunner, CodexRunner
+from src.java.type_resolution.agent import (
+    AgentResult,
+    AgentRunner,
+    CodexRunner,
+    PersistentCodexRunner,
+)
 from src.java.type_resolution.models import ProbeResult
 from src.java.type_resolution.resolver import TYPE_DECISIONS_SCHEMA, TypeResolutionService
 from src.java.type_resolution.schema import get_materialized_type, load_occurrences
@@ -319,6 +324,91 @@ class BaselineTypeResolutionTest(unittest.TestCase):
             self.assertEqual(result.status, "success")
             self.assertEqual(result.session_id, "thread-123")
             self.assertEqual(result.content, {"decisions": []})
+
+    def test_codex_runner_only_bypasses_approvals_when_explicitly_enabled(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            executable = root / "fake-codex"
+            executable.write_text(
+                "#!/usr/bin/env python3\n"
+                "import json, sys\n"
+                "out = sys.argv[sys.argv.index('--output-last-message') + 1]\n"
+                "open(out, 'w').write(json.dumps({'decisions': []}))\n"
+                "open('args.json', 'w').write(json.dumps(sys.argv[1:]))\n",
+                encoding="utf-8",
+            )
+            executable.chmod(0o755)
+            CodexRunner(str(executable)).run(
+                "prompt", TYPE_DECISIONS_SCHEMA, workspace=root
+            )
+            default_args = json.loads((root / "args.json").read_text())
+            self.assertNotIn("--dangerously-bypass-approvals-and-sandbox", default_args)
+
+            CodexRunner(
+                str(executable), bypass_approvals_and_sandbox=True
+            ).run("prompt", TYPE_DECISIONS_SCHEMA, workspace=root)
+            bypass_args = json.loads((root / "args.json").read_text())
+            self.assertIn("--dangerously-bypass-approvals-and-sandbox", bypass_args)
+
+    def test_persistent_runner_reuses_one_app_server_for_multiple_turns(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            executable = root / "fake-codex"
+            executable.write_text(
+                "#!/usr/bin/env python3\n"
+                "import json, pathlib, sys\n"
+                "seen = pathlib.Path('seen.jsonl')\n"
+                "turn_index = 0\n"
+                "for raw in sys.stdin:\n"
+                "    msg = json.loads(raw)\n"
+                "    seen.open('a', encoding='utf-8').write(json.dumps(msg) + '\\n')\n"
+                "    method = msg.get('method')\n"
+                "    if method == 'initialize':\n"
+                "        print(json.dumps({'id': msg['id'], 'result': {}}), flush=True)\n"
+                "    elif method == 'thread/start':\n"
+                "        print(json.dumps({'id': msg['id'], 'result': {'thread': {'id': 'thread-1'}}}), flush=True)\n"
+                "    elif method == 'turn/start':\n"
+                "        turn_index += 1\n"
+                "        turn = f'turn-{turn_index}'\n"
+                "        print(json.dumps({'id': msg['id'], 'result': {'turn': {'id': turn}}}), flush=True)\n"
+                "        item = {'type': 'agentMessage', 'text': json.dumps({'status': 'success', 'summary': turn})}\n"
+                "        params = {'item': item, 'threadId': 'thread-1', 'turnId': turn}\n"
+                "        print(json.dumps({'method': 'item/completed', 'params': params}), flush=True)\n"
+                "        done = {'id': turn, 'status': 'completed'}\n"
+                "        print(json.dumps({'method': 'turn/completed', 'params': {'turn': done}}), flush=True)\n"
+                "    elif method == 'turn/interrupt':\n"
+                "        print(json.dumps({'id': msg['id'], 'result': {}}), flush=True)\n",
+                encoding="utf-8",
+            )
+            executable.chmod(0o755)
+
+            runner = PersistentCodexRunner(
+                str(executable), timeout=5, bypass_approvals_and_sandbox=False
+            )
+            try:
+                first = runner.run("first", TYPE_DECISIONS_SCHEMA, workspace=root)
+                second = runner.run(
+                    "second", TYPE_DECISIONS_SCHEMA,
+                    workspace=root, session_id=first.session_id,
+                )
+            finally:
+                runner.close()
+
+            self.assertEqual(first.status, "success", first.stderr)
+            self.assertEqual(second.status, "success", second.stderr)
+            self.assertEqual(first.session_id, "thread-1")
+            self.assertEqual(second.session_id, "thread-1")
+            messages = [
+                json.loads(line)
+                for line in (root / "seen.jsonl").read_text().splitlines()
+            ]
+            methods = [message.get("method") for message in messages]
+            self.assertEqual(methods.count("initialize"), 1)
+            self.assertEqual(methods.count("thread/start"), 1)
+            self.assertEqual(methods.count("turn/start"), 2)
+            thread_start = next(message for message in messages if message.get("method") == "thread/start")
+            self.assertEqual(thread_start["params"]["sandbox"], "workspace-write")
+            self.assertEqual(thread_start["params"]["approvalPolicy"], "on-request")
 
 
 if __name__ == "__main__":

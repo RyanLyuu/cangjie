@@ -1,0 +1,115 @@
+{
+  "category": "array_instantiation",
+  "description": "泛型数组与实例化转换规则：Java 允许泛型数组和 new T() 实例化（通过反射），仓颉禁止这些操作。规则提供安全替代方案。",
+  "rules": [
+    {
+      "id": "C25",
+      "subcategory": "generic_array",
+      "name": "泛型数组创建",
+      "java_ast_pattern": {
+        "node_type": "ArrayCreationExpression",
+        "has_generic_type": true
+      },
+      "java_regex_fallback": "\\(\\w+\\[\\]\\)\\s+new\\s+\\w+\\[\\s*\\d+\\s*\\]",
+      "cangjie_template": "let arr = ArrayList<$1>()",
+      "transforms": [
+        { "from": "泛型数组创建 T[]", "to": "ArrayList<T> 动态数组", "scope": "array_creation" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉不支持泛型数组，使用 ArrayList 替代",
+        "requires": [],
+        "conflicts": [],
+        "action": "替换为 ArrayList<T>；若必须定长数组，使用 Array<Option<T>>"
+      },
+      "priority": 6,
+      "example": {
+        "java": "T[] arr = (T[]) new Object[10];",
+        "cangjie": "let arr = ArrayList<T>()",
+        "note": "泛型数组 → ArrayList"
+      },
+      "validation_probes": ["cjpm build 是否通过", "确认不再使用数组专有操作"]
+    },
+    {
+      "id": "C26",
+      "subcategory": "fixed_size_array",
+      "name": "定长数组创建",
+      "java_ast_pattern": {
+        "node_type": "ArrayCreationExpression",
+        "has_generic_type": false,
+        "element_type_is_primitive_or_string": true
+      },
+      "java_regex_fallback": "new\\s+(\\w+)\\[\\s*\\d+\\s*\\]",
+      "cangjie_template": "Array<$1>($2, item: $3)",
+      "transforms": [
+        { "from": "new Type[size]", "to": "Array<Type>(size, item: defaultValue)", "scope": "array_creation" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉的 Array 创建需要指定初始值",
+        "requires": [],
+        "conflicts": [],
+        "note": "仓颉 Array 构造函数需要初始值，如 Array<Int64>(5, item: 0)"
+      },
+      "priority": 6,
+      "example": {
+        "java": "String[] arr = new String[5];",
+        "cangjie": "let arr = Array<String>(5, item: \"\")",
+        "note": "仓颉 Array 需要初始值"
+      },
+      "validation_probes": ["cjpm build 是否通过", "确认初始值类型正确"]
+    },
+    {
+      "id": "C27",
+      "subcategory": "generic_instantiation",
+      "name": "new T() 实例化",
+      "java_ast_pattern": {
+        "node_type": "ObjectCreationExpression",
+        "instantiated_type_is_type_parameter": true
+      },
+      "java_regex_fallback": "new\\s+([A-Z]\\w*)\\s*\\(\\)",
+      "cangjie_template": "// TODO: 手动迁移，使用工厂闭包: () -> $1",
+      "transforms": [
+        { "from": "new T()", "to": "工厂闭包调用", "scope": "instantiation", "comment": "仓颉泛型无运行时类型信息，不能 new T()" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉泛型无类型擦除但也无运行时类型信息传递，不能直接 new T()",
+        "requires": [],
+        "conflicts": [],
+        "action": "标记为需手动迁移，建议改为传递工厂闭包 () -> T"
+      },
+      "priority": 5,
+      "example": {
+        "java": "T obj = new T();",
+        "cangjie": "// TODO: 手动迁移，使用工厂：let obj = factory()",
+        "note": "需要重构为工厂模式"
+      },
+      "validation_probes": ["标记为 TODO 需手动处理"]
+    },
+    {
+      "id": "C28",
+      "subcategory": "type_token",
+      "name": "Class<T> 类型令牌",
+      "java_ast_pattern": {
+        "node_type": "ParameterDeclaration",
+        "parameter_type": "Class"
+      },
+      "java_regex_fallback": "Class<\\s*([A-Z]\\w*)\\s*>\\s+(\\w+)",
+      "cangjie_template": "GenericType<$1> $2  // 或使用 () -> $1 工厂闭包",
+      "transforms": [
+        { "from": "Class<T> 类型令牌", "to": "GenericType<T> 或工厂闭包", "scope": "parameter" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉无 Class 对象；GenericType 为推荐替代，但标准库可能不提供",
+        "requires": [],
+        "conflicts": [],
+        "action": "若仓颉标准库提供 GenericType，则映射；否则提示重构为工厂闭包"
+      },
+      "priority": 5,
+      "example": {
+        "java": "<T> T create(Class<T> clazz)",
+        "cangjie": "func create<T>(type: GenericType<T>): T { return type.default() }",
+        "note": "Class<T> → GenericType<T> 或工厂闭包"
+      },
+      "validation_probes": ["cjpm build 是否通过", "确认 GenericType 在标准库中可用"]
+    }
+  ]
+}

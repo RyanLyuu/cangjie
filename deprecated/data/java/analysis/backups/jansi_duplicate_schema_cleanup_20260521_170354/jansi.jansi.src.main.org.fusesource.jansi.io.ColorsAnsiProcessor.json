@@ -1,0 +1,726 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/jansi/src/main/java/org/fusesource/jansi/io/ColorsAnsiProcessor.java",
+    "imports": {
+        "18-18:import java.io.IOException;": {
+            "start": 18,
+            "end": 18,
+            "body": "import java.io.IOException;"
+        },
+        "19-19:import java.io.OutputStream;": {
+            "start": 19,
+            "end": 19,
+            "body": "import java.io.OutputStream;"
+        },
+        "20-20:import java.util.ArrayList;": {
+            "start": 20,
+            "end": 20,
+            "body": "import java.util.ArrayList;"
+        },
+        "21-21:import java.util.Iterator;": {
+            "start": 21,
+            "end": 21,
+            "body": "import java.util.Iterator;"
+        },
+        "23-23:import org.fusesource.jansi.AnsiColors;": {
+            "start": 23,
+            "end": 23,
+            "body": "import org.fusesource.jansi.AnsiColors;"
+        }
+    },
+    "classes": {
+        "28-145:ColorsAnsiProcessor": {
+            "start": 28,
+            "end": 145,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [],
+            "implements": [],
+            "extends": [
+                "AnsiProcessor"
+            ],
+            "methods": {
+                "32-35:ColorsAnsiProcessor": {
+                    "start": 32,
+                    "end": 35,
+                    "body": [
+                        "public ColorsAnsiProcessor(OutputStream os, AnsiColors colors) {",
+                        "        super(os);",
+                        "        this.colors = colors;",
+                        "    }"
+                    ],
+                    "is_constructor": true,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [],
+                    "body_types": [],
+                    "signature": "ColorsAnsiProcessor( OutputStream os,  AnsiColors colors)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "OutputStream",
+                            "name": "os"
+                        },
+                        {
+                            "modifier": "",
+                            "type": "AnsiColors",
+                            "name": "colors"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {
+                            "|OutputStream|os": {
+                                "identifier": "|OutputStream|os",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "OutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "|AnsiColors|colors": {
+                                "identifier": "|AnsiColors|colors",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "AnsiColors",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": "super(os)\nthis.colors = colors",
+                    "translation_status": "completed",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "success",
+                        "message": "Compilation successful"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 2.419168472290039,
+                    "generation_timestamp": "2026-05-14T19:23:43.413008",
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public init(os: OutputStream, colors: AnsiColors) {",
+                        "        super()\n        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 4,
+                        "test_execution": 4
+                    },
+                    "final_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 4,
+                        "test_execution": 4
+                    }
+                },
+                "37-134:processEscapeCommand": {
+                    "start": 37,
+                    "end": 134,
+                    "body": [
+                        "@Override",
+                        "    protected boolean processEscapeCommand(ArrayList<Object> options, int command) throws IOException {",
+                        "        if (command == 'm' && (colors == AnsiColors.Colors256 || colors == AnsiColors.Colors16)) {",
+                        "            // Validate all options are ints...",
+                        "            boolean has38or48 = false;",
+                        "            for (Object next : options) {",
+                        "                if (next != null && next.getClass() != Integer.class) {",
+                        "                    throw new IllegalArgumentException();",
+                        "                }",
+                        "                Integer value = (Integer) next;",
+                        "                has38or48 |= value == 38 || value == 48;",
+                        "            }",
+                        "            // SGR commands do not contain an extended color, so just transfer the buffer",
+                        "            if (!has38or48) {",
+                        "                return false;",
+                        "            }",
+                        "            StringBuilder sb = new StringBuilder(32);",
+                        "            sb.append('\\033').append('[');",
+                        "            boolean first = true;",
+                        "            Iterator<Object> optionsIterator = options.iterator();",
+                        "            while (optionsIterator.hasNext()) {",
+                        "                Object next = optionsIterator.next();",
+                        "                if (next != null) {",
+                        "                    int value = (Integer) next;",
+                        "                    if (value == 38 || value == 48) {",
+                        "                        // extended color like `esc[38;5;<index>m` or `esc[38;2;<r>;<g>;<b>m`",
+                        "                        int arg2or5 = getNextOptionInt(optionsIterator);",
+                        "                        if (arg2or5 == 2) {",
+                        "                            // 24 bit color style like `esc[38;2;<r>;<g>;<b>m`",
+                        "                            int r = getNextOptionInt(optionsIterator);",
+                        "                            int g = getNextOptionInt(optionsIterator);",
+                        "                            int b = getNextOptionInt(optionsIterator);",
+                        "                            if (colors == AnsiColors.Colors256) {",
+                        "                                int col = Colors.roundRgbColor(r, g, b, 256);",
+                        "                                if (!first) {",
+                        "                                    sb.append(';');",
+                        "                                }",
+                        "                                first = false;",
+                        "                                sb.append(value);",
+                        "                                sb.append(';');",
+                        "                                sb.append(5);",
+                        "                                sb.append(';');",
+                        "                                sb.append(col);",
+                        "                            } else {",
+                        "                                int col = Colors.roundRgbColor(r, g, b, 16);",
+                        "                                if (!first) {",
+                        "                                    sb.append(';');",
+                        "                                }",
+                        "                                first = false;",
+                        "                                sb.append(",
+                        "                                        value == 38",
+                        "                                                ? col >= 8 ? 90 + col - 8 : 30 + col",
+                        "                                                : col >= 8 ? 100 + col - 8 : 40 + col);",
+                        "                            }",
+                        "                        } else if (arg2or5 == 5) {",
+                        "                            // 256 color style like `esc[38;5;<index>m`",
+                        "                            int paletteIndex = getNextOptionInt(optionsIterator);",
+                        "                            if (colors == AnsiColors.Colors256) {",
+                        "                                if (!first) {",
+                        "                                    sb.append(';');",
+                        "                                }",
+                        "                                first = false;",
+                        "                                sb.append(value);",
+                        "                                sb.append(';');",
+                        "                                sb.append(5);",
+                        "                                sb.append(';');",
+                        "                                sb.append(paletteIndex);",
+                        "                            } else {",
+                        "                                int col = Colors.roundColor(paletteIndex, 16);",
+                        "                                if (!first) {",
+                        "                                    sb.append(';');",
+                        "                                }",
+                        "                                first = false;",
+                        "                                sb.append(",
+                        "                                        value == 38",
+                        "                                                ? col >= 8 ? 90 + col - 8 : 30 + col",
+                        "                                                : col >= 8 ? 100 + col - 8 : 40 + col);",
+                        "                            }",
+                        "                        } else {",
+                        "                            throw new IllegalArgumentException();",
+                        "                        }",
+                        "                    } else {",
+                        "                        if (!first) {",
+                        "                            sb.append(';');",
+                        "                        }",
+                        "                        first = false;",
+                        "                        sb.append(value);",
+                        "                    }",
+                        "                }",
+                        "            }",
+                        "            sb.append('m');",
+                        "            os.write(sb.toString().getBytes());",
+                        "            return true;",
+                        "",
+                        "        } else {",
+                        "            return false;",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Override"
+                    ],
+                    "modifiers": [
+                        "protected"
+                    ],
+                    "return_types": [
+                        "boolean"
+                    ],
+                    "body_types": [
+                        "boolean",
+                        "Object",
+                        "Integer",
+                        "IllegalArgumentException",
+                        "StringBuilder",
+                        "Iterator<Object>",
+                        "int"
+                    ],
+                    "signature": "processEscapeCommand( ArrayList<Object> options,  int command)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "ArrayList<Object>",
+                            "name": "options"
+                        },
+                        {
+                            "modifier": "",
+                            "type": "int",
+                            "name": "command"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Object": {
+                                "identifier": "Object",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Object",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Integer": {
+                                "identifier": "Integer",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Integer",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "IllegalArgumentException": {
+                                "identifier": "IllegalArgumentException",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "IllegalArgumentException",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "StringBuilder": {
+                                "identifier": "StringBuilder",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "StringBuilder",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Iterator<Object>": {
+                                "identifier": "Iterator<Object>",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Iterator<Object>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "int": {
+                                "identifier": "int",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "|ArrayList<Object>|options": {
+                                "identifier": "|ArrayList<Object>|options",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "ArrayList<Object>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "|int|command": {
+                                "identifier": "|int|command",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [
+                        "    protected override func processEscapeCommand(options: ArrayList<Object>, command: Int64): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "translation_status": "attempted",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "error",
+                        "message": "Compilation failed: error: 'Colors256' is non-static member, cannot access by type name\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/ColorsAnsiProcessor.cj:22:50:\n   | \n22 |                 if (command == 109 && (colors == AnsiColors.Colors256 || colors == AnsiColors.Colors16)) {\n   |                                                  ^ \n   |\nerror: 'Colors16' is non-static member, cannot access by type name\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/ColorsAnsiProcessor.cj:22:84:\n   | \n22 |                 if (command == 109 && (colors == AnsiColors.Colors256 || colors == AnsiColors.Colors16)) {\n   |                                                                                    ^ \n   |\nerror: undeclared identifier 'nil'\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/ColorsAnsiProcessor.cj:25:21:\n   | \n25 |         if (next != nil && !(next is Int64)) {\n   |                     ^ \n   |\nerror: 'hasNext' is not a member of class 'Iterator<Class-Object>'\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/ColorsAnsiProcessor.cj:39:32:\n   | \n39 |         while (optionsIterator.hasNext()) {\n   |                                ^^^^^^^ \n   |\nerror: undeclared identifier 'nil'\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/ColorsAnsiProcessor.cj:41:21:\n   | \n41 |         if (next != nil) {\n   |                     ^ \n   |"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 28.53126096725464,
+                    "generation_timestamp": "2026-05-15T16:08:41.033138",
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": true,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    protected override func processEscapeCommand(options: ArrayList<Object>, command: Int64): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 4,
+                        "test_execution": 4
+                    },
+                    "final_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 1,
+                        "test_execution": 4
+                    }
+                },
+                "136-139:processOperatingSystemCommand": {
+                    "start": 136,
+                    "end": 139,
+                    "body": [
+                        "@Override",
+                        "    protected boolean processOperatingSystemCommand(ArrayList<Object> options) {",
+                        "        return false;",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Override"
+                    ],
+                    "modifiers": [
+                        "protected"
+                    ],
+                    "return_types": [
+                        "boolean"
+                    ],
+                    "body_types": [],
+                    "signature": "processOperatingSystemCommand( ArrayList<Object> options)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "ArrayList<Object>",
+                            "name": "options"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "|ArrayList<Object>|options": {
+                                "identifier": "|ArrayList<Object>|options",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "ArrayList<Object>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": "return false",
+                    "translation_status": "completed",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "success",
+                        "message": "Compilation successful"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 4.01847767829895,
+                    "generation_timestamp": "2026-05-14T19:55:16.927729",
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": true,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    protected override func processOperatingSystemCommand(options: ArrayList<Object>): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 4,
+                        "test_execution": 4
+                    },
+                    "final_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 3,
+                        "test_execution": 4
+                    }
+                },
+                "141-144:processCharsetSelect": {
+                    "start": 141,
+                    "end": 144,
+                    "body": [
+                        "@Override",
+                        "    protected boolean processCharsetSelect(ArrayList<Object> options) {",
+                        "        return false;",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Override"
+                    ],
+                    "modifiers": [
+                        "protected"
+                    ],
+                    "return_types": [
+                        "boolean"
+                    ],
+                    "body_types": [],
+                    "signature": "processCharsetSelect( ArrayList<Object> options)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "ArrayList<Object>",
+                            "name": "options"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "|ArrayList<Object>|options": {
+                                "identifier": "|ArrayList<Object>|options",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "ArrayList<Object>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": "return false",
+                    "translation_status": "completed",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "success",
+                        "message": "Compilation successful"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 4.2353515625,
+                    "generation_timestamp": "2026-05-14T19:55:21.183244",
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": true,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    protected override func processCharsetSelect(options: ArrayList<Object>): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 4,
+                        "test_execution": 4
+                    },
+                    "final_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 3,
+                        "test_execution": 4
+                    }
+                }
+            },
+            "fields": {
+                "30-30:colors": {
+                    "start": 30,
+                    "end": 30,
+                    "enum_constant": false,
+                    "body": [
+                        "private final AnsiColors colors;"
+                    ],
+                    "modifiers": [
+                        "private",
+                        "final"
+                    ],
+                    "types": [
+                        "AnsiColors"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "AnsiColors": {
+                                "identifier": "AnsiColors",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "AnsiColors",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": "let colors: AnsiColors = throw Exception('TODO')",
+                    "translation_status": "completed",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "success",
+                        "message": "Compilation successful"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 2.2294392585754395,
+                    "generation_timestamp": "2026-05-14T19:54:48.579354",
+                    "model_name": "",
+                    "partial_translation": [
+                        "    let colors: AnsiColors = throw Exception('TODO')\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 2,
+                        "cangjie_compilation": 2,
+                        "test_execution": 2
+                    },
+                    "final_budget": {
+                        "syntactic": 2,
+                        "cangjie_compilation": 2,
+                        "test_execution": 2
+                    }
+                }
+            },
+            "cangjie_class_declaration": "public open class ColorsAnsiProcessor <: AnsiProcessor {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/ColorsAnsiProcessor.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/ColorsAnsiProcessor.cj",
+    "import_map": {
+        "IOException": "java.io.IOException",
+        "OutputStream": "java.io.OutputStream",
+        "ArrayList": "java.util.ArrayList",
+        "Iterator": "java.util.Iterator",
+        "AnsiColors": "org.fusesource.jansi.AnsiColors"
+    }
+}

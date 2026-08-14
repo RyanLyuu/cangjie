@@ -1,0 +1,135 @@
+{
+  "category": "constraint",
+  "description": "泛型约束转换规则：Java 的 extends 约束到仓颉 where <: 约束的映射。仓颉使用 where T <: UpperBound 语法声明泛型约束，支持接口约束和子类型约束。",
+  "rules": [
+    {
+      "id": "C07",
+      "subcategory": "single_constraint",
+      "name": "单类型约束",
+      "java_ast_pattern": {
+        "node_type": "TypeParameter",
+        "constraint_type": "single_bound"
+      },
+      "java_regex_fallback": "<\\s*([A-Z]\\w*)\\s+extends\\s+(\\w+)\\s*>",
+      "cangjie_template": "where $1 <: $2",
+      "transforms": [
+        { "from": "extends", "to": "<:", "scope": "type_bound" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉约束声明在类型/函数体之前，使用 where 关键字",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 9,
+      "example": {
+        "java": "class Sorted<T extends Comparable>",
+        "cangjie": "class Sorted<T> where T <: Comparable",
+        "note": "extends → where <:"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C08",
+      "subcategory": "multi_constraint",
+      "name": "多约束 & 连接",
+      "java_ast_pattern": {
+        "node_type": "TypeParameter",
+        "constraint_type": "multi_bound"
+      },
+      "java_regex_fallback": "<\\s*([A-Z]\\w*)\\s+extends\\s+(\\w+\\s*&\\s*\\w+(?:\\s*&\\s*\\w+)*)\\s*>",
+      "cangjie_template": "where $1 <: $2",
+      "transforms": [
+        { "from": "extends", "to": "<:", "scope": "type_bound" },
+        { "from": "Java & 多约束", "to": "仓颉 & 多约束", "scope": "multi_bound", "comment": "& 语法保留，但子类约束需放在接口约束之前" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉多约束使用 & 连接；如果同时有 class 和 interface 约束，class 约束必须在继承链上",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 9,
+      "example": {
+        "java": "<T extends Number & Serializable>",
+        "cangjie": "where T <: Number & Serializable",
+        "note": "& 连接符保留，但注意仓颉要求同一继承链"
+      },
+      "validation_probes": ["cjpm build 是否通过", "多 class 约束是否在同一继承链"]
+    },
+    {
+      "id": "C09",
+      "subcategory": "recursive_constraint",
+      "name": "递归泛型约束",
+      "java_ast_pattern": {
+        "node_type": "TypeParameter",
+        "constraint_type": "recursive_bound"
+      },
+      "java_regex_fallback": "(\\w+)\\s+extends\\s+Comparable<\\s*\\1\\s*>",
+      "cangjie_template": "where $1 <: Comparable<$1>",
+      "transforms": [],
+      "constraints": {
+        "cangjie_semantics": "仓颉支持递归泛型约束，与 Java 语法一致",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 8,
+      "example": {
+        "java": "class Sorted<T extends Comparable<T>>",
+        "cangjie": "class Sorted<T> where T <: Comparable<T>",
+        "note": "递归约束直迁"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C10",
+      "subcategory": "recursive_constraint",
+      "name": "F-bound 多约束（递归下界）",
+      "java_ast_pattern": {
+        "node_type": "TypeParameter",
+        "constraint_type": "f_bound"
+      },
+      "java_regex_fallback": "(\\w+)\\s+extends\\s+Comparable<\\s*\\?\\s+super\\s+\\1\\s*>",
+      "cangjie_template": "where $1 <: Comparable<~$1>",
+      "transforms": [
+        { "from": "? super T 递归", "to": "~T 投影递归", "scope": "wildcard_in_bound" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉使用 ~ 表示逆变投影，? super T 递归约束映射为 ~T",
+        "requires": ["C14"],
+        "conflicts": []
+      },
+      "priority": 8,
+      "example": {
+        "java": "class Sorted<T extends Comparable<? super T>>",
+        "cangjie": "class Sorted<T> where T <: Comparable<~T>",
+        "note": "? super T → ~T 逆变投影"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C11",
+      "subcategory": "multi_param_constraint",
+      "name": "多类型参数交叉约束",
+      "java_ast_pattern": {
+        "node_type": "TypeParameterList",
+        "constraint_type": "multi_param"
+      },
+      "java_regex_fallback": "<\\s*([A-Z]\\w*)\\s*,\\s*([A-Z]\\w*)\\s*>[^<]*where[^<]*<[^>]*extends\\s+(\\w+)",
+      "cangjie_template": "where $1 <: $3, $2 <: $4",
+      "transforms": [
+        { "from": "Java 多参数约束", "to": "仓颉 where 逗号分隔", "scope": "multi_param_constraint" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉中不同类型变元的约束用逗号分隔",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 8,
+      "example": {
+        "java": "class Pair<K extends Comparable, V extends Serializable>",
+        "cangjie": "class Pair<K, V> where K <: Comparable, V <: Serializable",
+        "note": "不同类型变元的约束用逗号分隔"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    }
+  ]
+}

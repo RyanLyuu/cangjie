@@ -1,0 +1,512 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/jansi/src/test/java/org/fusesource/jansi/EncodingTest.java",
+    "imports": {
+        "18-18:import java.io.ByteArrayOutputStream;": {
+            "start": 18,
+            "end": 18,
+            "body": "import java.io.ByteArrayOutputStream;"
+        },
+        "19-19:import java.io.PrintStream;": {
+            "start": 19,
+            "end": 19,
+            "body": "import java.io.PrintStream;"
+        },
+        "20-20:import java.io.UnsupportedEncodingException;": {
+            "start": 20,
+            "end": 20,
+            "body": "import java.io.UnsupportedEncodingException;"
+        },
+        "21-21:import java.nio.charset.StandardCharsets;": {
+            "start": 21,
+            "end": 21,
+            "body": "import java.nio.charset.StandardCharsets;"
+        },
+        "22-22:import java.util.concurrent.atomic.AtomicReference;": {
+            "start": 22,
+            "end": 22,
+            "body": "import java.util.concurrent.atomic.AtomicReference;"
+        },
+        "24-24:import org.fusesource.jansi.io.AnsiOutputStream;": {
+            "start": 24,
+            "end": 24,
+            "body": "import org.fusesource.jansi.io.AnsiOutputStream;"
+        },
+        "25-25:import org.fusesource.jansi.io.AnsiProcessor;": {
+            "start": 25,
+            "end": 25,
+            "body": "import org.fusesource.jansi.io.AnsiProcessor;"
+        },
+        "26-26:import org.junit.jupiter.api.Test;": {
+            "start": 26,
+            "end": 26,
+            "body": "import org.junit.jupiter.api.Test;"
+        },
+        "28-28:import static org.junit.jupiter.api.Assertions.assertEquals;": {
+            "start": 28,
+            "end": 28,
+            "body": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+        }
+    },
+    "classes": {
+        "30-89:EncodingTest": {
+            "start": 30,
+            "end": 89,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [],
+            "implements": [],
+            "extends": [],
+            "methods": {
+                "32-59:testEncoding8859": {
+                    "start": 32,
+                    "end": 59,
+                    "body": [
+                        "@Test",
+                        "    public void testEncoding8859() throws UnsupportedEncodingException {",
+                        "        ByteArrayOutputStream baos = new ByteArrayOutputStream();",
+                        "        final AtomicReference<String> newLabel = new AtomicReference<>();",
+                        "        PrintStream ansi = new AnsiPrintStream(",
+                        "                new AnsiOutputStream(",
+                        "                        baos,",
+                        "                        null,",
+                        "                        AnsiMode.Default,",
+                        "                        new AnsiProcessor(baos) {",
+                        "                            @Override",
+                        "                            protected void processChangeWindowTitle(String label) {",
+                        "                                newLabel.set(label);",
+                        "                            }",
+                        "                        },",
+                        "                        AnsiType.Emulation,",
+                        "                        AnsiColors.TrueColor,",
+                        "                        StandardCharsets.ISO_8859_1,",
+                        "                        null,",
+                        "                        null,",
+                        "                        false),",
+                        "                true,",
+                        "                \"ISO-8859-1\");",
+                        "",
+                        "        ansi.print(\"\\033]0;un bon café\\007\");",
+                        "        ansi.flush();",
+                        "        assertEquals(\"un bon café\", newLabel.get());",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "ByteArrayOutputStream",
+                        "AtomicReference<String>",
+                        "AtomicReference<>",
+                        "PrintStream",
+                        "AnsiPrintStream",
+                        "AnsiOutputStream",
+                        "AnsiProcessor",
+                        "void",
+                        "String"
+                    ],
+                    "signature": "testEncoding8859()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "ByteArrayOutputStream": {
+                                "identifier": "ByteArrayOutputStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "ByteArrayOutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AtomicReference<String>": {
+                                "identifier": "AtomicReference<String>",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AtomicReference<String>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AtomicReference<>": {
+                                "identifier": "AtomicReference<>",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AtomicReference<>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "PrintStream": {
+                                "identifier": "PrintStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "PrintStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiPrintStream": {
+                                "identifier": "AnsiPrintStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiPrintStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiOutputStream": {
+                                "identifier": "AnsiOutputStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiOutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiProcessor": {
+                                "identifier": "AnsiProcessor",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiProcessor",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testEncoding8859(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "61-88:testEncodingUtf8": {
+                    "start": 61,
+                    "end": 88,
+                    "body": [
+                        "@Test",
+                        "    public void testEncodingUtf8() throws UnsupportedEncodingException {",
+                        "        ByteArrayOutputStream baos = new ByteArrayOutputStream();",
+                        "        final AtomicReference<String> newLabel = new AtomicReference<>();",
+                        "        PrintStream ansi = new PrintStream(",
+                        "                new AnsiOutputStream(",
+                        "                        baos,",
+                        "                        null,",
+                        "                        AnsiMode.Default,",
+                        "                        new AnsiProcessor(baos) {",
+                        "                            @Override",
+                        "                            protected void processChangeWindowTitle(String label) {",
+                        "                                newLabel.set(label);",
+                        "                            }",
+                        "                        },",
+                        "                        AnsiType.Emulation,",
+                        "                        AnsiColors.TrueColor,",
+                        "                        StandardCharsets.UTF_8,",
+                        "                        null,",
+                        "                        null,",
+                        "                        false),",
+                        "                true,",
+                        "                \"UTF-8\");",
+                        "",
+                        "        ansi.print(\"\\033]0;ひらがな\\007\");",
+                        "        ansi.flush();",
+                        "        assertEquals(\"ひらがな\", newLabel.get());",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "ByteArrayOutputStream",
+                        "AtomicReference<String>",
+                        "AtomicReference<>",
+                        "PrintStream",
+                        "AnsiOutputStream",
+                        "AnsiProcessor",
+                        "void",
+                        "String"
+                    ],
+                    "signature": "testEncodingUtf8()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "ByteArrayOutputStream": {
+                                "identifier": "ByteArrayOutputStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "ByteArrayOutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AtomicReference<String>": {
+                                "identifier": "AtomicReference<String>",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AtomicReference<String>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AtomicReference<>": {
+                                "identifier": "AtomicReference<>",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AtomicReference<>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "PrintStream": {
+                                "identifier": "PrintStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "PrintStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiOutputStream": {
+                                "identifier": "AnsiOutputStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiOutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiProcessor": {
+                                "identifier": "AnsiProcessor",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiProcessor",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testEncodingUtf8(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "fields": {},
+            "cangjie_class_declaration": "public open class EncodingTest {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/EncodingTest_test.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/EncodingTest_test.cj",
+    "import_map": {
+        "ByteArrayOutputStream": "java.io.ByteArrayOutputStream",
+        "PrintStream": "java.io.PrintStream",
+        "UnsupportedEncodingException": "java.io.UnsupportedEncodingException",
+        "StandardCharsets": "java.nio.charset.StandardCharsets",
+        "AtomicReference": "java.util.concurrent.atomic.AtomicReference",
+        "AnsiOutputStream": "org.fusesource.jansi.io.AnsiOutputStream",
+        "AnsiProcessor": "org.fusesource.jansi.io.AnsiProcessor",
+        "Test": "org.junit.jupiter.api.Test",
+        "assertEquals": "static org.junit.jupiter.api.Assertions.assertEquals"
+    }
+}

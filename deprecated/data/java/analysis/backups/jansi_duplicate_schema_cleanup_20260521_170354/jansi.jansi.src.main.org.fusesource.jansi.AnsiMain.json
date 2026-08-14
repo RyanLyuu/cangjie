@@ -1,0 +1,1561 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/jansi/src/main/java/org/fusesource/jansi/AnsiMain.java",
+    "imports": {
+        "18-18:import java.io.BufferedReader;": {
+            "start": 18,
+            "end": 18,
+            "body": "import java.io.BufferedReader;"
+        },
+        "19-19:import java.io.Closeable;": {
+            "start": 19,
+            "end": 19,
+            "body": "import java.io.Closeable;"
+        },
+        "20-20:import java.io.File;": {
+            "start": 20,
+            "end": 20,
+            "body": "import java.io.File;"
+        },
+        "21-21:import java.io.FileInputStream;": {
+            "start": 21,
+            "end": 21,
+            "body": "import java.io.FileInputStream;"
+        },
+        "22-22:import java.io.IOException;": {
+            "start": 22,
+            "end": 22,
+            "body": "import java.io.IOException;"
+        },
+        "23-23:import java.io.InputStream;": {
+            "start": 23,
+            "end": 23,
+            "body": "import java.io.InputStream;"
+        },
+        "24-24:import java.io.InputStreamReader;": {
+            "start": 24,
+            "end": 24,
+            "body": "import java.io.InputStreamReader;"
+        },
+        "25-25:import java.io.PrintStream;": {
+            "start": 25,
+            "end": 25,
+            "body": "import java.io.PrintStream;"
+        },
+        "26-26:import java.util.Properties;": {
+            "start": 26,
+            "end": 26,
+            "body": "import java.util.Properties;"
+        },
+        "28-28:import org.fusesource.jansi.Ansi.Attribute;": {
+            "start": 28,
+            "end": 28,
+            "body": "import org.fusesource.jansi.Ansi.Attribute;"
+        },
+        "29-29:import org.fusesource.jansi.internal.CLibrary;": {
+            "start": 29,
+            "end": 29,
+            "body": "import org.fusesource.jansi.internal.CLibrary;"
+        },
+        "30-30:import org.fusesource.jansi.internal.JansiLoader;": {
+            "start": 30,
+            "end": 30,
+            "body": "import org.fusesource.jansi.internal.JansiLoader;"
+        },
+        "31-31:import org.fusesource.jansi.internal.Kernel32;": {
+            "start": 31,
+            "end": 31,
+            "body": "import org.fusesource.jansi.internal.Kernel32;"
+        },
+        "32-32:import org.fusesource.jansi.internal.MingwSupport;": {
+            "start": 32,
+            "end": 32,
+            "body": "import org.fusesource.jansi.internal.MingwSupport;"
+        },
+        "34-34:import static java.nio.charset.StandardCharsets.UTF_8;": {
+            "start": 34,
+            "end": 34,
+            "body": "import static java.nio.charset.StandardCharsets.UTF_8;"
+        },
+        "35-35:import static org.fusesource.jansi.Ansi.ansi;": {
+            "start": 35,
+            "end": 35,
+            "body": "import static org.fusesource.jansi.Ansi.ansi;"
+        },
+        "36-36:import static org.fusesource.jansi.internal.Kernel32.GetConsoleScreenBufferInfo;": {
+            "start": 36,
+            "end": 36,
+            "body": "import static org.fusesource.jansi.internal.Kernel32.GetConsoleScreenBufferInfo;"
+        }
+    },
+    "classes": {
+        "55-344:AnsiMain": {
+            "start": 55,
+            "end": 344,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [],
+            "implements": [],
+            "extends": [],
+            "methods": {
+                "56-192:main": {
+                    "start": 56,
+                    "end": 192,
+                    "body": [
+                        "public static void main(String... args) throws IOException {",
+                        "        System.out.println(\"Jansi \" + getJansiVersion());",
+                        "",
+                        "        System.out.println();",
+                        "",
+                        "        // info on native library",
+                        "        System.out.println(\"library.jansi.path= \" + System.getProperty(\"library.jansi.path\", \"\"));",
+                        "        System.out.println(\"library.jansi.version= \" + System.getProperty(\"library.jansi.version\", \"\"));",
+                        "        boolean loaded = JansiLoader.initialize();",
+                        "        if (loaded) {",
+                        "            System.out.println(\"Jansi native library loaded from \" + JansiLoader.getNativeLibraryPath());",
+                        "            if (JansiLoader.getNativeLibrarySourceUrl() != null) {",
+                        "                System.out.println(\"   which was auto-extracted from \" + JansiLoader.getNativeLibrarySourceUrl());",
+                        "            }",
+                        "        } else {",
+                        "            String prev = System.getProperty(AnsiConsole.JANSI_GRACEFUL);",
+                        "            try {",
+                        "                System.setProperty(AnsiConsole.JANSI_GRACEFUL, \"false\");",
+                        "                JansiLoader.initialize();",
+                        "            } catch (Throwable e) {",
+                        "                e.printStackTrace(System.out);",
+                        "            } finally {",
+                        "                if (prev != null) {",
+                        "                    System.setProperty(AnsiConsole.JANSI_GRACEFUL, prev);",
+                        "                } else {",
+                        "                    System.clearProperty(AnsiConsole.JANSI_GRACEFUL);",
+                        "                }",
+                        "            }",
+                        "        }",
+                        "",
+                        "        System.out.println();",
+                        "",
+                        "        System.out.println(\"os.name= \" + System.getProperty(\"os.name\") + \", \"",
+                        "                + \"os.version= \" + System.getProperty(\"os.version\") + \", \"",
+                        "                + \"os.arch= \" + System.getProperty(\"os.arch\"));",
+                        "        System.out.println(\"file.encoding= \" + System.getProperty(\"file.encoding\"));",
+                        "        System.out.println(\"sun.stdout.encoding= \" + System.getProperty(\"sun.stdout.encoding\") + \", \"",
+                        "                + \"sun.stderr.encoding= \" + System.getProperty(\"sun.stderr.encoding\"));",
+                        "        System.out.println(\"stdout.encoding= \" + System.getProperty(\"stdout.encoding\") + \", \" + \"stderr.encoding= \"",
+                        "                + System.getProperty(\"stderr.encoding\"));",
+                        "        System.out.println(\"java.version= \" + System.getProperty(\"java.version\") + \", \"",
+                        "                + \"java.vendor= \" + System.getProperty(\"java.vendor\") + \",\"",
+                        "                + \" java.home= \" + System.getProperty(\"java.home\"));",
+                        "        System.out.println(\"Console: \" + System.console());",
+                        "",
+                        "        System.out.println();",
+                        "",
+                        "        System.out.println(AnsiConsole.JANSI_GRACEFUL + \"= \" + System.getProperty(AnsiConsole.JANSI_GRACEFUL, \"\"));",
+                        "        System.out.println(AnsiConsole.JANSI_MODE + \"= \" + System.getProperty(AnsiConsole.JANSI_MODE, \"\"));",
+                        "        System.out.println(AnsiConsole.JANSI_OUT_MODE + \"= \" + System.getProperty(AnsiConsole.JANSI_OUT_MODE, \"\"));",
+                        "        System.out.println(AnsiConsole.JANSI_ERR_MODE + \"= \" + System.getProperty(AnsiConsole.JANSI_ERR_MODE, \"\"));",
+                        "        System.out.println(AnsiConsole.JANSI_COLORS + \"= \" + System.getProperty(AnsiConsole.JANSI_COLORS, \"\"));",
+                        "        System.out.println(AnsiConsole.JANSI_OUT_COLORS + \"= \" + System.getProperty(AnsiConsole.JANSI_OUT_COLORS, \"\"));",
+                        "        System.out.println(AnsiConsole.JANSI_ERR_COLORS + \"= \" + System.getProperty(AnsiConsole.JANSI_ERR_COLORS, \"\"));",
+                        "        System.out.println(",
+                        "                AnsiConsole.JANSI_PASSTHROUGH + \"= \" + AnsiConsole.getBoolean(AnsiConsole.JANSI_PASSTHROUGH));",
+                        "        System.out.println(AnsiConsole.JANSI_STRIP + \"= \" + AnsiConsole.getBoolean(AnsiConsole.JANSI_STRIP));",
+                        "        System.out.println(AnsiConsole.JANSI_FORCE + \"= \" + AnsiConsole.getBoolean(AnsiConsole.JANSI_FORCE));",
+                        "        System.out.println(AnsiConsole.JANSI_NORESET + \"= \" + AnsiConsole.getBoolean(AnsiConsole.JANSI_NORESET));",
+                        "        System.out.println(Ansi.DISABLE + \"= \" + AnsiConsole.getBoolean(Ansi.DISABLE));",
+                        "",
+                        "        System.out.println();",
+                        "",
+                        "        System.out.println(\"IS_WINDOWS: \" + AnsiConsole.IS_WINDOWS);",
+                        "        if (AnsiConsole.IS_WINDOWS) {",
+                        "            System.out.println(\"IS_CONEMU: \" + AnsiConsole.IS_CONEMU);",
+                        "            System.out.println(\"IS_CYGWIN: \" + AnsiConsole.IS_CYGWIN);",
+                        "            System.out.println(\"IS_MSYSTEM: \" + AnsiConsole.IS_MSYSTEM);",
+                        "        }",
+                        "",
+                        "        System.out.println();",
+                        "",
+                        "        diagnoseTty(false); // System.out",
+                        "        diagnoseTty(true); // System.err",
+                        "",
+                        "        AnsiConsole.systemInstall();",
+                        "",
+                        "        System.out.println();",
+                        "",
+                        "        System.out.println(\"Resulting Jansi modes for stout/stderr streams:\");",
+                        "        System.out.println(\"  - System.out: \" + AnsiConsole.out().toString());",
+                        "        System.out.println(\"  - System.err: \" + AnsiConsole.err().toString());",
+                        "        System.out.println(\"Processor types description:\");",
+                        "        for (AnsiType type : AnsiType.values()) {",
+                        "            System.out.println(\"  - \" + type + \": \" + type.getDescription());",
+                        "        }",
+                        "        System.out.println(\"Colors support description:\");",
+                        "        for (AnsiColors colors : AnsiColors.values()) {",
+                        "            System.out.println(\"  - \" + colors + \": \" + colors.getDescription());",
+                        "        }",
+                        "        System.out.println(\"Modes description:\");",
+                        "        for (AnsiMode mode : AnsiMode.values()) {",
+                        "            System.out.println(\"  - \" + mode + \": \" + mode.getDescription());",
+                        "        }",
+                        "",
+                        "        try {",
+                        "            System.out.println();",
+                        "",
+                        "            testAnsi(false);",
+                        "            testAnsi(true);",
+                        "",
+                        "            if (args.length == 0) {",
+                        "                printJansiLogoDemo();",
+                        "                return;",
+                        "            }",
+                        "",
+                        "            System.out.println();",
+                        "",
+                        "            if (args.length == 1) {",
+                        "                File f = new File(args[0]);",
+                        "                if (f.exists()) {",
+                        "                    // write file content",
+                        "                    System.out.println(",
+                        "                            ansi().bold().a(\"\\\"\" + args[0] + \"\\\" content:\").reset());",
+                        "                    writeFileContent(f);",
+                        "                    return;",
+                        "                }",
+                        "            }",
+                        "",
+                        "            // write args without Jansi then with Jansi AnsiConsole",
+                        "            System.out.println(ansi().bold().a(\"original args:\").reset());",
+                        "            int i = 1;",
+                        "            for (String arg : args) {",
+                        "                AnsiConsole.system_out.print(i++ + \": \");",
+                        "                AnsiConsole.system_out.println(arg);",
+                        "            }",
+                        "",
+                        "            System.out.println(ansi().bold().a(\"Jansi filtered args:\").reset());",
+                        "            i = 1;",
+                        "            for (String arg : args) {",
+                        "                System.out.print(i++ + \": \");",
+                        "                System.out.println(arg);",
+                        "            }",
+                        "        } finally {",
+                        "            AnsiConsole.systemUninstall();",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "boolean",
+                        "String",
+                        "Throwable",
+                        "AnsiType",
+                        "AnsiColors",
+                        "AnsiMode",
+                        "File",
+                        "int"
+                    ],
+                    "signature": "main()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Throwable": {
+                                "identifier": "Throwable",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Throwable",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiType": {
+                                "identifier": "AnsiType",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiType",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiColors": {
+                                "identifier": "AnsiColors",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiColors",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiMode": {
+                                "identifier": "AnsiMode",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiMode",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "File": {
+                                "identifier": "File",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "File",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "int": {
+                                "identifier": "int",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false
+                },
+                "194-197:getJansiVersion": {
+                    "start": 194,
+                    "end": 197,
+                    "body": [
+                        "private static String getJansiVersion() {",
+                        "        Package p = AnsiMain.class.getPackage();",
+                        "        return (p == null) ? null : p.getImplementationVersion();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "private",
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [
+                        "Package",
+                        "AnsiMain"
+                    ],
+                    "signature": "getJansiVersion()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "Package": {
+                                "identifier": "Package",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Package",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiMain": {
+                                "identifier": "AnsiMain",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiMain",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private static func getJansiVersion(): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "199-232:diagnoseTty": {
+                    "start": 199,
+                    "end": 232,
+                    "body": [
+                        "private static void diagnoseTty(boolean stderr) {",
+                        "        int isatty;",
+                        "        int width;",
+                        "        if (AnsiConsole.IS_WINDOWS) {",
+                        "            long console = Kernel32.GetStdHandle(stderr ? Kernel32.STD_ERROR_HANDLE : Kernel32.STD_OUTPUT_HANDLE);",
+                        "            int[] mode = new int[1];",
+                        "            isatty = Kernel32.GetConsoleMode(console, mode);",
+                        "            if ((AnsiConsole.IS_CONEMU || AnsiConsole.IS_CYGWIN || AnsiConsole.IS_MSYSTEM) && isatty == 0) {",
+                        "                MingwSupport mingw = new MingwSupport();",
+                        "                String name = mingw.getConsoleName(!stderr);",
+                        "                if (name != null && !name.isEmpty()) {",
+                        "                    isatty = 1;",
+                        "                    width = mingw.getTerminalWidth(name);",
+                        "                } else {",
+                        "                    isatty = 0;",
+                        "                    width = 0;",
+                        "                }",
+                        "            } else {",
+                        "                Kernel32.Kernel32_CONSOLE_SCREEN_BUFFER_INFO info = new Kernel32.Kernel32_CONSOLE_SCREEN_BUFFER_INFO();",
+                        "                GetConsoleScreenBufferInfo(console, info);",
+                        "                width = info.windowWidth();",
+                        "            }",
+                        "        } else {",
+                        "            int fd = stderr ? CLibrary.STDERR_FILENO : CLibrary.STDOUT_FILENO;",
+                        "            isatty = CLibrary.LOADED ? CLibrary.isatty(fd) : 0;",
+                        "            CLibrary.CLibrary_WinSize ws = new CLibrary.CLibrary_WinSize();",
+                        "            CLibrary.ioctl(fd, CLibrary.TIOCGWINSZ, ws);",
+                        "            width = ws.ws_col;",
+                        "        }",
+                        "",
+                        "        System.out.println(\"isatty(STD\" + (stderr ? \"ERR\" : \"OUT\") + \"_FILENO): \" + isatty + \", System.\"",
+                        "                + (stderr ? \"err\" : \"out\") + \" \" + ((isatty == 0) ? \"is *NOT*\" : \"is\") + \" a terminal\");",
+                        "        System.out.println(\"width(STD\" + (stderr ? \"ERR\" : \"OUT\") + \"_FILENO): \" + width);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "private",
+                        "static"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "int",
+                        "long",
+                        "int[]",
+                        "MingwSupport",
+                        "String",
+                        "Kernel32.Kernel32_CONSOLE_SCREEN_BUFFER_INFO",
+                        "Kernel32",
+                        "Kernel32_CONSOLE_SCREEN_BUFFER_INFO",
+                        "CLibrary.CLibrary_WinSize",
+                        "CLibrary",
+                        "CLibrary_WinSize"
+                    ],
+                    "signature": "diagnoseTty( boolean stderr)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "boolean",
+                            "name": "stderr"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "int": {
+                                "identifier": "int",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "long": {
+                                "identifier": "long",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "long",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "int[]": {
+                                "identifier": "int[]",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "int[]",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "MingwSupport": {
+                                "identifier": "MingwSupport",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "MingwSupport",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Kernel32.Kernel32_CONSOLE_SCREEN_BUFFER_INFO": {
+                                "identifier": "Kernel32.Kernel32_CONSOLE_SCREEN_BUFFER_INFO",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Kernel32.Kernel32_CONSOLE_SCREEN_BUFFER_INFO",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Kernel32": {
+                                "identifier": "Kernel32",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Kernel32",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Kernel32_CONSOLE_SCREEN_BUFFER_INFO": {
+                                "identifier": "Kernel32_CONSOLE_SCREEN_BUFFER_INFO",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Kernel32_CONSOLE_SCREEN_BUFFER_INFO",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "CLibrary.CLibrary_WinSize": {
+                                "identifier": "CLibrary.CLibrary_WinSize",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "CLibrary.CLibrary_WinSize",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "CLibrary": {
+                                "identifier": "CLibrary",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "CLibrary",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "CLibrary_WinSize": {
+                                "identifier": "CLibrary_WinSize",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "CLibrary_WinSize",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "|boolean|stderr": {
+                                "identifier": "|boolean|stderr",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private static func diagnoseTty(stderr: Bool): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "234-295:testAnsi": {
+                    "start": 234,
+                    "end": 295,
+                    "body": [
+                        "private static void testAnsi(boolean stderr) {",
+                        "        @SuppressWarnings(\"resource\")",
+                        "        PrintStream s = stderr ? System.err : System.out;",
+                        "        s.print(\"test on System.\" + (stderr ? \"err\" : \"out\") + \":\");",
+                        "        for (Ansi.Color c : Ansi.Color.values()) {",
+                        "            s.print(\" \" + ansi().fg(c) + c + ansi().reset());",
+                        "        }",
+                        "        s.println();",
+                        "        s.print(\"            bright:\");",
+                        "        for (Ansi.Color c : Ansi.Color.values()) {",
+                        "            s.print(\" \" + ansi().fgBright(c) + c + ansi().reset());",
+                        "        }",
+                        "        s.println();",
+                        "        s.print(\"              bold:\");",
+                        "        for (Ansi.Color c : Ansi.Color.values()) {",
+                        "            s.print(\" \" + ansi().bold().fg(c) + c + ansi().reset());",
+                        "        }",
+                        "        s.println();",
+                        "        s.print(\"             faint:\");",
+                        "        for (Ansi.Color c : Ansi.Color.values()) {",
+                        "            s.print(\" \" + ansi().a(Attribute.INTENSITY_FAINT).fg(c) + c + ansi().reset());",
+                        "        }",
+                        "        s.println();",
+                        "        s.print(\"        bold+faint:\");",
+                        "        for (Ansi.Color c : Ansi.Color.values()) {",
+                        "            s.print(\" \" + ansi().bold().a(Attribute.INTENSITY_FAINT).fg(c) + c + ansi().reset());",
+                        "        }",
+                        "        s.println();",
+                        "        Ansi ansi = ansi();",
+                        "        ansi.a(\"        256 colors: \");",
+                        "        for (int i = 0; i < 6 * 6 * 6; i++) {",
+                        "            if (i > 0 && i % 36 == 0) {",
+                        "                ansi.reset();",
+                        "                ansi.newline();",
+                        "                ansi.a(\"                    \");",
+                        "            } else if (i > 0 && i % 6 == 0) {",
+                        "                ansi.reset();",
+                        "                ansi.a(\"  \");",
+                        "            }",
+                        "            int a0 = i % 6;",
+                        "            int a1 = (i / 6) % 6;",
+                        "            int a2 = i / 36;",
+                        "            ansi.bg(16 + a0 + a2 * 6 + a1 * 36).a(' ');",
+                        "        }",
+                        "        ansi.reset();",
+                        "        s.println(ansi);",
+                        "        ansi = ansi();",
+                        "        ansi.a(\"         truecolor: \");",
+                        "        for (int i = 0; i < 256; i++) {",
+                        "            if (i > 0 && i % 48 == 0) {",
+                        "                ansi.reset();",
+                        "                ansi.newline();",
+                        "                ansi.a(\"                    \");",
+                        "            }",
+                        "            int r = 255 - i;",
+                        "            int g = i * 2 > 255 ? 255 - 2 * i : 2 * i;",
+                        "            int b = i;",
+                        "            ansi.bgRgb(r, g, b).fgRgb(255 - r, 255 - g, 255 - b).a(i % 2 == 0 ? '/' : '\\\\');",
+                        "        }",
+                        "        ansi.reset();",
+                        "        s.println(ansi);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "private",
+                        "static"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "PrintStream",
+                        "Ansi.Color",
+                        "Ansi",
+                        "Color",
+                        "int"
+                    ],
+                    "signature": "testAnsi( boolean stderr)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "boolean",
+                            "name": "stderr"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "PrintStream": {
+                                "identifier": "PrintStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "PrintStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Ansi.Color": {
+                                "identifier": "Ansi.Color",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Ansi.Color",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Ansi": {
+                                "identifier": "Ansi",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Ansi",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Color": {
+                                "identifier": "Color",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Color",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "int": {
+                                "identifier": "int",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "|boolean|stderr": {
+                                "identifier": "|boolean|stderr",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private static func testAnsi(stderr: Bool): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "297-309:getPomPropertiesVersion": {
+                    "start": 297,
+                    "end": 309,
+                    "body": [
+                        "private static String getPomPropertiesVersion(String path) throws IOException {",
+                        "        InputStream in__ = AnsiMain.class.getResourceAsStream(\"/META-INF/maven/\" + path + \"/pom.properties\");",
+                        "        if (in__ == null) {",
+                        "            return null;",
+                        "        }",
+                        "        try {",
+                        "            Properties p = new Properties();",
+                        "            p.load(in__);",
+                        "            return p.getProperty(\"version\");",
+                        "        } finally {",
+                        "            closeQuietly(in__);",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "private",
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [
+                        "InputStream",
+                        "AnsiMain",
+                        "Properties"
+                    ],
+                    "signature": "getPomPropertiesVersion( String path)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "String",
+                            "name": "path"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "InputStream": {
+                                "identifier": "InputStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "InputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiMain": {
+                                "identifier": "AnsiMain",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiMain",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Properties": {
+                                "identifier": "Properties",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Properties",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "|String|path": {
+                                "identifier": "|String|path",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private static func getPomPropertiesVersion(path: String): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "311-322:printJansiLogoDemo": {
+                    "start": 311,
+                    "end": 322,
+                    "body": [
+                        "private static void printJansiLogoDemo() throws IOException {",
+                        "        BufferedReader in__ =",
+                        "                new BufferedReader(new InputStreamReader(AnsiMain.class.getResourceAsStream(\"jansi.txt\"), UTF_8));",
+                        "        try {",
+                        "            String l;",
+                        "            while ((l = in__.readLine()) != null) {",
+                        "                System.out.println(l);",
+                        "            }",
+                        "        } finally {",
+                        "            closeQuietly(in__);",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "private",
+                        "static"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "BufferedReader",
+                        "InputStreamReader",
+                        "AnsiMain",
+                        "String"
+                    ],
+                    "signature": "printJansiLogoDemo()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "BufferedReader": {
+                                "identifier": "BufferedReader",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "BufferedReader",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "InputStreamReader": {
+                                "identifier": "InputStreamReader",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "InputStreamReader",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "AnsiMain": {
+                                "identifier": "AnsiMain",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "AnsiMain",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private static func printJansiLogoDemo(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "324-335:writeFileContent": {
+                    "start": 324,
+                    "end": 335,
+                    "body": [
+                        "private static void writeFileContent(File f) throws IOException {",
+                        "        InputStream in__ = new FileInputStream(f);",
+                        "        try {",
+                        "            byte[] buf = new byte[1024];",
+                        "            int l = 0;",
+                        "            while ((l = in__.read(buf)) >= 0) {",
+                        "                System.out.write(buf, 0, l);",
+                        "            }",
+                        "        } finally {",
+                        "            closeQuietly(in__);",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "private",
+                        "static"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "InputStream",
+                        "FileInputStream",
+                        "byte[]",
+                        "byte",
+                        "int"
+                    ],
+                    "signature": "writeFileContent( File f)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "File",
+                            "name": "f"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "InputStream": {
+                                "identifier": "InputStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "InputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "FileInputStream": {
+                                "identifier": "FileInputStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "FileInputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "byte[]": {
+                                "identifier": "byte[]",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "byte[]",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "byte": {
+                                "identifier": "byte",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "byte",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "int": {
+                                "identifier": "int",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "|File|f": {
+                                "identifier": "|File|f",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "File",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private static func writeFileContent(f: Any): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "337-343:closeQuietly": {
+                    "start": 337,
+                    "end": 343,
+                    "body": [
+                        "private static void closeQuietly(Closeable c) {",
+                        "        try {",
+                        "            c.close();",
+                        "        } catch (IOException ioe) {",
+                        "            ioe.printStackTrace(System.err);",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "private",
+                        "static"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "IOException"
+                    ],
+                    "signature": "closeQuietly( Closeable c)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "Closeable",
+                            "name": "c"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "IOException": {
+                                "identifier": "IOException",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "IOException",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "|Closeable|c": {
+                                "identifier": "|Closeable|c",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "Closeable",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private static func closeQuietly(c: Any): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "fields": {},
+            "cangjie_class_declaration": "public open class AnsiMain {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/AnsiMain.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/AnsiMain.cj",
+    "import_map": {
+        "BufferedReader": "java.io.BufferedReader",
+        "Closeable": "java.io.Closeable",
+        "File": "java.io.File",
+        "FileInputStream": "java.io.FileInputStream",
+        "IOException": "java.io.IOException",
+        "InputStream": "java.io.InputStream",
+        "InputStreamReader": "java.io.InputStreamReader",
+        "PrintStream": "java.io.PrintStream",
+        "Properties": "java.util.Properties",
+        "Attribute": "org.fusesource.jansi.Ansi.Attribute",
+        "CLibrary": "org.fusesource.jansi.internal.CLibrary",
+        "JansiLoader": "org.fusesource.jansi.internal.JansiLoader",
+        "Kernel32": "org.fusesource.jansi.internal.Kernel32",
+        "MingwSupport": "org.fusesource.jansi.internal.MingwSupport",
+        "UTF_8": "static java.nio.charset.StandardCharsets.UTF_8",
+        "ansi": "static org.fusesource.jansi.Ansi.ansi",
+        "GetConsoleScreenBufferInfo": "static org.fusesource.jansi.internal.Kernel32.GetConsoleScreenBufferInfo"
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/jansi/src/test/java/org/fusesource/jansi/AnsiStringTest.java",
+    "imports": {
+        "18-18:import org.junit.jupiter.api.Test;": {
+            "start": 18,
+            "end": 18,
+            "body": "import org.junit.jupiter.api.Test;"
+        },
+        "20-20:import static org.junit.jupiter.api.Assertions.assertEquals;": {
+            "start": 20,
+            "end": 20,
+            "body": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+        }
+    },
+    "classes": {
+        "24-31:AnsiStringTest": {
+            "start": 24,
+            "end": 31,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [],
+            "implements": [],
+            "extends": [],
+            "methods": {
+                "26-30:testCursorPosition": {
+                    "start": 26,
+                    "end": 30,
+                    "body": [
+                        "@Test",
+                        "    public void testCursorPosition() {",
+                        "        Ansi ansi = Ansi.ansi().cursor(3, 6).reset();",
+                        "        assertEquals(\"\\u001B[3;6H\\u001B[m\", ansi.toString());",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "Ansi"
+                    ],
+                    "signature": "testCursorPosition()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 16:45:34",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {
+                            "Ansi": {
+                                "identifier": "Ansi",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-13 16:45:34",
+                                "source_type": "Ansi",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Ansi",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testCursorPosition(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "fields": {},
+            "cangjie_class_declaration": "public open class AnsiStringTest {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/AnsiStringTest_test.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/AnsiStringTest_test.cj",
+    "import_map": {
+        "Test": "org.junit.jupiter.api.Test",
+        "assertEquals": "static org.junit.jupiter.api.Assertions.assertEquals"
+    }
+}

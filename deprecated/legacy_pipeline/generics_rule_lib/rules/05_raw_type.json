@@ -1,0 +1,86 @@
+{
+  "category": "raw_type",
+  "description": "原始类型转换规则：Java 的原始类型（Raw Type）在仓颉中没有对应概念，仓颉所有泛型类型必须携带类型参数。规则将原始类型补上类型参数（通常为 Any），同时 Hash 容器需使用 AnyHashable。",
+  "rules": [
+    {
+      "id": "C22",
+      "subcategory": "raw_type_assignment",
+      "name": "赋值语句原始类型",
+      "java_ast_pattern": {
+        "node_type": "VariableDeclaration",
+        "has_type_arguments": false
+      },
+      "java_regex_fallback": "(\\w+)<[^>]*>\\s+\\w+\\s*=\\s*new\\s+\\w+<(?:\\s*)>",
+      "cangjie_template": "let $2: $1<Any> = $1<Any>()",
+      "transforms": [
+        { "from": "原始类型赋值", "to": "补全类型参数 Any", "scope": "assignment" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉不允许省略类型参数，必须补全",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 7,
+      "example": {
+        "java": "List list = new ArrayList();",
+        "cangjie": "let list: List<Any> = ArrayList<Any>()",
+        "note": "原始类型补上 <Any>"
+      },
+      "validation_probes": ["cjpm build 是否通过", "确认不是 HashMap 等需 AnyHashable 的容器"]
+    },
+    {
+      "id": "C23",
+      "subcategory": "raw_type_parameter",
+      "name": "参数原始类型",
+      "java_ast_pattern": {
+        "node_type": "FormalParameter",
+        "has_type_arguments": false,
+        "type_is_generic_container": true
+      },
+      "java_regex_fallback": "(\\w+)<\\s*>\\s+\\w+\\s*[,)]",
+      "cangjie_template": "$1<Any> $2",
+      "transforms": [
+        { "from": "参数原始类型", "to": "参数补全 Any", "scope": "parameter" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉方法参数中泛型容器不允许省略类型参数",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 7,
+      "example": {
+        "java": "void process(List list)",
+        "cangjie": "func process(list: List<Any>)",
+        "note": "参数原始类型补 Any"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C24",
+      "subcategory": "raw_type_return",
+      "name": "返回类型原始类型",
+      "java_ast_pattern": {
+        "node_type": "MethodDeclaration",
+        "return_type_has_type_arguments": false,
+        "return_type_is_generic_container": true
+      },
+      "java_regex_fallback": "(\\w+)<\\s*>\\s+\\w+\\s*\\(",
+      "cangjie_template": "func $2(): $1<Any>",
+      "transforms": [
+        { "from": "返回类型原始类型", "to": "返回类型补全 Any", "scope": "return_type" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉方法返回类型不允许省略类型参数",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 7,
+      "example": {
+        "java": "List getList()",
+        "cangjie": "func getList(): List<Any>",
+        "note": "返回类型补 Any"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    }
+  ]
+}

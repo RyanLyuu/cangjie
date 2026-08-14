@@ -7,12 +7,12 @@ docs/projects.txt
 __pycache__/
 misc/
 vscode-codeql-starter/
-projects/**/.git/
-projects/**/target/
+projects/
+deprecated/
+data/
+resolve-cangjie-types/
 databases/
 java/data/
-data/java/rag/
-data/java/
 x2cangjie.code-workspace
 **/target/
 *.log

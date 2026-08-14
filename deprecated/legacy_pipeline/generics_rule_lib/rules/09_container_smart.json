@@ -1,0 +1,119 @@
+{
+  "category": "container_smart",
+  "description": "语义级容器/API差异规则：仅保留无法由确定性类型表达式解析完成、需要代码结构重写的 Java API 模式。Optional/HashMap/HashSet 等纯类型表达式映射由 java_base_type_map.json + type_expression.py 处理。",
+  "rules": [
+    {
+      "id": "C44",
+      "subcategory": "stream_api",
+      "name": "Stream<T> → 迭代器/循环重构",
+      "java_ast_pattern": {
+        "node_type": "MethodInvocation",
+        "method_name": "stream"
+      },
+      "java_regex_fallback": "\\.stream\\(\\)|\\.collect\\(|\\.map\\(|\\.filter\\(|\\.forEach\\(|Collectors\\.",
+      "cangjie_template": "// 需重构为 for-in 循环或集合操作方法",
+      "transforms": [
+        {
+          "from": ".stream()",
+          "to": "直接对集合使用迭代方法",
+          "scope": "stream_operation"
+        },
+        {
+          "from": ".collect(Collectors.toList())",
+          "to": "ArrayList<T>() 或迭代收集",
+          "scope": "terminal_operation"
+        },
+        {
+          "from": ".map(f)",
+          "to": "集合.map(f) 或 for 循环",
+          "scope": "intermediate_operation"
+        },
+        {
+          "from": ".filter(p)",
+          "to": "集合.filter(p) 或 for 循环",
+          "scope": "intermediate_operation"
+        },
+        {
+          "from": ".forEach(c)",
+          "to": "for (item in collection) { c(item) }",
+          "scope": "terminal_operation"
+        },
+        {
+          "from": ".reduce(init, f)",
+          "to": "集合.fold(init, f) 或 for 循环",
+          "scope": "terminal_operation"
+        }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉标准库无 Stream API，需逐个操作映射为集合方法或 for-in 循环",
+        "requires": [],
+        "conflicts": [],
+        "action": "需要逐个操作手动重构，无法自动翻译"
+      },
+      "priority": 7,
+      "example": {
+        "java": "list.stream().filter(s -> s.length() > 5).map(String::toUpperCase).collect(Collectors.toList());",
+        "cangjie": "var result = ArrayList<String>()\nfor (s in list) {\n    if (s.length > 5) {\n        result.append(s.uppercase())\n    }\n}",
+        "note": "Stream 操作需重构为 for-in 或集合方法"
+      },
+      "validation_probes": [
+        "cjpm build 是否通过",
+        "确认语义等价"
+      ]
+    },
+    {
+      "id": "C45",
+      "subcategory": "concurrent",
+      "name": "CompletableFuture<T> → Future/异步模式",
+      "java_ast_pattern": {
+        "node_type": "TypeDeclaration",
+        "type_name": "CompletableFuture"
+      },
+      "java_regex_fallback": "CompletableFuture<\\s*([^>]+)\\s*>",
+      "cangjie_template": "Future<$1>  // 或 async/await 模式",
+      "transforms": [
+        {
+          "from": "CompletableFuture",
+          "to": "Future 或 async/await",
+          "scope": "type_name"
+        },
+        {
+          "from": "thenApply",
+          "to": "map",
+          "scope": "method_call"
+        },
+        {
+          "from": "thenCompose",
+          "to": "flatMap",
+          "scope": "method_call"
+        },
+        {
+          "from": "exceptionally",
+          "to": "recover",
+          "scope": "method_call"
+        },
+        {
+          "from": "get()",
+          "to": "await",
+          "scope": "method_call"
+        }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉并发模型与 Java 不同，CompletableFuture 需重构为 Future 或 async/await",
+        "requires": [],
+        "conflicts": [],
+        "action": "需要根据具体使用场景重构并发模式"
+      },
+      "priority": 6,
+      "example": {
+        "java": "CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> fetchData());\nString result = future.thenApply(String::toUpperCase).get();",
+        "cangjie": "// 方案1: Future\nlet future: Future<String> = Future<String>(fetchData)\nlet result = future.map({ s => s.uppercase() }).await()\n\n// 方案2: async/await\nasync func getData(): String {\n    return fetchData().uppercase()\n}",
+        "note": "并发模式需根据场景选择重构策略"
+      },
+      "validation_probes": [
+        "cjpm build 是否通过",
+        "确认并发语义正确"
+      ]
+    }
+  ]
+}

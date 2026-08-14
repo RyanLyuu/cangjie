@@ -1,0 +1,1504 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/jansi/src/main/java/org/fusesource/jansi/internal/OSInfo.java",
+    "imports": {
+        "34-34:import java.io.ByteArrayOutputStream;": {
+            "start": 34,
+            "end": 34,
+            "body": "import java.io.ByteArrayOutputStream;"
+        },
+        "35-35:import java.io.IOException;": {
+            "start": 35,
+            "end": 35,
+            "body": "import java.io.IOException;"
+        },
+        "36-36:import java.io.InputStream;": {
+            "start": 36,
+            "end": 36,
+            "body": "import java.io.InputStream;"
+        },
+        "37-37:import java.nio.file.Files;": {
+            "start": 37,
+            "end": 37,
+            "body": "import java.nio.file.Files;"
+        },
+        "38-38:import java.nio.file.Paths;": {
+            "start": 38,
+            "end": 38,
+            "body": "import java.nio.file.Paths;"
+        },
+        "39-39:import java.util.HashMap;": {
+            "start": 39,
+            "end": 39,
+            "body": "import java.util.HashMap;"
+        },
+        "40-40:import java.util.Locale;": {
+            "start": 40,
+            "end": 40,
+            "body": "import java.util.Locale;"
+        }
+    },
+    "classes": {
+        "46-229:OSInfo": {
+            "start": 46,
+            "end": 229,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [],
+            "implements": [],
+            "extends": [],
+            "methods": {
+                "99-111:main": {
+                    "start": 99,
+                    "end": 111,
+                    "body": [
+                        "public static void main(String[] args) {",
+                        "        if (args.length >= 1) {",
+                        "            if (\"--os\".equals(args[0])) {",
+                        "                System.out.print(getOSName());",
+                        "                return;",
+                        "            } else if (\"--arch\".equals(args[0])) {",
+                        "                System.out.print(getArchName());",
+                        "                return;",
+                        "            }",
+                        "        }",
+                        "",
+                        "        System.out.print(getNativeLibFolderPathForCurrentOS());",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "main( String[] args)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "String[]",
+                            "name": "args"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "|String[]|args": {
+                                "identifier": "|String[]|args",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "String[]",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false
+                },
+                "113-115:getNativeLibFolderPathForCurrentOS": {
+                    "start": 113,
+                    "end": 115,
+                    "body": [
+                        "public static String getNativeLibFolderPathForCurrentOS() {",
+                        "        return getOSName() + \"/\" + getArchName();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [],
+                    "signature": "getNativeLibFolderPathForCurrentOS()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func getNativeLibFolderPathForCurrentOS(): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "117-119:getOSName": {
+                    "start": 117,
+                    "end": 119,
+                    "body": [
+                        "public static String getOSName() {",
+                        "        return translateOSNameToFolderName(System.getProperty(\"os.name\"));",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [],
+                    "signature": "getOSName()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func getOSName(): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "121-123:isAndroid": {
+                    "start": 121,
+                    "end": 123,
+                    "body": [
+                        "public static boolean isAndroid() {",
+                        "        return System.getProperty(\"java.runtime.name\", \"\").toLowerCase().contains(\"android\");",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "boolean"
+                    ],
+                    "body_types": [],
+                    "signature": "isAndroid()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func isAndroid(): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "125-136:isAlpine": {
+                    "start": 125,
+                    "end": 136,
+                    "body": [
+                        "public static boolean isAlpine() {",
+                        "        try {",
+                        "            for (String line : Files.readAllLines(Paths.get(\"/etc/os-release\"))) {",
+                        "                if (line.startsWith(\"ID\") && line.toLowerCase(Locale.ROOT).contains(\"alpine\")) {",
+                        "                    return true;",
+                        "                }",
+                        "            }",
+                        "        } catch (Throwable ignored) {",
+                        "        }",
+                        "",
+                        "        return false;",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "boolean"
+                    ],
+                    "body_types": [
+                        "String",
+                        "Throwable"
+                    ],
+                    "signature": "isAlpine()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "boolean": {
+                                "identifier": "boolean",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "boolean",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Throwable": {
+                                "identifier": "Throwable",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Throwable",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func isAlpine(): Bool {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "138-153:getHardwareName": {
+                    "start": 138,
+                    "end": 153,
+                    "body": [
+                        "static String getHardwareName() {",
+                        "        try {",
+                        "            Process p = Runtime.getRuntime().exec(\"uname -m\");",
+                        "            p.waitFor();",
+                        "",
+                        "            InputStream in__ = p.getInputStream();",
+                        "            try {",
+                        "                return readFully(in__);",
+                        "            } finally {",
+                        "                in__.close();",
+                        "            }",
+                        "        } catch (Throwable e) {",
+                        "            System.err.println(\"Error while running uname -m: \" + e.getMessage());",
+                        "            return \"unknown\";",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [
+                        "Process",
+                        "InputStream",
+                        "Throwable"
+                    ],
+                    "signature": "getHardwareName()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "Process": {
+                                "identifier": "Process",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Process",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "InputStream": {
+                                "identifier": "InputStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "InputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "Throwable": {
+                                "identifier": "Throwable",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "Throwable",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    static func getHardwareName(): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "155-163:readFully": {
+                    "start": 155,
+                    "end": 163,
+                    "body": [
+                        "private static String readFully(InputStream in__) throws IOException {",
+                        "        int readLen = 0;",
+                        "        ByteArrayOutputStream b = new ByteArrayOutputStream();",
+                        "        byte[] buf = new byte[32];",
+                        "        while ((readLen = in__.read(buf, 0, buf.length)) >= 0) {",
+                        "            b.write(buf, 0, readLen);",
+                        "        }",
+                        "        return b.toString();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "private",
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [
+                        "int",
+                        "ByteArrayOutputStream",
+                        "byte[]",
+                        "byte"
+                    ],
+                    "signature": "readFully( InputStream in__)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "InputStream",
+                            "name": "in__"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "int": {
+                                "identifier": "int",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "ByteArrayOutputStream": {
+                                "identifier": "ByteArrayOutputStream",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "ByteArrayOutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "byte[]": {
+                                "identifier": "byte[]",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "byte[]",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "byte": {
+                                "identifier": "byte",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "byte",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "|InputStream|in__": {
+                                "identifier": "|InputStream|in__",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "InputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private static func readFully(in__: InputStream): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "165-192:resolveArmArchType": {
+                    "start": 165,
+                    "end": 192,
+                    "body": [
+                        "static String resolveArmArchType() {",
+                        "        if (System.getProperty(\"os.name\").contains(\"Linux\")) {",
+                        "            String armType = getHardwareName();",
+                        "            // armType (uname -m) can be armv5t, armv5te, armv5tej, armv5tejl, armv6, armv7, armv7l, aarch64, i686",
+                        "            if (armType.startsWith(\"armv6\")) {",
+                        "                // Raspberry PI",
+                        "                return \"armv6\";",
+                        "            } else if (armType.startsWith(\"armv7\")) {",
+                        "                // Generic",
+                        "                return \"armv7\";",
+                        "            } else if (armType.startsWith(\"armv5\")) {",
+                        "                // Use armv5, soft-float ABI",
+                        "                return \"arm\";",
+                        "            } else if (armType.equals(\"aarch64\")) {",
+                        "                // Use arm64",
+                        "                return \"arm64\";",
+                        "            }",
+                        "",
+                        "            // Java 1.8 introduces a system property to determine armel or armhf",
+                        "            // http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8005545",
+                        "            String abi = System.getProperty(\"sun.arch.abi\");",
+                        "            if (abi != null && abi.startsWith(\"gnueabihf\")) {",
+                        "                return \"armv7\";",
+                        "            }",
+                        "        }",
+                        "        // Use armv5, soft-float ABI",
+                        "        return \"arm\";",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "resolveArmArchType()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    static func resolveArmArchType(): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "194-208:getArchName": {
+                    "start": 194,
+                    "end": 208,
+                    "body": [
+                        "public static String getArchName() {",
+                        "        String osArch = System.getProperty(\"os.arch\");",
+                        "        // For Android",
+                        "        if (isAndroid()) {",
+                        "            return \"android-arm\";",
+                        "        }",
+                        "",
+                        "        if (osArch.startsWith(\"arm\")) {",
+                        "            osArch = resolveArmArchType();",
+                        "        } else {",
+                        "            String lc = osArch.toLowerCase(Locale.US);",
+                        "            if (archMapping.containsKey(lc)) return archMapping.get(lc);",
+                        "        }",
+                        "        return translateArchNameToFolderName(osArch);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "public",
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "getArchName()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public static func getArchName(): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "210-224:translateOSNameToFolderName": {
+                    "start": 210,
+                    "end": 224,
+                    "body": [
+                        "static String translateOSNameToFolderName(String osName) {",
+                        "        if (osName.contains(\"Windows\")) {",
+                        "            return \"Windows\";",
+                        "        } else if (osName.contains(\"Mac\") || osName.contains(\"Darwin\")) {",
+                        "            return \"Mac\";",
+                        "            //        } else if (isAlpine()) {",
+                        "            //            return \"Linux-Alpine\";",
+                        "        } else if (osName.contains(\"Linux\")) {",
+                        "            return \"Linux\";",
+                        "        } else if (osName.contains(\"AIX\")) {",
+                        "            return \"AIX\";",
+                        "        } else {",
+                        "            return osName.replaceAll(\"\\\\W\", \"\");",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [],
+                    "signature": "translateOSNameToFolderName( String osName)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "String",
+                            "name": "osName"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "|String|osName": {
+                                "identifier": "|String|osName",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    static func translateOSNameToFolderName(osName: String): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "226-228:translateArchNameToFolderName": {
+                    "start": 226,
+                    "end": 228,
+                    "body": [
+                        "static String translateArchNameToFolderName(String archName) {",
+                        "        return archName.replaceAll(\"\\\\W\", \"\");",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "static"
+                    ],
+                    "return_types": [
+                        "String"
+                    ],
+                    "body_types": [],
+                    "signature": "translateArchNameToFolderName( String archName)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "String",
+                            "name": "archName"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "|String|archName": {
+                                "identifier": "|String|archName",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    static func translateArchNameToFolderName(archName: String): String {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "fields": {
+                "48-48:X86": {
+                    "start": 48,
+                    "end": 48,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String X86 = \"x86\";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let X86: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "49-49:X86_64": {
+                    "start": 49,
+                    "end": 49,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String X86_64 = \"x86_64\";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let X86_64: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "50-50:IA64_32": {
+                    "start": 50,
+                    "end": 50,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String IA64_32 = \"ia64_32\";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let IA64_32: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "51-51:IA64": {
+                    "start": 51,
+                    "end": 51,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String IA64 = \"ia64\";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let IA64: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "52-52:PPC": {
+                    "start": 52,
+                    "end": 52,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String PPC = \"ppc\";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let PPC: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "53-53:PPC64": {
+                    "start": 53,
+                    "end": 53,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String PPC64 = \"ppc64\";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let PPC64: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "54-54:ARM64": {
+                    "start": 54,
+                    "end": 54,
+                    "enum_constant": false,
+                    "body": [
+                        "public static final String ARM64 = \"arm64\";"
+                    ],
+                    "modifiers": [
+                        "public",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "String"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let ARM64: String = throw Exception('TODO')\n"
+                    ]
+                },
+                "56-56:archMapping": {
+                    "start": 56,
+                    "end": 56,
+                    "enum_constant": false,
+                    "body": [
+                        "private static final HashMap<String, String> archMapping = new HashMap<String, String>();"
+                    ],
+                    "modifiers": [
+                        "private",
+                        "static",
+                        "final"
+                    ],
+                    "types": [
+                        "HashMap<String, String>"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "HashMap<String, String>": {
+                                "identifier": "HashMap<String, String>",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "HashMap<String, String>",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static let archMapping: HashMap<String, String> = throw Exception('TODO')\n"
+                    ]
+                }
+            },
+            "static_initializers": {
+                "58-97:run_static_init": {
+                    "start": 58,
+                    "end": 97,
+                    "body": [
+                        "static {",
+                        "        // x86 mappings",
+                        "        archMapping.put(X86, X86);",
+                        "        archMapping.put(\"i386\", X86);",
+                        "        archMapping.put(\"i486\", X86);",
+                        "        archMapping.put(\"i586\", X86);",
+                        "        archMapping.put(\"i686\", X86);",
+                        "        archMapping.put(\"pentium\", X86);",
+                        "",
+                        "        // x86_64 mappings",
+                        "        archMapping.put(X86_64, X86_64);",
+                        "        archMapping.put(\"amd64\", X86_64);",
+                        "        archMapping.put(\"em64t\", X86_64);",
+                        "        archMapping.put(\"universal\", X86_64); // Needed for openjdk7 in Mac",
+                        "",
+                        "        // Itenium 64-bit mappings",
+                        "        archMapping.put(IA64, IA64);",
+                        "        archMapping.put(\"ia64w\", IA64);",
+                        "",
+                        "        // Itenium 32-bit mappings, usually an HP-UX construct",
+                        "        archMapping.put(IA64_32, IA64_32);",
+                        "        archMapping.put(\"ia64n\", IA64_32);",
+                        "",
+                        "        // PowerPC mappings",
+                        "        archMapping.put(PPC, PPC);",
+                        "        archMapping.put(\"power\", PPC);",
+                        "        archMapping.put(\"powerpc\", PPC);",
+                        "        archMapping.put(\"power_pc\", PPC);",
+                        "        archMapping.put(\"power_rs\", PPC);",
+                        "",
+                        "        // TODO: PowerPC 64bit mappings",
+                        "        archMapping.put(PPC64, PPC64);",
+                        "        archMapping.put(\"power64\", PPC64);",
+                        "        archMapping.put(\"powerpc64\", PPC64);",
+                        "        archMapping.put(\"power_pc64\", PPC64);",
+                        "        archMapping.put(\"power_rs64\", PPC64);",
+                        "",
+                        "        // aarch64 mappings",
+                        "        archMapping.put(\"aarch64\", ARM64);",
+                        "    }"
+                    ],
+                    "type_translations": {},
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "partial_translation": [
+                        "    static init() {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "cangjie_class_declaration": "public open class OSInfo {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/OSInfo.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/OSInfo.cj",
+    "import_map": {
+        "ByteArrayOutputStream": "java.io.ByteArrayOutputStream",
+        "IOException": "java.io.IOException",
+        "InputStream": "java.io.InputStream",
+        "Files": "java.nio.file.Files",
+        "Paths": "java.nio.file.Paths",
+        "HashMap": "java.util.HashMap",
+        "Locale": "java.util.Locale"
+    }
+}

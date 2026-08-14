@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
-from src.java.isolation_validation import runtime_support
+from src.java.translation import runtime_support
 from src.java.utils.get_dependencies import get_dependencies
 from src.java.utils.get_class_order import get_class_order
 from src.java.utils.get_custom_types import get_custom_type_translation_map, get_custom_types
@@ -1350,6 +1350,18 @@ def generate_one_file_skeleton(schema, schema_fname, schema_path, cjpm_name, typ
         dependencies, custom_types, processed_classes,
         java_type_imports, skeleton, collapsed_subpaths
     )
+    # A collapsed Java subpackage may now share the project-root Cangjie
+    # package with its former dependencies.  Imports within that same package
+    # are unnecessary and Cangjie treats them as a package self-cycle.
+    current_package = _get_cangjie_package(java_path, cjpm_name, collapsed_subpaths)
+    if current_package:
+        same_package_prefix = f"import {current_package}."
+        imports_str = "\n".join(
+            line for line in imports_str.splitlines()
+            if not line.strip().startswith(same_package_prefix)
+        )
+        if imports_str:
+            imports_str += "\n"
     skeleton = skeleton.replace('__IMPORTS_PLACEHOLDER__\n', imports_str)
 
     # Write skeleton file

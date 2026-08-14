@@ -1,0 +1,1324 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/src/test/java/org/fusesource/jansi/AnsiRendererTest.java",
+    "imports": {
+        "18-18:import org.junit.jupiter.api.BeforeAll;": {
+            "start": 18,
+            "end": 18,
+            "body": "import org.junit.jupiter.api.BeforeAll;"
+        },
+        "19-19:import org.junit.jupiter.api.Test;": {
+            "start": 19,
+            "end": 19,
+            "body": "import org.junit.jupiter.api.Test;"
+        },
+        "21-21:import static org.fusesource.jansi.Ansi.*;": {
+            "start": 21,
+            "end": 21,
+            "body": "import static org.fusesource.jansi.Ansi.*;"
+        },
+        "22-22:import static org.fusesource.jansi.Ansi.Attribute.*;": {
+            "start": 22,
+            "end": 22,
+            "body": "import static org.fusesource.jansi.Ansi.Attribute.*;"
+        },
+        "23-23:import static org.fusesource.jansi.Ansi.Color.*;": {
+            "start": 23,
+            "end": 23,
+            "body": "import static org.fusesource.jansi.Ansi.Color.*;"
+        },
+        "24-24:import static org.fusesource.jansi.AnsiRenderer.*;": {
+            "start": 24,
+            "end": 24,
+            "body": "import static org.fusesource.jansi.AnsiRenderer.*;"
+        },
+        "25-25:import static org.junit.jupiter.api.Assertions.assertEquals;": {
+            "start": 25,
+            "end": 25,
+            "body": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+        },
+        "26-26:import static org.junit.jupiter.api.Assertions.assertFalse;": {
+            "start": 26,
+            "end": 26,
+            "body": "import static org.junit.jupiter.api.Assertions.assertFalse;"
+        },
+        "27-27:import static org.junit.jupiter.api.Assertions.assertThrows;": {
+            "start": 27,
+            "end": 27,
+            "body": "import static org.junit.jupiter.api.Assertions.assertThrows;"
+        },
+        "28-28:import static org.junit.jupiter.api.Assertions.assertTrue;": {
+            "start": 28,
+            "end": 28,
+            "body": "import static org.junit.jupiter.api.Assertions.assertTrue;"
+        }
+    },
+    "classes": {
+        "34-125:AnsiRendererTest": {
+            "start": 34,
+            "end": 125,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [],
+            "implements": [],
+            "extends": [],
+            "methods": {
+                "35-38:setUp": {
+                    "start": 35,
+                    "end": 38,
+                    "body": [
+                        "@BeforeAll",
+                        "    static void setUp() {",
+                        "        Ansi.setEnabled(true);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@BeforeAll"
+                    ],
+                    "modifiers": [
+                        "static"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "setUp()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "181-183:setEnabled"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    static func setUp(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "40-45:testTest": {
+                    "start": 40,
+                    "end": 45,
+                    "body": [
+                        "@Test",
+                        "    public void testTest() throws Exception {",
+                        "        assertFalse(test(\"foo\"));",
+                        "        assertTrue(test(\"@|foo|\"));",
+                        "        assertTrue(test(\"@|foo\"));",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "testTest()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.AnsiRenderer",
+                            "45-258:AnsiRenderer",
+                            "160-162:test"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertFalse(boolean)"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertTrue(boolean)"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testTest(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "47-53:testRender": {
+                    "start": 47,
+                    "end": 53,
+                    "body": [
+                        "@Test",
+                        "    public void testRender() {",
+                        "        String str = render(\"@|bold foo|@\");",
+                        "        System.out.println(str);",
+                        "        assertEquals(ansi().a(INTENSITY_BOLD).a(\"foo\").reset().toString(), str);",
+                        "        assertEquals(ansi().bold().a(\"foo\").reset().toString(), str);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "testRender()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.AnsiRenderer",
+                            "45-258:AnsiRenderer",
+                            "59-66:render"
+                        ],
+                        [
+                            "library",
+                            "java.io.PrintStream",
+                            "println(java.lang.String)"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "189-195:ansi"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "565-568:a"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "755-757:reset"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "896-900:toString"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertEquals(java.lang.Object,java.lang.Object)"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "759-761:bold"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testRender(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "55-60:testRenderCodes": {
+                    "start": 55,
+                    "end": 60,
+                    "body": [
+                        "@Test",
+                        "    public void testRenderCodes() {",
+                        "        String str = renderCodes(\"bold red\");",
+                        "        System.out.println(str);",
+                        "        assertEquals(ansi().bold().fg(Color.RED).toString(), str);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "testRenderCodes()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.AnsiRenderer",
+                            "45-258:AnsiRenderer",
+                            "131-133:renderCodes"
+                        ],
+                        [
+                            "library",
+                            "java.io.PrintStream",
+                            "println(java.lang.String)"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "189-195:ansi"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "759-761:bold"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "393-396:fg"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "896-900:toString"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertEquals(java.lang.Object,java.lang.Object)"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testRenderCodes(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "62-68:testRender2": {
+                    "start": 62,
+                    "end": 68,
+                    "body": [
+                        "@Test",
+                        "    public void testRender2() {",
+                        "        String str = render(\"@|bold,red foo|@\");",
+                        "        System.out.println(str);",
+                        "        assertEquals(Ansi.ansi().a(INTENSITY_BOLD).fg(RED).a(\"foo\").reset().toString(), str);",
+                        "        assertEquals(Ansi.ansi().bold().fgRed().a(\"foo\").reset().toString(), str);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "testRender2()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.AnsiRenderer",
+                            "45-258:AnsiRenderer",
+                            "59-66:render"
+                        ],
+                        [
+                            "library",
+                            "java.io.PrintStream",
+                            "println(java.lang.String)"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "189-195:ansi"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "565-568:a"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "393-396:fg"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "755-757:reset"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "896-900:toString"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertEquals(java.lang.Object,java.lang.Object)"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "759-761:bold"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "442-444:fgRed"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testRender2(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "70-76:testRender3": {
+                    "start": 70,
+                    "end": 76,
+                    "body": [
+                        "@Test",
+                        "    public void testRender3() {",
+                        "        String str = render(\"@|bold,red foo bar baz|@\");",
+                        "        System.out.println(str);",
+                        "        assertEquals(ansi().a(INTENSITY_BOLD).fg(RED).a(\"foo bar baz\").reset().toString(), str);",
+                        "        assertEquals(ansi().bold().fgRed().a(\"foo bar baz\").reset().toString(), str);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "testRender3()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.AnsiRenderer",
+                            "45-258:AnsiRenderer",
+                            "59-66:render"
+                        ],
+                        [
+                            "library",
+                            "java.io.PrintStream",
+                            "println(java.lang.String)"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "189-195:ansi"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "565-568:a"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "393-396:fg"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "755-757:reset"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "896-900:toString"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertEquals(java.lang.Object,java.lang.Object)"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "759-761:bold"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "442-444:fgRed"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testRender3(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "78-94:testRender4": {
+                    "start": 78,
+                    "end": 94,
+                    "body": [
+                        "@Test",
+                        "    public void testRender4() {",
+                        "        String str = render(\"@|bold,red foo bar baz|@ ick @|bold,red foo bar baz|@\");",
+                        "        System.out.println(str);",
+                        "        assertEquals(",
+                        "                ansi().a(INTENSITY_BOLD)",
+                        "                        .fg(RED)",
+                        "                        .a(\"foo bar baz\")",
+                        "                        .reset()",
+                        "                        .a(\" ick \")",
+                        "                        .a(INTENSITY_BOLD)",
+                        "                        .fg(RED)",
+                        "                        .a(\"foo bar baz\")",
+                        "                        .reset()",
+                        "                        .toString(),",
+                        "                str);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "testRender4()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.AnsiRenderer",
+                            "45-258:AnsiRenderer",
+                            "59-66:render"
+                        ],
+                        [
+                            "library",
+                            "java.io.PrintStream",
+                            "println(java.lang.String)"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "189-195:ansi"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "565-568:a"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "393-396:fg"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "755-757:reset"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "896-900:toString"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertEquals(java.lang.Object,java.lang.Object)"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testRender4(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "96-102:testRender5": {
+                    "start": 96,
+                    "end": 102,
+                    "body": [
+                        "@Test",
+                        "    public void testRender5() {",
+                        "        // Check the ansi() render method.",
+                        "        String str = ansi().render(\"@|bold Hello|@\").toString();",
+                        "        System.out.println(str);",
+                        "        assertEquals(ansi().a(INTENSITY_BOLD).a(\"Hello\").reset().toString(), str);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "testRender5()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "189-195:ansi"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "877-880:render"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "896-900:toString"
+                        ],
+                        [
+                            "library",
+                            "java.io.PrintStream",
+                            "println(java.lang.String)"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "565-568:a"
+                        ],
+                        [
+                            "jansi.src.main.org.fusesource.jansi.Ansi",
+                            "27-973:Ansi",
+                            "755-757:reset"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertEquals(java.lang.Object,java.lang.Object)"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testRender5(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "104-107:testRenderNothing": {
+                    "start": 104,
+                    "end": 107,
+                    "body": [
+                        "@Test",
+                        "    public void testRenderNothing() {",
+                        "        assertEquals(\"foo\", render(\"foo\"));",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "testRenderNothing()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.AnsiRenderer",
+                            "45-258:AnsiRenderer",
+                            "59-66:render"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertEquals(java.lang.Object,java.lang.Object)"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testRenderNothing(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "109-113:testRenderInvalidMissingEnd": {
+                    "start": 109,
+                    "end": 113,
+                    "body": [
+                        "@Test",
+                        "    public void testRenderInvalidMissingEnd() {",
+                        "        String str = render(\"@|bold foo\");",
+                        "        assertEquals(\"@|bold foo\", str);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "testRenderInvalidMissingEnd()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.AnsiRenderer",
+                            "45-258:AnsiRenderer",
+                            "59-66:render"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertEquals(java.lang.Object,java.lang.Object)"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testRenderInvalidMissingEnd(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "115-118:testRenderInvalidEndBeforeStart": {
+                    "start": 115,
+                    "end": 118,
+                    "body": [
+                        "@Test",
+                        "    public void testRenderInvalidEndBeforeStart() {",
+                        "        assertThrows(IllegalArgumentException.class, () -> render(\"@|@\"));",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "IllegalArgumentException"
+                    ],
+                    "signature": "testRenderInvalidEndBeforeStart()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "library",
+                            "org.junit.jupiter.api.function.Executable",
+                            "execute()"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertThrows(java.lang.Class,org.junit.jupiter.api.function.Executable)"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "IllegalArgumentException": {
+                                "identifier": "IllegalArgumentException",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-21 16:20:24",
+                                "source_type": "IllegalArgumentException",
+                                "generation": "CANGJIE IMPORTS:\n```\n```\n\nCANGJIE TRANSLATION:\n```\nIllegalArgumentException\n```\n\nREASONING:\nCangjie has a built-in `IllegalArgumentException` exception class that serves the same purpose as Java's `IllegalArgumentException` \u2014 thrown when a method receives an illegal or inappropriate argument. No imports are needed as it's part of the standard library.",
+                                "imports": "",
+                                "translated_target_type": "IllegalArgumentException",
+                                "reasoning": "Cangjie has a built-in `IllegalArgumentException` exception class that serves the same purpose as Java's `IllegalArgumentException` \u2014 thrown when a method receives an illegal or inappropriate argument. No imports are needed as it's part of the standard library.",
+                                "prompt": "### Reference: Cangjie documentation\nThe following documentation from Cangjie standard library may help:\n---\n### Reference [Source: Language Manual]\n[Context: runtime \u73af\u5883\u53d8\u91cf\u4f7f\u7528\u624b\u518c > runtime \u521d\u59cb\u5316\u53ef\u9009\u914d\u7f6e > \u4ed3\u9889 GWP-Asan \u5185\u5b58\u5b89\u5168\u68c0\u6d4b]\n[Context: runtime \u73af\u5883\u53d8\u91cf\u4f7f\u7528\u624b\u518c > runtime \u521d\u59cb\u5316\u53ef\u9009\u914d\u7f6e > \u4ed3\u9889 GWP-Asan \u5185\u5b58\u5b89\u5168\u68c0\u6d4b]\n\n- \u4ed3\u9889 GWP-Asan \u662f\u4e00\u79cd\u57fa\u4e8e\u91c7\u6837\u7684\u5185\u5b58\u68c0\u67e5\u5de5\u5177\uff0c\u5185\u5b58\u8d8a\u754c\u95ee\u9898\u53ef\u80fd\u65e0\u6cd5\u5b8c\u5168\u68c0\u51fa\u3002\n- \u4ed3\u9889 GWP-Asan \u5bf9\u4ed3\u9889\u5806\u5185\u5b58\u7684\u8d8a\u754c\u68c0\u6d4b\u8303\u56f4\u6709\u9650\uff0c\u65e0\u6cd5\u68c0\u6d4b\u5185\u5b58\u8bfb\u8d8a\u754c\u8bbf\u95ee\uff0c\u4ec5\u80fd\u68c0\u6d4b\u90e8\u5206\u5199\u8d8a\u754c\u8bbf\u95ee\uff1a\u5411\u524d\u5199\u8d8a\u754c 8 \u5b57\u8282\u4ee5\u5185\uff1b\u5411\u540e\u5199\u8d8a\u754c\u5230\u5c3e\u90e8\u7684\u586b\u5145\u533a\u57df\uff08\u6839\u636e\u6570\u7ec4\u5bf9\u8c61\u957f\u5ea6\u7684\u4e0d\u540c\uff0c\u586b\u5145\u533a\u57df\u53ef\u80fd\u4e3a 0-7 \u5b57\u8282\uff09\u3002\n\n### Reference [Source: Language Manual]\n[Context: runtime \u73af\u5883\u53d8\u91cf\u4f7f\u7528\u624b\u518c > runtime \u521d\u59cb\u5316\u53ef\u9009\u914d\u7f6e > \u4ed3\u9889 GWP-Asan \u5185\u5b58\u5b89\u5168\u68c0\u6d4b]\n[Context: runtime \u73af\u5883\u53d8\u91cf\u4f7f\u7528\u624b\u518c > runtime \u521d\u59cb\u5316\u53ef\u9009\u914d\u7f6e > \u4ed3\u9889 GWP-Asan \u5185\u5b58\u5b89\u5168\u68c0\u6d4b]\n\n\u5728\u4ed3\u9889\u4e0e C \u4ee3\u7801\u4e92\u64cd\u4f5c\u7684\u8fc7\u7a0b\u4e2d\uff0c\u53ef\u80fd\u51fa\u73b0\u4e00\u4e9b\u4ed3\u9889\u5806\u5185\u5b58\u5b89\u5168\u95ee\u9898\u3002\u4ed3\u9889 GWP-Asan \u63d0\u4f9b\u4e86\u4e00\u79cd\u5185\u5b58\u5b89\u5168\u68c0\u6d4b\u529f\u80fd\u3002\u5b83\u53ef\u4ee5\u5728\u4ed3\u9889\u7a0b\u5e8f\u8fd0\u884c\u8fc7\u7a0b\u4e2d\u68c0\u6d4b\u4ee3\u7801\u662f\u5426\u5b58\u5728\u4ed3\u9889\u5806\u5185\u5b58\u5b89\u5168\u95ee\u9898\u3002GWP-Asan \u901a\u8fc7\u5bf9\u4ed3\u9889\u8bed\u8a00\u6807\u51c6\u5e93\u63d0\u4f9b\u7684 acquireArrayRawData \u548c releaseArrayRawData \u63a5\u53e3\uff08\u53c2\u89c1\u300a\u4ed3\u9889\u7f16\u7a0b\u8bed\u8a00\u5e93 API \u6587\u6863\u300bstd.core \u5305\u4e00\u8282\uff09\u8fdb\u884c\u91c7\u6837\uff0c\u5e76\u8bb0\u5f55\u5bf9\u6bd4\u91c7\u6837\u5bf9\u8c61\u524d\u540e\u5185\u5b58\u7684 Canary \u6570\u636e\uff0c\u4ece\u800c\u68c0\u6d4b\u4ed3\u9889\u4e0e C \u8bed\u8a00\u4e92\u64cd\u4f5c\u8fc7\u7a0b\u4e2d\u662f\u5426\u51fa\u73b0\u4e86\u4ed3\u9889\u5806\u5185\u5b58\u5b89\u5168\u95ee\u9898\u3002\n\n\u4ed3\u9889 GWP-Asan \u662f\u4e00\u79cd\u57fa\u4e8e\u91c7\u6837\u7684\u68c0\u6d4b\u5de5\u5177\uff0c\u53ef\u4ee5\u901a\u8fc7\u8bbe\u7f6e\u4e0d\u540c\u7684\u503c\u6765\u8c03\u6574\u91c7\u6837\u9891\u7387\uff0c\u4ee5\u5e73\u8861\u6027\u80fd\u5f71\u54cd\u548c\u68c0\u6d4b\u8986\u76d6\u7387\u3002\u5728\u9ed8\u8ba4\u6216\u66f4\u4f4e\u91c7\u6837\u9891\u7387\u4e0b\uff0cCPU \u6027\u80fd\u635f\u5931\u548c\u989d\u5916\u7684\u5185\u5b58\u5360\u7528\u6781\u4f4e\u3002\n\n> **\u8bf4\u660e\uff1a**\n>\n> \u4ed3\u9889 GWP-Asan \u5185\u5b58\u5b89\u5168\u68c0\u6d4b\u4ec5\u652f\u6301 Linux \u548c OpenHarmony \u64cd\u4f5c\u7cfb\u7edf\u3002\n\n---\n\nUse your expertise to translate the given type according to the instructions. Find an equivalent type (corresponding type that maintains the same functionality) in Cangjie by looking into \"JAVA TYPE\", \"JAVA TYPE DESCRIPTION\" and \"JAVA CODE\" as context.\n\nJAVA TYPE:\n```\nIllegalArgumentException\n```\n\nJAVA TYPE DESCRIPTION:\nThrown to indicate that a method has been passed an illegal or\n inappropriate argument.\n\nJAVA CODE:\n```\n    @Test\n    public void testRenderInvalidEndBeforeStart() {\n        assertThrows(IllegalArgumentException.class, () -> render(\"@|@\"));\n    }\n```\n\nRESPONSE FORMAT: You must provide your response in the following format by enclosing IMPORTS and TRANSLATION inside three backticks. DO NOT include any additional information in your response. Your response should only contain the translated type without any other CANGJIE code syntax (e.g., assignments, definitions, expressions).\n\nCANGJIE IMPORTS:\n```\n<cangjie_imports_if_any>\n```\n\nCANGJIE TRANSLATION:\n```\n<cangjie_type_translation>\n```\n\nREASONING:\n<natural_language_reasoning>",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testRenderInvalidEndBeforeStart(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                },
+                "120-124:testRenderInvalidMissingText": {
+                    "start": 120,
+                    "end": 124,
+                    "body": [
+                        "@Test",
+                        "    public void testRenderInvalidMissingText() {",
+                        "        String str = render(\"@|bold|@\");",
+                        "        assertEquals(\"@|bold|@\", str);",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "testRenderInvalidMissingText()",
+                    "parameters": [],
+                    "calls": [
+                        [
+                            "jansi.src.main.org.fusesource.jansi.AnsiRenderer",
+                            "45-258:AnsiRenderer",
+                            "59-66:render"
+                        ],
+                        [
+                            "library",
+                            "org.junit.jupiter.api.Assertions",
+                            "assertEquals(java.lang.Object,java.lang.Object)"
+                        ]
+                    ],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-21 16:20:26",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-21 16:20:26",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testRenderInvalidMissingText(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "fields": {},
+            "cangjie_class_declaration": "public open class AnsiRendererTest {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/AnsiRendererTest_test.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/AnsiRendererTest_test.cj",
+    "import_map": {
+        "BeforeAll": "org.junit.jupiter.api.BeforeAll",
+        "Test": "org.junit.jupiter.api.Test",
+        "*": "static org.fusesource.jansi.AnsiRenderer.*",
+        "assertEquals": "static org.junit.jupiter.api.Assertions.assertEquals",
+        "assertFalse": "static org.junit.jupiter.api.Assertions.assertFalse",
+        "assertThrows": "static org.junit.jupiter.api.Assertions.assertThrows",
+        "assertTrue": "static org.junit.jupiter.api.Assertions.assertTrue"
+    }
+}

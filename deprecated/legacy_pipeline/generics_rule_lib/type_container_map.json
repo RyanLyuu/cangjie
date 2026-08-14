@@ -1,0 +1,225 @@
+{
+  "version": "2.0",
+  "description": "Java 泛型容器到仓颉容器的映射，含约束自动推导规则。当容器类型参数中出现 Any 时，Hash 容器需要替换为 AnyHashable。",
+  "mappings": {
+    "List": {
+      "cangjie": "ArrayList",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "List 接口在仓颉无直接对应，使用 ArrayList 实现"
+    },
+    "ArrayList": {
+      "cangjie": "ArrayList",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "直映射"
+    },
+    "LinkedList": {
+      "cangjie": "LinkedList",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "直映射"
+    },
+    "Map": {
+      "cangjie": "HashMap",
+      "type_args": 2,
+      "key_constraints": ["K <: Hashable & Equatable<K>"],
+      "notes": "Map 接口使用 HashMap 实现；键类型参数必须满足 Hashable 约束"
+    },
+    "HashMap": {
+      "cangjie": "HashMap",
+      "type_args": 2,
+      "key_constraints": ["K <: Hashable & Equatable<K>"],
+      "notes": "键类型必须满足 Hashable & Equatable<K>；如 K 为 Any 则替换为 AnyHashable",
+      "any_key_replacement": "AnyHashable"
+    },
+    "LinkedHashMap": {
+      "cangjie": "LinkedHashMap",
+      "type_args": 2,
+      "key_constraints": ["K <: Hashable & Equatable<K>"],
+      "notes": "键类型必须满足 Hashable & Equatable<K>",
+      "any_key_replacement": "AnyHashable"
+    },
+    "TreeMap": {
+      "cangjie": "TreeMap",
+      "type_args": 2,
+      "key_constraints": ["K <: Comparable<K>"],
+      "notes": "键类型必须满足 Comparable<K> 约束"
+    },
+    "ConcurrentHashMap": {
+      "cangjie": "ConcurrentHashMap",
+      "type_args": 2,
+      "key_constraints": ["K <: Hashable & Equatable<K>"],
+      "notes": "键类型约束同 HashMap",
+      "any_key_replacement": "AnyHashable"
+    },
+    "Set": {
+      "cangjie": "HashSet",
+      "type_args": 1,
+      "key_constraints": ["T <: Hashable & Equatable<T>"],
+      "notes": "元素类型必须满足 Hashable & Equatable<T>；如为 Any 则替换为 AnyHashable",
+      "any_element_replacement": "AnyHashable"
+    },
+    "HashSet": {
+      "cangjie": "HashSet",
+      "type_args": 1,
+      "key_constraints": ["T <: Hashable & Equatable<T>"],
+      "notes": "元素类型约束同 Set",
+      "any_element_replacement": "AnyHashable"
+    },
+    "LinkedHashSet": {
+      "cangjie": "LinkedHashSet",
+      "type_args": 1,
+      "key_constraints": ["T <: Hashable & Equatable<T>"],
+      "notes": "元素类型约束同 Set",
+      "any_element_replacement": "AnyHashable"
+    },
+    "TreeSet": {
+      "cangjie": "TreeSet",
+      "type_args": 1,
+      "key_constraints": ["T <: Comparable<T>"],
+      "notes": "元素类型必须满足 Comparable<T>"
+    },
+    "Optional": {
+      "cangjie": "Option",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "Optional<T> → Option<T>；isPresent() 需改为模式匹配或 let 绑定",
+      "api_transforms": {
+        "isPresent()": "let some = opt; opt != None  或  match(opt) { case Some(v) => ... case None => ... }",
+        "get()": "opt.getOrThrow()",
+        "orElse(default)": "opt ?? default",
+        "orElseGet(supplier)": "opt ?? supplier()",
+        "ifPresent(consumer)": "if (let Some(v) = opt) { consumer(v) }",
+        "map(mapper)": "opt.map(mapper)",
+        "flatMap(mapper)": "opt.flatMap(mapper)",
+        "filter(predicate)": "opt.filter(predicate)"
+      }
+    },
+    "Iterator": {
+      "cangjie": "Iterator",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "Iterator 直映射，但 hasNext()/next() → for-in 迭代模式"
+    },
+    "Iterable": {
+      "cangjie": "Iterable",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "Iterable 直映射"
+    },
+    "Collection": {
+      "cangjie": "Collection",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "Collection 直映射"
+    },
+    "Comparable": {
+      "cangjie": "Comparable",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "Comparable<T> 直映射；仓颉中是接口"
+    },
+    "Comparator": {
+      "cangjie": "Comparator",
+      "type_args": 2,
+      "key_constraints": [],
+      "notes": "Comparator<T, T> 在仓颉中需要检查标准库是否提供"
+    },
+    "Function": {
+      "cangjie": "函数类型",
+      "type_args": 0,
+      "notes": "Function<T, R> → (T) -> R；Consumer<T> → (T) -> Unit；Supplier<T> → () -> T；Predicate<T> → (T) -> Bool",
+      "api_transforms": {
+        "Function<T, R>": "(T) -> R",
+        "Consumer<T>": "(T) -> Unit",
+        "Supplier<T>": "() -> T",
+        "Predicate<T>": "(T) -> Bool",
+        "BiFunction<T, U, R>": "(T, U) -> R",
+        "BiConsumer<T, U>": "(T, U) -> Unit",
+        "UnaryOperator<T>": "(T) -> T",
+        "BinaryOperator<T>": "(T, T) -> T"
+      }
+    },
+    "Callable": {
+      "cangjie": "函数类型",
+      "type_args": 0,
+      "notes": "Callable<V> → () -> V（无检查异常版本）；有异常版本 → () -> V 或使用 Result<V, E>"
+    },
+    "CompletableFuture": {
+      "cangjie": "Future",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "仓颉并发原语不同；CompletableFuture<T> 需重构为 Future<T> 或 async/await 模式",
+      "api_transforms": {
+        "thenApply": "map",
+        "thenCompose": "flatMap",
+        "exceptionally": "recover",
+        "get()": "await"
+      }
+    },
+    "Stream": {
+      "cangjie": "无直接对应",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "仓颉无 Stream API；需重构为 for-in 循环或 Iterable 操作",
+      "migration_strategy": "Stream 操作逐个映射为仓颉集合操作或迭代器模式"
+    },
+    "Class": {
+      "cangjie": "GenericType",
+      "type_args": 1,
+      "key_constraints": [],
+      "notes": "Class<T> → GenericType<T>；如仓颉标准库无 GenericType 则重构为工厂闭包 () -> T"
+    },
+    "Thread": {
+      "cangjie": "Thread",
+      "type_args": 0,
+      "key_constraints": [],
+      "notes": "Thread 无泛型参数，直映射"
+    },
+    "Runnable": {
+      "cangjie": "函数类型",
+      "type_args": 0,
+      "notes": "Runnable → () -> Unit"
+    },
+    "AutoCloseable": {
+      "cangjie": "Resource",
+      "type_args": 0,
+      "notes": "AutoCloseable → use 语句中的 Resource 接口；try-with-resources → try (r = ...) { ... }"
+    },
+    "Path": {
+      "cangjie": "Path",
+      "type_args": 0,
+      "key_constraints": [],
+      "notes": "Path 无泛型参数，检查仓颉标准库是否提供"
+    },
+    "Pair": {
+      "cangjie": "元组类型",
+      "type_args": 2,
+      "key_constraints": [],
+      "notes": "Pair<A, B> → (A, B) 元组类型"
+    },
+    "Entry": {
+      "cangjie": "元组类型",
+      "type_args": 2,
+      "key_constraints": [],
+      "notes": "Map.Entry<K, V> → (K, V) 元组类型"
+    },
+    "StringBuilder": {
+      "cangjie": "StringBuilder",
+      "type_args": 0,
+      "key_constraints": [],
+      "notes": "StringBuilder 无泛型参数，直映射"
+    }
+  },
+  "constraint_inference_rules": {
+    "description": "当类型参数为 Any 时，Hash 容器需要替换为满足约束的特化类型",
+    "hash_key_containers": ["HashMap", "LinkedHashMap", "ConcurrentHashMap"],
+    "hash_element_containers": ["HashSet", "LinkedHashSet"],
+    "comparable_element_containers": ["TreeSet", "TreeMap"],
+    "replacement": {
+      "Any_in_key_position": "AnyHashable",
+      "Any_in_hash_element_position": "AnyHashable"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "backup_dir": "data/java/analysis/backups/jansi_type_resolution_reset_20260521_165939",
+  "schema_files_backed_up": 64,
+  "type_entries_seen": 2904,
+  "type_entries_reset": 2904,
+  "unique_source_types": 121,
+  "universal_entries_removed": 121,
+  "log_moved_to": "data/java/analysis/backups/jansi_type_resolution_reset_20260521_165939/jansi_deepseek-chat_0.0_type_resolution.log"
+}

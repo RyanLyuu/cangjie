@@ -1,0 +1,213 @@
+{
+  "category": "semantic_gap",
+  "description": "Java 与仓颉的语义差异规则：这些规则覆盖因两种语言的泛型实现机制不同而需要特别注意的场景，是翻译中最易出错的区域。",
+  "rules": [
+    {
+      "id": "C33",
+      "subcategory": "reified_generics",
+      "name": "仓颉泛型具化（无类型擦除）",
+      "java_ast_pattern": {
+        "node_type": "MethodDeclaration",
+        "constraint_type": "overload_by_generic"
+      },
+      "java_regex_fallback": "void\\s+(\\w+)\\(List<String>\\s+\\w+\\)\\s*\\{[^}]*\\}\\s*void\\s+\\1\\(List<Integer>\\s+\\w+\\)",
+      "cangjie_template": "func $1(list: List<String>) { ... }\nfunc $1(list: List<Int64>) { ... }  // 合法：仓颉无类型擦除",
+      "transforms": [],
+      "constraints": {
+        "cangjie_semantics": "仓颉泛型在运行时保留类型信息，不同类型参数的泛型是不同的类型。Java 中因类型擦除导致的重载冲突在仓颉中不存在。",
+        "requires": [],
+        "conflicts": [],
+        "action": "直接保留两个重载方法，无需修改",
+        "note": "这是仓颉的优势场景，Java 的类型擦除问题在仓颉中自然消失"
+      },
+      "priority": 6,
+      "example": {
+        "java": "void process(List<String> s) { }\nvoid process(List<Integer> i) { } // Java 编译错误",
+        "cangjie": "func process(list: List<String>) { }\nfunc process(list: List<Int64>) { }  // 合法",
+        "note": "仓颉无类型擦除，不同泛型参数是不同类型"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C34",
+      "subcategory": "instanceof_generics",
+      "name": "instanceof 泛型类型检查",
+      "java_ast_pattern": {
+        "node_type": "InstanceofExpression",
+        "has_type_arguments": true
+      },
+      "java_regex_fallback": "instanceof\\s+(\\w+)<\\s*[^>]+\\s*>",
+      "cangjie_template": "match value { case v: $1<具体类型> => ... }",
+      "transforms": [
+        { "from": "instanceof 泛型类型", "to": "仓颉模式匹配", "scope": "type_check" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉模式匹配可检查具体类型参数，因为泛型是具化的。但类型参数必须在编译时已知。",
+        "requires": [],
+        "conflicts": [],
+        "note": "Java 中 instanceof List<String> 在编译时有警告，运行时因擦除总为 true；仓颉中可精确检查"
+      },
+      "priority": 6,
+      "example": {
+        "java": "if (list instanceof List<String>)",
+        "cangjie": "match list {\n    case l: List<String> => ...\n    case _ => ...\n}",
+        "note": "仓颉模式匹配可精确检查泛型类型参数"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C35",
+      "subcategory": "generic_exception",
+      "name": "泛型异常",
+      "java_ast_pattern": {
+        "node_type": "ClassDeclaration",
+        "extends_exception": true,
+        "has_type_parameters": true
+      },
+      "java_regex_fallback": "class\\s+(\\w+Exception)\\s*<\\s*[A-Z]\\w*\\s*>\\s+extends\\s+\\w+Exception",
+      "cangjie_template": "// 仓颉不支持泛型异常，请改为非泛型异常或使用 Result<T, E>",
+      "transforms": [],
+      "constraints": {
+        "cangjie_semantics": "仓颉的异常类不能有泛型参数，与 Java 根本不同",
+        "requires": [],
+        "conflicts": [],
+        "action": "标记为不支持：建议重构为非泛型异常类，或使用 Result<T, E> 模式"
+      },
+      "priority": 4,
+      "example": {
+        "java": "class MyException<T> extends Exception { private T data; }",
+        "cangjie": "// 方案1: 去掉泛型\nclass MyException <: Exception { }\n\n// 方案2: 使用 Result\nclass Result<T, E> { ... }",
+        "note": "建议改为非泛型异常或 Result 模式"
+      },
+      "validation_probes": ["标记为需手动处理", "确认异常类无泛型参数"]
+    },
+    {
+      "id": "C36",
+      "subcategory": "static_type_param",
+      "name": "静态字段使用类型参数",
+      "java_ast_pattern": {
+        "node_type": "FieldDeclaration",
+        "is_static": true,
+        "uses_type_parameter": true
+      },
+      "java_regex_fallback": "static\\s+([A-Z]\\w*)\\s+\\w+\\s*[=;]",
+      "cangjie_template": "// 错误：静态字段不能使用类的泛型参数，需重构",
+      "transforms": [],
+      "constraints": {
+        "cangjie_semantics": "仓颉静态成员不能引用类的类型参数，与 Java 一致但需要确认迁移正确性",
+        "requires": [],
+        "conflicts": [],
+        "action": "标记为编译错误：需移除静态字段的类型参数或改为实例字段"
+      },
+      "priority": 5,
+      "example": {
+        "java": "static T field;",
+        "cangjie": "// 静态字段不能依赖类型参数 T\n// 方案1: 改为实例字段\n// 方案2: 使用具体类型",
+        "note": "Java 和仓颉都不允许，但需要确认迁移正确性"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C37",
+      "subcategory": "array_covariance",
+      "name": "数组协变",
+      "java_ast_pattern": {
+        "node_type": "AssignmentExpression",
+        "constraint_type": "array_covariance"
+      },
+      "java_regex_fallback": "",
+      "cangjie_template": "// 仓颉数组不变：String[] 不是 Object[] 的子类型",
+      "transforms": [],
+      "constraints": {
+        "cangjie_semantics": "仓颉中 Array<String> 和 Array<Any> 是不同类型，没有子类型关系。Java 的数组协变在仓颉中不存在。",
+        "requires": [],
+        "conflicts": [],
+        "note": "Java 允许 String[] 赋给 Object[]（协变数组），仓颉不允许"
+      },
+      "priority": 5,
+      "example": {
+        "java": "Object[] arr = new String[5]; // Java 合法但运行时不安全",
+        "cangjie": "// 仓颉中不允许\n// let arr: Array<Any> = Array<String>(...) // 编译错误\n// 需要显式转换或使用一致性类型",
+        "note": "仓颉数组不变，需重构"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C38",
+      "subcategory": "bridge_method",
+      "name": "桥方法消除",
+      "java_ast_pattern": {
+        "node_type": "MethodDeclaration",
+        "constraint_type": "bridge_method"
+      },
+      "java_regex_fallback": "",
+      "cangjie_template": "// 仓颉无需桥方法，直接保留实际方法即可",
+      "transforms": [],
+      "constraints": {
+        "cangjie_semantics": "Java 编译器生成的桥方法在仓颉中不需要，因为仓颉无类型擦除",
+        "requires": [],
+        "conflicts": [],
+        "action": "移除 Java 编译器生成的桥方法"
+      },
+      "priority": 6,
+      "example": {
+        "java": "// 桥方法 (编译器生成)\npublic String toString() { return value; }",
+        "cangjie": "// 无需桥方法，直接实现\npublic func toString(): String { return value }",
+        "note": "仓颉无类型擦除，不需要桥方法"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C39",
+      "subcategory": "type_cast",
+      "name": "泛型类型强转",
+      "java_ast_pattern": {
+        "node_type": "CastExpression",
+        "uses_type_parameter": true
+      },
+      "java_regex_fallback": "\\(\\s*([A-Z]\\w*)\\s*\\)\\s+\\w+",
+      "cangjie_template": "$2 as $1  // 或 $2 as? $1",
+      "transforms": [
+        { "from": "(T) obj", "to": "obj as T 或 obj as? T", "scope": "cast_expression" }
+      ],
+      "constraints": {
+        "cangjie_semantics": "仓颉使用 as 进行类型转换，as? 返回 Option 类型",
+        "requires": [],
+        "conflicts": []
+      },
+      "priority": 7,
+      "example": {
+        "java": "T obj = (T) value;",
+        "cangjie": "let obj = value as T  // 如果确定类型\nlet obj = value as? T  // 如果不确定",
+        "note": "as 直接转换，as? 安全转换返回 Option"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    },
+    {
+      "id": "C40",
+      "subcategory": "generic_overload",
+      "name": "泛型方法重载（无擦除冲突）",
+      "java_ast_pattern": {
+        "node_type": "MethodDeclaration",
+        "constraint_type": "generic_overload"
+      },
+      "java_regex_fallback": "",
+      "cangjie_template": "// 仓颉允许同名方法不同泛型参数的重载，直接保留",
+      "transforms": [],
+      "constraints": {
+        "cangjie_semantics": "因仓颉无类型擦除，Java 中因擦除冲突的重载在仓颉中合法",
+        "requires": [],
+        "conflicts": [],
+        "action": "直接保留两个重载方法",
+        "note": "顺向优势：Java 禁止的重载在仓颉中合法"
+      },
+      "priority": 6,
+      "example": {
+        "java": "void process(List<String> s) { }\nvoid process(List<Integer> i) { } // Java 编译错误（类型擦除冲突）",
+        "cangjie": "func process(list: List<String>) { }\nfunc process(list: List<Int64>) { }  // 合法",
+        "note": "仓颉无类型擦除，不同泛型参数的方法可以重载"
+      },
+      "validation_probes": ["cjpm build 是否通过"]
+    }
+  ]
+}

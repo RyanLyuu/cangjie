@@ -3,7 +3,7 @@
 set -euo pipefail
 
 if [ "$#" -lt 4 ]; then
-  echo "Usage: $0 <project> <schema_model> <suffix> <temperature> [translate_tests] [agent_model]" >&2
+  echo "Usage: $0 <project> <schema_model> <suffix> <temperature> [translate_tests] [agent_model] [agent_transport] [max_builds]" >&2
   exit 1
 fi
 
@@ -13,6 +13,8 @@ suffix=$3
 temperature=$4
 translate_tests=${5:-false}
 agent_model=${6:-}
+agent_transport=${7:-app-server}
+max_builds=${8:-3}
 
 args=(
   --project "$project"
@@ -29,6 +31,8 @@ fi
 if [ -n "$agent_model" ]; then
   args+=(--agent-model "$agent_model")
 fi
+args+=(--agent-transport "$agent_transport")
+args+=(--max-builds "$max_builds")
 
 export PYTHONPATH="$(pwd)${PYTHONPATH:+:$PYTHONPATH}"
 python3 -m src.java.translation.baseline_fragment_translation "${args[@]}"

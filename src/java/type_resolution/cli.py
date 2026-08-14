@@ -2,21 +2,26 @@ from __future__ import annotations
 
 import argparse
 import json
-import shutil
-import subprocess
 from pathlib import Path
-from types import SimpleNamespace
 
 from .adapter import default_run_dir
 from .agent import CodexRunner
 from .probe import CangjieTypeProbe
 from .resolver import TypeResolutionService
 from .schema import load_schema, schema_paths
+from src.java.translation.skeleton_stage import (
+    new_request as new_skeleton_request,
+    new_skeleton_runner,
+    run_skeleton_stage,
+)
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Resolve Java type occurrences with Codex, generate a TODO skeleton, and build it"
+        description=(
+            "Resolve Java type occurrences, then have a Codex agent invoke the "
+            "MCP skeleton generator and build it"
+        )
     )
     parser.add_argument("--project", required=True)
     parser.add_argument("--model", required=True, help="Schema namespace used by create_schema")
@@ -26,10 +31,13 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--agent-model", default="", help="Codex model override; default uses Codex config")
     parser.add_argument("--codex-executable", default="codex")
     parser.add_argument("--cjc-executable", default="cjc")
-    parser.add_argument("--cjpm-executable", default="cjpm")
     parser.add_argument("--agent-timeout", type=int, default=1800)
     parser.add_argument("--compile-timeout", type=int, default=300)
     parser.add_argument("--max-attempts", type=int, default=3)
+    parser.add_argument(
+        "--max-occurrences-per-prompt", type=int, default=128,
+        help="Bound one type-resolution prompt for large schema files.",
+    )
     parser.add_argument("--output-dir", default="")
     parser.add_argument("--types-only", action="store_true")
     return parser
@@ -57,6 +65,7 @@ def main(argv: list[str] | None = None) -> int:
         workspace=workspace,
         project=args.project,
         max_attempts=args.max_attempts,
+        max_occurrences_per_prompt=args.max_occurrences_per_prompt,
     )
     summary = service.resolve_project(
         schema_dir,
@@ -68,109 +77,80 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     paths = schema_paths(schema_dir, include_tests=args.include_tests)
-    skeleton_dir = Path(f"data/java/skeletons/{args.project}")
+    skeleton_runner = new_skeleton_runner(
+        executable=args.codex_executable,
+        model=args.agent_model,
+        timeout=args.agent_timeout,
+        workspace=workspace,
+    )
     last_build = None
     build_attempts = 0
     for build_attempt in range(1, 4):
         build_attempts = build_attempt
-        _generate_skeleton(args, schema_dir)
-        _write_placeholder_files(paths, args)
-        last_build = _run_build(skeleton_dir, args.cjpm_executable, args.compile_timeout)
-        if last_build.returncode == 0:
+        stage = run_skeleton_stage(
+            skeleton_runner,
+            new_skeleton_request(
+                project=args.project, model=args.model, temperature=args.temperature,
+                suffix=args.suffix, include_tests=args.include_tests,
+                compile_timeout=args.compile_timeout,
+            ),
+            workspace=workspace,
+        )
+        if stage.status == "success":
             _refresh_resolution_counts(summary, service)
             summary["skeleton_build"] = {
                 "status": "success",
                 "attempts": build_attempt,
                 "fallback_pass": False,
+                "via": "mcp-agent",
+                "request_id": stage.request_id,
             }
             _write_summary(output_dir, summary)
             print(json.dumps(summary, indent=2, ensure_ascii=False))
             return 0
-        impacted = _impacted_schema_paths(paths, last_build.output)
-        changed = sum(service.repair_schema(path, last_build.output) for path in impacted)
+        if stage.status != "build_failed":
+            raise SystemExit(
+                f"skeleton MCP stage failed ({stage.status}): {stage.diagnostic}"
+            )
+        last_build = _BuildResult(stage.build_returncode, stage.diagnostic)
+        impacted = _impacted_schema_paths(paths, stage.diagnostic)
+        changed = sum(service.repair_schema(path, stage.diagnostic) for path in impacted)
         if changed == 0:
             break
 
     impacted = _impacted_schema_paths(paths, last_build.output if last_build else "")
     for path in impacted:
         service.fallback_schema(path)
-    _generate_skeleton(args, schema_dir)
-    _write_placeholder_files(paths, args)
-    final_build = _run_build(skeleton_dir, args.cjpm_executable, args.compile_timeout)
+    final_stage = run_skeleton_stage(
+        skeleton_runner,
+        new_skeleton_request(
+            project=args.project, model=args.model, temperature=args.temperature,
+            suffix=args.suffix, include_tests=args.include_tests,
+            compile_timeout=args.compile_timeout,
+        ),
+        workspace=workspace,
+    )
     build_attempts += 1
     _refresh_resolution_counts(summary, service)
     summary["skeleton_build"] = {
-        "status": "success" if final_build.returncode == 0 else "failed",
+        "status": "success" if final_stage.status == "success" else "failed",
         "attempts": build_attempts,
         "fallback_pass": True,
-        "diagnostic": final_build.output if final_build.returncode else "",
+        "via": "mcp-agent",
+        "request_id": final_stage.request_id,
+        "diagnostic": final_stage.diagnostic if final_stage.status != "success" else "",
     }
     _write_summary(output_dir, summary)
     print(json.dumps(summary, indent=2, ensure_ascii=False))
-    if final_build.returncode != 0:
+    if final_stage.status != "success":
         raise SystemExit("TODO skeleton failed cjpm build after deterministic fallback")
     return 0
-
-
-def _generate_skeleton(args, schema_dir: Path) -> None:
-    from src.java.translation.create_skeleton import main as create_skeleton
-
-    create_skeleton(SimpleNamespace(
-        project=args.project,
-        model=args.model,
-        temperature=args.temperature,
-        suffix=args.suffix,
-        translate_tests="true" if args.include_tests else "false",
-        schemas_dir=str(schema_dir),
-    ))
-
-
-def _write_placeholder_files(paths: list[Path], args) -> None:
-    names = set()
-    for path in paths:
-        for placeholder in load_schema(path).get("generated_type_placeholders", []):
-            name = str(placeholder.get("name", "")).strip()
-            if name:
-                names.add(name)
-    if not names:
-        return
-    package = args.project.replace("-", "_")
-    content = f"package {package}\n\n" + "\n".join(
-        f"public interface {name} {{}}" for name in sorted(names)
-    ) + "\n"
-    roots = [
-        Path(f"data/java/skeletons/{args.project}"),
-        Path(f"data/java/skeletons/translations/{args.model}/{args.temperature}/{args.project}"),
-    ]
-    for root in roots:
-        target = root / "src" / "x2cangjie_type_placeholders.cj"
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(content, encoding="utf-8")
 
 
 class _BuildResult:
     def __init__(self, returncode: int, output: str):
         self.returncode = returncode
         self.output = output
-
-
-def _run_build(root: Path, executable: str, timeout: int) -> _BuildResult:
-    command = shutil.which(executable) or (executable if Path(executable).is_file() else "")
-    if not command:
-        raise SystemExit(f"Cangjie package manager not found: {executable}")
-    try:
-        result = subprocess.run(
-            [command, "build"],
-            capture_output=True,
-            text=True,
-            timeout=timeout,
-            cwd=root,
-            check=False,
-        )
-    except subprocess.TimeoutExpired:
-        return _BuildResult(124, f"cjpm build timed out after {timeout}s")
-    output = "\n".join(part.strip() for part in (result.stdout, result.stderr) if part.strip())
-    return _BuildResult(result.returncode, output)
 
 
 def _impacted_schema_paths(paths: list[Path], diagnostic: str) -> list[Path]:

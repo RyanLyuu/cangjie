@@ -1,0 +1,6 @@
+{
+  "backup_dir": "data/java/analysis/backups/jansi_duplicate_schema_cleanup_20260521_170354",
+  "duplicate_files_moved": 32,
+  "remaining_schema_files": 32,
+  "remaining_type_entries_reset": 1452
+}

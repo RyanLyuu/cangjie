@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Resolve types with Codex, generate the TODO skeleton, and require cjpm build success.
+# Resolve types, then ask a Codex skeleton agent to invoke the skeleton MCP tool.
+# The MCP tool writes the TODO skeleton and requires cjpm build success.
 # Usage: ./scripts/java/create_skeleton.sh <project> <schema_model> <suffix> <temperature> [translate_tests] [agent_model]
 # translate_tests: "true" or "false" (default: false)
 

@@ -1,0 +1,14 @@
+[package]
+  cjc-version = "1.0.5"
+  name = "commons_cli"
+  description = "nothing here"
+  version = "1.0.0"
+  src-dir = "src"
+  target-dir = ""
+  output-type = "static"
+  compile-option = "-Woff unused"
+  override-compile-option = ""
+  link-option = ""
+  package-configuration = {}
+
+[dependencies]

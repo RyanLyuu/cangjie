@@ -49,6 +49,7 @@ class TypeResolutionService:
     workspace: Path
     project: str
     max_attempts: int = 3
+    max_occurrences_per_prompt: int = 128
     _sessions: dict[str, str] = field(default_factory=dict, init=False)
     _attempts: dict[str, int] = field(default_factory=dict, init=False)
     _feedback: dict[str, list[str]] = field(default_factory=dict, init=False)
@@ -100,6 +101,22 @@ class TypeResolutionService:
             self._attempts.setdefault(occurrence.occurrence_id, 0)
             self._feedback.setdefault(occurrence.occurrence_id, [])
 
+        # Project-defined names already have the target spelling. Resolve them
+        # locally before constructing an agent prompt; large libraries repeat
+        # these names hundreds of times and do not need model deliberation.
+        for occurrence in tuple(pending.values()):
+            preserved = self._preserve_project_type(occurrence)
+            if preserved is None:
+                continue
+            self._resolutions[occurrence.occurrence_id] = OccurrenceResolution(
+                occurrence=occurrence,
+                decision=preserved,
+                attempts=0,
+                probe=ProbeResult(True, "project type name preserved before agent prompt"),
+                status="resolved-project",
+            )
+            pending.pop(occurrence.occurrence_id, None)
+
         while pending and any(
             self._attempts[occurrence_id] < self.max_attempts for occurrence_id in pending
         ):
@@ -107,6 +124,7 @@ class TypeResolutionService:
                 item for item in pending.values()
                 if self._attempts[item.occurrence_id] < self.max_attempts
             ]
+            active = active[: self.max_occurrences_per_prompt]
             prompt = self._initial_prompt(schema, active) if not self._sessions.get(path.name) else (
                 self._retry_prompt(active)
             )
@@ -336,9 +354,45 @@ class TypeResolutionService:
             "to occurrence_id; do not merge identical source strings. Return exactly one decision for "
             "every occurrence and no extra occurrences.\n\n"
             f"PROJECT TYPES:\n{json.dumps(sorted(self._project_types), ensure_ascii=False)}\n\n"
-            f"FILE SCHEMA:\n{json.dumps(schema, indent=2, ensure_ascii=False)}\n\n"
+            f"FILE SCHEMA CONTEXT:\n{json.dumps(self._schema_context(schema, occurrences), indent=2, ensure_ascii=False)}\n\n"
             f"TYPE OCCURRENCES:\n{json.dumps([item.to_dict() for item in occurrences], indent=2, ensure_ascii=False)}"
         )
+
+    @staticmethod
+    def _schema_context(schema: dict, occurrences: list[TypeOccurrence]) -> dict[str, Any]:
+        """Keep type prompts bounded while retaining the selected fragment context."""
+        classes = schema.get("classes", {})
+        selected: dict[str, Any] = {}
+        for occurrence in occurrences:
+            class_info = classes.get(occurrence.class_key, {})
+            if not isinstance(class_info, dict):
+                continue
+            fragment_group = {
+                "field": "fields",
+                "static_initializer": "static_initializers",
+                "method": "methods",
+            }.get(occurrence.fragment_kind, "")
+            fragment = class_info.get(fragment_group, {}).get(occurrence.fragment_key, {})
+            selected.setdefault(occurrence.class_key, {
+                "extends": class_info.get("extends", []),
+                "implements": class_info.get("implements", []),
+                "type_parameters": class_info.get("type_parameters", []),
+                "fragment": {},
+            })
+            if isinstance(fragment, dict):
+                selected[occurrence.class_key]["fragment"][occurrence.fragment_key] = {
+                    key: fragment.get(key)
+                    for key in (
+                        "signature", "body", "parameters", "return_types",
+                        "body_types", "type_parameters", "types",
+                    )
+                    if key in fragment
+                }
+        return {
+            "path": schema.get("path", ""),
+            "imports": schema.get("imports", {}),
+            "classes": selected,
+        }
 
     def _retry_prompt(self, occurrences: list[TypeOccurrence]) -> str:
         payload = []

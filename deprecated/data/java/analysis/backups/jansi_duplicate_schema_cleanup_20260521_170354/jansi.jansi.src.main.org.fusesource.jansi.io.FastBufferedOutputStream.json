@@ -1,0 +1,668 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/jansi/src/main/java/org/fusesource/jansi/io/FastBufferedOutputStream.java",
+    "imports": {
+        "18-18:import java.io.FilterOutputStream;": {
+            "start": 18,
+            "end": 18,
+            "body": "import java.io.FilterOutputStream;"
+        },
+        "19-19:import java.io.IOException;": {
+            "start": 19,
+            "end": 19,
+            "body": "import java.io.IOException;"
+        },
+        "20-20:import java.io.OutputStream;": {
+            "start": 20,
+            "end": 20,
+            "body": "import java.io.OutputStream;"
+        }
+    },
+    "classes": {
+        "25-68:FastBufferedOutputStream": {
+            "start": 25,
+            "end": 68,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [],
+            "implements": [],
+            "extends": [
+                "java.io.FilterOutputStream"
+            ],
+            "methods": {
+                "30-32:FastBufferedOutputStream": {
+                    "start": 30,
+                    "end": 32,
+                    "body": [
+                        "public FastBufferedOutputStream(OutputStream out) {",
+                        "        super(out);",
+                        "    }"
+                    ],
+                    "is_constructor": true,
+                    "annotations": [],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [],
+                    "body_types": [],
+                    "signature": "FastBufferedOutputStream( OutputStream out)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "OutputStream",
+                            "name": "out"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {
+                            "|OutputStream|out": {
+                                "identifier": "|OutputStream|out",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "OutputStream",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": "super()",
+                    "translation_status": "completed",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "success",
+                        "message": "Compilation successful"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 3.4804019927978516,
+                    "generation_timestamp": "2026-05-14T20:39:03.924014",
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public init(out: OutputStream) {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 4,
+                        "test_execution": 4
+                    },
+                    "final_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 3,
+                        "test_execution": 4
+                    }
+                },
+                "34-40:write": {
+                    "start": 34,
+                    "end": 40,
+                    "body": [
+                        "@Override",
+                        "    public void write(int b) throws IOException {",
+                        "        if (count >= buf.length) {",
+                        "            flushBuffer();",
+                        "        }",
+                        "        buf[count++] = (byte) b;",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Override"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "byte"
+                    ],
+                    "signature": "write( int b)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "int",
+                            "name": "b"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {
+                            "byte": {
+                                "identifier": "byte",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "body_types",
+                                "timestamp": "",
+                                "source_type": "byte",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "parameters": {
+                            "|int|b": {
+                                "identifier": "|int|b",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [
+                        "    public open func write(b: Int64): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "translation_status": "attempted",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "error",
+                        "message": "Compilation failed: error: undeclared identifier 'toByte'\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/FastBufferedOutputStream.cj:23:24:\n   | \n23 |         buf[count] = b.toByte()\n   |                        ^^^^^^ \n   |"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 7.413004398345947,
+                    "generation_timestamp": "2026-05-14T20:39:11.354595",
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func write(b: Int64): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 4,
+                        "test_execution": 4
+                    },
+                    "final_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 1,
+                        "test_execution": 4
+                    }
+                },
+                "42-54:write": {
+                    "start": 42,
+                    "end": 54,
+                    "body": [
+                        "@Override",
+                        "    public void write(byte b[], int off, int len) throws IOException {",
+                        "        if (len >= buf.length) {",
+                        "            flushBuffer();",
+                        "            out.write(b, off, len);",
+                        "            return;",
+                        "        }",
+                        "        if (len > buf.length - count) {",
+                        "            flushBuffer();",
+                        "        }",
+                        "        System.arraycopy(b, off, buf, count, len);",
+                        "        count += len;",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Override"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "write( byte b,  int off,  int len)",
+                    "parameters": [
+                        {
+                            "modifier": "",
+                            "type": "byte",
+                            "name": "b"
+                        },
+                        {
+                            "modifier": "",
+                            "type": "int",
+                            "name": "off"
+                        },
+                        {
+                            "modifier": "",
+                            "type": "int",
+                            "name": "len"
+                        }
+                    ],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {
+                            "|byte|b": {
+                                "identifier": "|byte|b",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "byte",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "|int|off": {
+                                "identifier": "|int|off",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            },
+                            "|int|len": {
+                                "identifier": "|int|len",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "parameters",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "types": {}
+                    },
+                    "translation": [
+                        "    public open func write(b: Int8, off: Int64, len: Int64): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "translation_status": "attempted",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "error",
+                        "message": "Compilation failed: error: undeclared identifier 'out'\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/FastBufferedOutputStream.cj:26:9:\n   | \n26 |         out.write(b, off, len)\n   |         ^ \n   |\nerror: invalid subscript operator [] on type 'Int8' with index type 'Int64'\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/FastBufferedOutputStream.cj:33:26:\n   | \n33 |         buf[count + i] = b[off + i]\n   |                          ^^^^^^^^^^ \n   | \n   # note: you may want to implement 'operator func [](index0: Int64)' for type 'Int8'"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 9.797306537628174,
+                    "generation_timestamp": "2026-05-14T20:39:21.166135",
+                    "model_name": "",
+                    "is_overload": true,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func write(b: Int8, off: Int64, len: Int64): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 4,
+                        "test_execution": 4
+                    },
+                    "final_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 1,
+                        "test_execution": 4
+                    }
+                },
+                "56-61:flushBuffer": {
+                    "start": 56,
+                    "end": 61,
+                    "body": [
+                        "private void flushBuffer() throws IOException {",
+                        "        if (count > 0) {",
+                        "            out.write(buf, 0, count);",
+                        "            count = 0;",
+                        "        }",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [],
+                    "modifiers": [
+                        "private"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "flushBuffer()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [
+                        "    private func flushBuffer(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "translation_status": "attempted",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "error",
+                        "message": "Compilation failed: error: undeclared identifier 'out'\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/FastBufferedOutputStream.cj:29:9:\n   | \n29 |         out.write(buf, 0, count)\n   |         ^ \n   |"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 6.906701564788818,
+                    "generation_timestamp": "2026-05-14T20:39:28.098211",
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    private func flushBuffer(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 4,
+                        "test_execution": 4
+                    },
+                    "final_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 1,
+                        "test_execution": 4
+                    }
+                },
+                "63-67:flush": {
+                    "start": 63,
+                    "end": 67,
+                    "body": [
+                        "@Override",
+                        "    public void flush() throws IOException {",
+                        "        flushBuffer();",
+                        "        out.flush();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Override"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "flush()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "return_types",
+                                "timestamp": "",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [
+                        "    public open func flush(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "translation_status": "attempted",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "error",
+                        "message": "Compilation failed: error: undeclared identifier 'out'\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/FastBufferedOutputStream.cj:33:9:\n   | \n33 |         out.flush()\n   |         ^ \n   |"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 7.0296595096588135,
+                    "generation_timestamp": "2026-05-14T20:39:35.144108",
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func flush(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 4,
+                        "test_execution": 4
+                    },
+                    "final_budget": {
+                        "syntactic": 4,
+                        "cangjie_compilation": 1,
+                        "test_execution": 4
+                    }
+                }
+            },
+            "fields": {
+                "27-27:buf": {
+                    "start": 27,
+                    "end": 27,
+                    "enum_constant": false,
+                    "body": [
+                        "protected final byte[] buf = new byte[8192];"
+                    ],
+                    "modifiers": [
+                        "protected",
+                        "final"
+                    ],
+                    "types": [
+                        "byte[]"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "byte[]": {
+                                "identifier": "byte[]",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "byte[]",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": [
+                        "    let buf: Array<Byte> = throw Exception('TODO')\n"
+                    ],
+                    "translation_status": "attempted",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "error",
+                        "message": "Compilation failed: error: cannot convert an integer literal to type '(Int64) -> UInt8'\n  ==> /home/lin/computer_science/paperCode/x2cangjie/x2cangjie/data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/FastBufferedOutputStream.cj:10:46:\n   | \n10 |     let buf: Array<Byte> = Array<Byte>(8192, 0)  // Already translated, compilation failed\n   |                                              ^ \n   |"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 3.7733840942382812,
+                    "generation_timestamp": "2026-05-14T20:38:58.248443",
+                    "model_name": "",
+                    "partial_translation": [
+                        "    let buf: Array<Byte> = throw Exception('TODO')\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 2,
+                        "cangjie_compilation": 2,
+                        "test_execution": 2
+                    },
+                    "final_budget": {
+                        "syntactic": 2,
+                        "cangjie_compilation": 1,
+                        "test_execution": 2
+                    }
+                },
+                "28-28:count": {
+                    "start": 28,
+                    "end": 28,
+                    "enum_constant": false,
+                    "body": [
+                        "protected int count;"
+                    ],
+                    "modifiers": [
+                        "protected"
+                    ],
+                    "types": [
+                        "int"
+                    ],
+                    "type_translations": {
+                        "return_types": {},
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {
+                            "int": {
+                                "identifier": "int",
+                                "translated": false,
+                                "attempted": false,
+                                "type_variation": "types",
+                                "timestamp": "",
+                                "source_type": "int",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "",
+                                "reasoning": "",
+                                "prompt": "",
+                                "feedback": ""
+                            }
+                        }
+                    },
+                    "translation": "var count: Int64 = 0",
+                    "translation_status": "completed",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": {
+                        "outcome": "success",
+                        "message": "Compilation successful"
+                    },
+                    "test_execution": "pending",
+                    "elapsed_time": 2.1611907482147217,
+                    "generation_timestamp": "2026-05-14T20:39:00.426425",
+                    "model_name": "",
+                    "partial_translation": [
+                        "    var count: Int64 = throw Exception('TODO')\n"
+                    ],
+                    "original_budget": {
+                        "syntactic": 2,
+                        "cangjie_compilation": 2,
+                        "test_execution": 2
+                    },
+                    "final_budget": {
+                        "syntactic": 2,
+                        "cangjie_compilation": 2,
+                        "test_execution": 2
+                    }
+                }
+            },
+            "cangjie_class_declaration": "public open class FastBufferedOutputStream {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/FastBufferedOutputStream.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/FastBufferedOutputStream.cj",
+    "import_map": {
+        "FilterOutputStream": "java.io.FilterOutputStream",
+        "IOException": "java.io.IOException",
+        "OutputStream": "java.io.OutputStream"
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/jansi/src/test/java/org/fusesource/jansi/internal/Kernel32Test.java",
+    "imports": {
+        "18-18:import org.junit.jupiter.api.Test;": {
+            "start": 18,
+            "end": 18,
+            "body": "import org.junit.jupiter.api.Test;"
+        },
+        "19-19:import org.junit.jupiter.api.condition.EnabledOnOs;": {
+            "start": 19,
+            "end": 19,
+            "body": "import org.junit.jupiter.api.condition.EnabledOnOs;"
+        },
+        "20-20:import org.junit.jupiter.api.condition.OS;": {
+            "start": 20,
+            "end": 20,
+            "body": "import org.junit.jupiter.api.condition.OS;"
+        },
+        "22-22:import static org.junit.jupiter.api.Assertions.assertEquals;": {
+            "start": 22,
+            "end": 22,
+            "body": "import static org.junit.jupiter.api.Assertions.assertEquals;"
+        }
+    },
+    "classes": {
+        "24-32:Kernel32Test": {
+            "start": 24,
+            "end": 32,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [],
+            "implements": [],
+            "extends": [],
+            "methods": {
+                "26-31:testErrorMessage": {
+                    "start": 26,
+                    "end": 31,
+                    "body": [
+                        "@Test",
+                        "    @EnabledOnOs(OS.WINDOWS)",
+                        "    public void testErrorMessage() {",
+                        "        String msg = Kernel32.getErrorMessage(500);",
+                        "        assertEquals(msg, \"User profile cannot be loaded.\");",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test",
+                        "@EnabledOnOs(OS.WINDOWS)"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [
+                        "String"
+                    ],
+                    "signature": "testErrorMessage()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 17:12:36",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {
+                            "String": {
+                                "identifier": "String",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "body_types",
+                                "timestamp": "2026-05-13 17:12:36",
+                                "source_type": "String",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "String",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testErrorMessage(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "fields": {},
+            "cangjie_class_declaration": "public open class Kernel32Test {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/Kernel32Test_test.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/Kernel32Test_test.cj",
+    "import_map": {
+        "Test": "org.junit.jupiter.api.Test",
+        "EnabledOnOs": "org.junit.jupiter.api.condition.EnabledOnOs",
+        "OS": "org.junit.jupiter.api.condition.OS",
+        "assertEquals": "static org.junit.jupiter.api.Assertions.assertEquals"
+    }
+}

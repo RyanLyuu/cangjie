@@ -1,0 +1,95 @@
+{
+    "path": "projects/java/cleaned_final_projects/jansi/jansi/src/test/java/org/fusesource/jansi/internal/JansiLoaderTest.java",
+    "imports": {
+        "18-18:import org.junit.jupiter.api.Test;": {
+            "start": 18,
+            "end": 18,
+            "body": "import org.junit.jupiter.api.Test;"
+        }
+    },
+    "classes": {
+        "20-26:JansiLoaderTest": {
+            "start": 20,
+            "end": 26,
+            "is_abstract": false,
+            "is_interface": false,
+            "is_enum": false,
+            "modifiers": [
+                "public"
+            ],
+            "nested_inside": "",
+            "nests": [],
+            "implements": [],
+            "extends": [],
+            "methods": {
+                "22-25:testLoadJansi": {
+                    "start": 22,
+                    "end": 25,
+                    "body": [
+                        "@Test",
+                        "    public void testLoadJansi() {",
+                        "        JansiLoader.initialize();",
+                        "    }"
+                    ],
+                    "is_constructor": false,
+                    "annotations": [
+                        "@Test"
+                    ],
+                    "modifiers": [
+                        "public"
+                    ],
+                    "return_types": [
+                        "void"
+                    ],
+                    "body_types": [],
+                    "signature": "testLoadJansi()",
+                    "parameters": [],
+                    "calls": [],
+                    "type_translations": {
+                        "return_types": {
+                            "void": {
+                                "identifier": "void",
+                                "translated": true,
+                                "attempted": true,
+                                "type_variation": "return_types",
+                                "timestamp": "2026-05-13 17:03:23",
+                                "source_type": "void",
+                                "generation": "",
+                                "imports": "",
+                                "translated_target_type": "Unit",
+                                "reasoning": "",
+                                "prompt": ""
+                            }
+                        },
+                        "body_types": {},
+                        "parameters": {},
+                        "types": {}
+                    },
+                    "translation": [],
+                    "translation_status": "pending",
+                    "syntactic_validation": "pending",
+                    "cangjie_compilation": "pending",
+                    "test_execution": "pending",
+                    "elapsed_time": 0,
+                    "generation_timestamp": 0,
+                    "model_name": "",
+                    "is_overload": false,
+                    "is_override": false,
+                    "needs_open": false,
+                    "partial_translation": [
+                        "    public open func testLoadJansi(): Unit {",
+                        "        throw Exception('TODO')",
+                        "    }\n"
+                    ]
+                }
+            },
+            "fields": {},
+            "cangjie_class_declaration": "public open class JansiLoaderTest {\n"
+        }
+    },
+    "cangjie_skeleton_path": "data/java/skeletons/jansi/src/JansiLoaderTest_test.cj",
+    "cangjie_translations_skeleton_path": "data/java/skeletons/translations/deepseek-chat/0.0/jansi/src/JansiLoaderTest_test.cj",
+    "import_map": {
+        "Test": "org.junit.jupiter.api.Test"
+    }
+}
