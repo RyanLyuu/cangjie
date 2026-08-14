@@ -608,15 +608,6 @@ def _source_path_for(schema: dict[str, Any], workspace: Path) -> Path | None:
     candidate = candidate if candidate.is_absolute() else workspace / candidate
     if candidate.is_file():
         return candidate.resolve()
-    # Historical schemas used projects/java/<dataset>/..., while the current
-    # repository layout is projects/<dataset>/.... Keep old schema artifacts
-    # usable without mutating their recorded source path.
-    normalized = raw.replace("\\", "/")
-    legacy_prefix = "projects/java/"
-    if normalized.startswith(legacy_prefix):
-        migrated = workspace / "projects" / normalized[len(legacy_prefix):]
-        if migrated.is_file():
-            return migrated.resolve()
     return None
 
 

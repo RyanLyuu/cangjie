@@ -253,19 +253,6 @@ class FileTransactionTest(unittest.TestCase):
             self.assertEqual(target.read_text(encoding="utf-8"), original_target)
             self.assertEqual(peer.read_text(encoding="utf-8"), original_peer)
 
-    def test_legacy_schema_source_path_maps_to_current_project_layout(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            workspace = Path(tmp)
-            source = workspace / "projects" / "cleaned" / "Demo.java"
-            source.parent.mkdir(parents=True)
-            source.write_text("class Demo {}\n", encoding="utf-8")
-
-            result = _source_path_for(
-                {"path": "projects/java/cleaned/Demo.java"}, workspace
-            )
-
-            self.assertEqual(result, source.resolve())
-
     def test_isolated_workspace_contains_only_current_project_and_syncs_transaction(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
