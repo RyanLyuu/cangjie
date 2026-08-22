@@ -29,8 +29,80 @@ def schema_scc_batches(
     project: str,
     suffix: str = "",
     include_tests: bool = False,
+    workspace: str | Path | None = None,
 ) -> list[list[Path]]:
     """Return dependency-first file batches with cycles preserved as SCCs."""
+    paths, path_by_schema, file_edges = _schema_file_graph(
+        schema_dir,
+        project=project,
+        suffix=suffix,
+        include_tests=include_tests,
+        workspace=workspace,
+    )
+    batches = _dependency_first_sccs(file_edges)
+    source_order = {path.stem: index for index, path in enumerate(paths)}
+    return [
+        [path_by_schema[name] for name in sorted(batch, key=source_order.__getitem__)]
+        for batch in batches
+    ]
+
+
+def schema_dependency_closure(
+    schema_dir: str | Path,
+    current: str | Path,
+    *,
+    project: str,
+    suffix: str = "",
+    include_tests: bool = False,
+    workspace: str | Path | None = None,
+) -> list[Path]:
+    """Return transitive semantic dependencies in dependency-first order."""
+    _, path_by_schema, file_edges = _schema_file_graph(
+        schema_dir,
+        project=project,
+        suffix=suffix,
+        include_tests=include_tests,
+        workspace=workspace,
+    )
+    current_path = Path(current).resolve()
+    current_name = next(
+        (
+            name
+            for name, path in path_by_schema.items()
+            if path.resolve() == current_path
+        ),
+        None,
+    )
+    if current_name is None:
+        return []
+
+    result: list[Path] = []
+    visited: set[str] = set()
+    visiting: set[str] = set()
+
+    def visit(name: str) -> None:
+        if name in visited or name in visiting:
+            return
+        visiting.add(name)
+        for dependency in sorted(file_edges.get(name, set())):
+            visit(dependency)
+        visiting.remove(name)
+        visited.add(name)
+        if name != current_name:
+            result.append(path_by_schema[name])
+
+    visit(current_name)
+    return result
+
+
+def _schema_file_graph(
+    schema_dir: str | Path,
+    *,
+    project: str,
+    suffix: str,
+    include_tests: bool,
+    workspace: str | Path | None,
+):
     paths = schema_paths(schema_dir, include_tests=include_tests)
     nodes = []
     data_by_schema = {}
@@ -75,7 +147,15 @@ def schema_scc_batches(
             if target in by_id and target != node.node_id:
                 edges[node.node_id].add(target)
 
-    _add_jdeps_edges(edges, nodes, by_fqn, by_short, project, suffix)
+    _add_jdeps_edges(
+        edges,
+        nodes,
+        by_fqn,
+        by_short,
+        project,
+        suffix,
+        workspace=workspace,
+    )
 
     # Collapse class dependencies to files only after class identity is unambiguous.
     file_edges = {name: set() for name in path_by_schema}
@@ -86,12 +166,7 @@ def schema_scc_batches(
             if source_file != dependency_file:
                 file_edges[source_file].add(dependency_file)
 
-    batches = _dependency_first_sccs(file_edges)
-    source_order = {path.stem: index for index, path in enumerate(paths)}
-    return [
-        [path_by_schema[name] for name in sorted(batch, key=source_order.__getitem__)]
-        for batch in batches
-    ]
+    return paths, path_by_schema, file_edges
 
 
 def fragment_order(schema: dict) -> list[dict]:
@@ -159,8 +234,18 @@ def _fragment(class_key: str, key: str, kind: str, info: dict) -> dict:
     }
 
 
-def _add_jdeps_edges(edges, nodes, by_fqn, by_short, project, suffix):
-    path = Path(f"data/java/dependencies{suffix}/{project}/dependencies.json")
+def _add_jdeps_edges(
+    edges,
+    nodes,
+    by_fqn,
+    by_short,
+    project,
+    suffix,
+    *,
+    workspace: str | Path | None = None,
+):
+    root = Path(workspace) if workspace is not None else Path.cwd()
+    path = root / f"data/java/dependencies{suffix}/{project}/dependencies.json"
     if not path.is_file():
         return
     raw = json.loads(path.read_text(encoding="utf-8"))

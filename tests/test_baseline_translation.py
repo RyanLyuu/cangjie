@@ -2,6 +2,8 @@ import json
 import os
 import subprocess
 import tempfile
+import threading
+import time
 import unittest
 from pathlib import Path
 from types import SimpleNamespace
@@ -9,8 +11,12 @@ from types import SimpleNamespace
 from src.java.translation.baseline_fragment_translation import (
     _AgentBuildBudget,
     _agent_environment,
+    _batch_timeout,
+    _fragment_batches,
     _has_skeleton_todo,
     _isolated_project_workspace,
+    _new_translation_runner,
+    _run_agent_with_watchdog,
     _sync_file_transaction,
     _source_path_for,
     _translate_file_transaction,
@@ -85,7 +91,80 @@ class _FileEditingRunner(AgentRunner):
         )
 
 
+class _BatchEditingRunner(AgentRunner):
+    def __init__(self, target: Path):
+        self.target = target
+        self.calls = []
+
+    def run(self, prompt, output_schema, *, workspace, session_id=""):
+        self.calls.append((prompt, output_schema, Path(workspace), session_id))
+        source = self.target.read_text(encoding="utf-8")
+        if len(self.calls) == 1:
+            source = source.replace(
+                "func first() { throw Exception('TODO') }",
+                "func first() { return }",
+            )
+        else:
+            source = source.replace(
+                "func second() { throw Exception('TODO') }",
+                "func second() { return }",
+            )
+        self.target.write_text(source, encoding="utf-8")
+        return AgentResult(
+            "success", {"status": "success", "summary": "target updated"},
+            session_id="shared-codex-session",
+        )
+
+
+class _BlockingPersistentRunner(AgentRunner):
+    def __init__(self):
+        self.closed = threading.Event()
+        self.close_calls = 0
+
+    def run(self, prompt, output_schema, *, workspace, session_id=""):
+        self.closed.wait()
+        return AgentResult("error", None, stderr="transport closed")
+
+    def close(self):
+        self.close_calls += 1
+        self.closed.set()
+
+
 class FileTransactionTest(unittest.TestCase):
+    def test_app_server_translation_runner_auto_approves_inside_workspace_sandbox(self):
+        args = build_parser().parse_args([
+            "--project", "demo", "--model", "codex", "--temperature", "0.0",
+            "--agent-transport", "app-server",
+        ])
+
+        runner = _new_translation_runner(args, {})
+
+        self.assertEqual(runner.sandbox, "workspace-write")
+        self.assertEqual(runner._approval_policy(), "never")
+
+    def test_watchdog_closes_a_stalled_agent_turn(self):
+        runner = _BlockingPersistentRunner()
+        started = time.monotonic()
+
+        result = _run_agent_with_watchdog(
+            runner, "prompt", {}, workspace=Path.cwd(), timeout=0.05,
+        )
+
+        self.assertEqual(result.status, "timeout")
+        self.assertEqual(runner.close_calls, 1)
+        self.assertLess(time.monotonic() - started, 1)
+
+    def test_fragment_batches_preserve_order_and_have_a_fixed_bound(self):
+        fragments = [{"fragment_name": str(index)} for index in range(17)]
+
+        batches = _fragment_batches(fragments, max_size=8)
+
+        self.assertEqual([len(batch) for batch in batches], [8, 8, 1])
+        self.assertEqual(
+            [item["fragment_name"] for batch in batches for item in batch],
+            [str(index) for index in range(17)],
+        )
+
     def test_file_translation_defaults_to_a_300_second_transaction(self):
         args = build_parser().parse_args([
             "--project", "demo", "--model", "codex", "--temperature", "0.0",
@@ -94,6 +173,13 @@ class FileTransactionTest(unittest.TestCase):
         self.assertEqual(args.final_build_timeout, 20)
         self.assertEqual(args.max_builds, 3)
         self.assertEqual(args.agent_transport, "app-server")
+
+    def test_batch_reserves_20_seconds_after_a_200_second_agent_turn(self):
+        args = build_parser().parse_args([
+            "--project", "demo", "--model", "codex", "--temperature", "0.0",
+        ])
+
+        self.assertEqual(_batch_timeout(args), (200, 20))
 
     def test_agent_build_budget_rejects_the_fourth_build(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -120,6 +206,27 @@ class FileTransactionTest(unittest.TestCase):
                 )
                 self.assertEqual(budget.count(), 3)
                 self.assertTrue(budget.exceeded())
+            finally:
+                budget.cleanup()
+
+    def test_agent_build_budget_preserves_isolated_codex_home(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            real_cjpm = root / "real-cjpm"
+            real_cjpm.write_text("#!/bin/sh\nexit 0\n", encoding="utf-8")
+            real_cjpm.chmod(0o755)
+            budget = _AgentBuildBudget.create(root, str(real_cjpm), 3)
+            try:
+                environment = _agent_environment(
+                    {"CODEX_HOME": str(root / "isolated-codex"), "PATH": os.environ["PATH"]},
+                    budget,
+                )
+                self.assertEqual(
+                    environment["CODEX_HOME"], str(root / "isolated-codex")
+                )
+                self.assertEqual(
+                    environment["X2CANGJIE_BUILD_COUNT_FILE"], str(budget.count_path)
+                )
             finally:
                 budget.cleanup()
 
@@ -224,13 +331,81 @@ class FileTransactionTest(unittest.TestCase):
                 session_id="",
             )
 
-            self.assertEqual(result["status"], "build_failed")
+            self.assertEqual(result["status"], "incomplete")
+            self.assertEqual(result["failure_statuses"], ["build_failed"])
             self.assertEqual(target.read_text(encoding="utf-8"), original)
             stored = json.loads(schema.read_text(encoding="utf-8"))
-            self.assertEqual(stored["file_translation"]["status"], "build_failed")
+            self.assertEqual(stored["file_translation"]["status"], "incomplete")
             self.assertEqual(
                 stored["classes"]["1-3:Demo"]["methods"]["2-2:value"]["translation_status"],
-                "pending",
+                "failed",
+            )
+
+    def test_failed_batch_keeps_previous_batch_commit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            workspace, schema_dir, translation_root, schema, target, _, args = self._fixture(root)
+            target.write_text(
+                "class Demo {\n"
+                "  func first() { throw Exception('TODO') }\n"
+                "  func second() { throw Exception('TODO') }\n"
+                "}\n",
+                encoding="utf-8",
+            )
+            schema_data = json.loads(schema.read_text(encoding="utf-8"))
+            methods = schema_data["classes"]["1-3:Demo"]["methods"]
+            methods["2-2:first"] = {
+                "start": 2,
+                "end": 2,
+                "is_constructor": False,
+                "calls": [],
+                "partial_translation": [
+                    "  func first() { throw Exception('TODO') }\n",
+                ],
+            }
+            methods["3-3:second"] = {
+                "start": 3,
+                "end": 3,
+                "is_constructor": False,
+                "calls": [],
+                "partial_translation": [
+                    "  func second() { throw Exception('TODO') }\n",
+                ],
+            }
+            methods.pop("2-2:value")
+            schema.write_text(json.dumps(schema_data), encoding="utf-8")
+            cjpm = Path(args.cjpm_executable)
+            cjpm.write_text(
+                "#!/bin/sh\n"
+                "if grep -q \"func second() { return }\" src/Demo.cj; then exit 1; fi\n"
+                "exit 0\n",
+                encoding="utf-8",
+            )
+            cjpm.chmod(0o755)
+
+            from unittest.mock import patch
+
+            runner = _BatchEditingRunner(target)
+            with patch(
+                "src.java.translation.baseline_fragment_translation._FRAGMENT_BATCH_SIZE",
+                1,
+            ):
+                result = _translate_file_transaction(
+                    schema, schema_dir, translation_root, runner, args, workspace, 0,
+                    session_id="",
+                )
+
+            self.assertEqual(result["status"], "incomplete")
+            self.assertEqual(result["completed"], 1)
+            self.assertEqual(result["failed"], 1)
+            self.assertEqual(len(runner.calls), 2)
+            output = target.read_text(encoding="utf-8")
+            self.assertIn("func first() { return }", output)
+            self.assertIn("func second() { throw Exception('TODO') }", output)
+            stored = json.loads(schema.read_text(encoding="utf-8"))
+            self.assertEqual(
+                [item["status"] for item in stored["translation_batches"]],
+                ["success", "build_failed"],
             )
 
     def test_changes_outside_the_target_are_reverted(self):
@@ -249,7 +424,8 @@ class FileTransactionTest(unittest.TestCase):
                 workspace, 0, session_id="",
             )
 
-            self.assertEqual(result["status"], "out_of_scope_changes")
+            self.assertEqual(result["status"], "incomplete")
+            self.assertEqual(result["failure_statuses"], ["out_of_scope_changes"])
             self.assertEqual(target.read_text(encoding="utf-8"), original_target)
             self.assertEqual(peer.read_text(encoding="utf-8"), original_peer)
 

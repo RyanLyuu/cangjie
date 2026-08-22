@@ -146,6 +146,8 @@ class CodexRunner(AgentRunner):
             args.extend(["--sandbox", self.sandbox, "--color", "never"])
             if self.bypass_approvals_and_sandbox:
                 args.append("--dangerously-bypass-approvals-and-sandbox")
+        args.append("--ignore-rules")
+        args.extend(["--disable", "plugins"])
         args.extend(self.extra_args)
         return args
 
@@ -198,6 +200,7 @@ class PersistentCodexRunner(AgentRunner):
     timeout: int = 1800
     extra_args: list[str] = field(default_factory=list)
     bypass_approvals_and_sandbox: bool = False
+    approval_policy: str = ""
     environment: dict[str, str] | None = None
     client_name: str = "x2cangjie"
     client_version: str = "0.1"
@@ -325,7 +328,7 @@ class PersistentCodexRunner(AgentRunner):
         if not executable:
             raise FileNotFoundError(f"Codex executable not found: {self.executable}")
 
-        command = [executable, "app-server", "--listen", "stdio://"]
+        command = [executable, "app-server", "--disable", "plugins", "--listen", "stdio://"]
         command.extend(self.extra_args)
         self._process = subprocess.Popen(
             command,
@@ -353,7 +356,7 @@ class PersistentCodexRunner(AgentRunner):
         self._await_response(self._request_id, deadline)
         self._send_notification("initialized", {})
 
-        approval_policy = "never" if self.bypass_approvals_and_sandbox else "on-request"
+        approval_policy = self._approval_policy()
         if session_id:
             response = self._request_and_wait(
                 "thread/resume",
@@ -375,6 +378,13 @@ class PersistentCodexRunner(AgentRunner):
         self._thread_id = str(response.get("result", {}).get("thread", {}).get("id", ""))
         if not self._thread_id:
             raise RuntimeError("app-server thread response returned no thread id")
+
+    def _approval_policy(self) -> str:
+        if self.approval_policy:
+            if self.approval_policy not in {"on-request", "never"}:
+                raise ValueError("approval_policy must be 'on-request' or 'never'")
+            return self.approval_policy
+        return "never" if self.bypass_approvals_and_sandbox else "on-request"
 
     def _request_and_wait(
         self,
